@@ -12,24 +12,43 @@ Search* (WPCS).
   territories (313 colonial polities + 438 princely states) and 1,213 typed
   relationships
 - `viz/empire_evolution.html` — self-contained D3.js Sankey visualization
+- `scripts/load_falkordb.py` — load the graph into an embedded FalkorDB instance
+  (no Docker, no Neo4j server)
 
-## Render the paper
+## Quick start: spin up the graph in-process
 
 ```bash
-quarto render paper/empire-evolution-wpcs.qmd
+pip install -r requirements.txt
+python3 scripts/load_falkordb.py --interactive
 ```
 
-(Renders both HTML and PDF if a TeX distribution is available.)
+This loads the 751 nodes / 1,213 edges into an embedded FalkorDB
+("FalkorDBLite") instance saved to `./empire.db` and drops you into a
+Cypher REPL. No Neo4j installation, no Docker, no Java.
 
-## Load the graph
+Sample query at the prompt:
+
+```cypher
+MATCH (a:HistoricalTerritory)-[:PARTITIONED_INTO]->(b:HistoricalTerritory)
+RETURN a.canonical_name, b.canonical_name, b.established_year
+ORDER BY b.established_year LIMIT 20
+```
+
+> **Note**: the canonical export uses Neo4j-flavored Cypher
+> (`CREATE CONSTRAINT`, `datetime(...)`, `point({srid: 4326, ...})`). The
+> FalkorDB loader silently rewrites these on the fly to match FalkorDB's
+> parser; temporal types degrade to ISO strings and points retain
+> latitude/longitude only. See `scripts/load_falkordb.py` for the rewrite
+> rules.
+
+## Alternative: load into Neo4j
 
 ```bash
 cypher-shell -u neo4j -p <password> -f data/britishempire_kg_export.cypher
 ```
 
-The cypher file is self-contained: it creates a uniqueness constraint on
-`colony_id`, MERGEs all 751 nodes with their multi-label classification, and
-MERGEs all 1,213 relationships. Re-running is idempotent.
+Neo4j 5.x is recommended (the export uses `CREATE CONSTRAINT IF NOT EXISTS
+FOR ... REQUIRE` syntax). Re-running is idempotent.
 
 ## Open the visualization
 
@@ -39,6 +58,14 @@ open viz/empire_evolution.html          # macOS
 ```
 
 The data is embedded in the HTML; no server needed.
+
+## Render the paper
+
+```bash
+quarto render paper/empire-evolution-wpcs.qmd
+```
+
+Renders both HTML and PDF if a TeX distribution is available.
 
 ## Citation
 
@@ -53,6 +80,6 @@ Territorial Evolution. Working Papers in Critical Search.
 
 - Paper text: CC-BY 4.0
 - Dataset: CC-BY 4.0 (incorporates Wikidata QIDs and curated date/typology
-  decisions; Wikidata content is CC0)
+  decisions; Wikidata content itself is CC0)
 
 See `LICENSE` for full terms.

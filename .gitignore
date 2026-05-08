@@ -17,5 +17,9 @@
 .DS_Store
 Thumbs.db
 
+# FalkorDBLite local DB (regeneratable from data/britishempire_kg_export.cypher)
+empire.db
+empire.db.settings
+
 # Secrets
 .env
