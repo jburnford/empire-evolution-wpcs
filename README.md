@@ -14,6 +14,8 @@ Search* (WPCS).
 - `viz/empire_evolution.html` — self-contained D3.js Sankey visualization
 - `scripts/load_falkordb.py` — load the graph into an embedded FalkorDB instance
   (no Docker, no Neo4j server)
+- `notebooks/quick_tour.ipynb` — guided tour with three pyvis visualizations
+  (label/edge stats, Canada lineage tree, Southeast Asia subgraph)
 
 ## Quick start: spin up the graph in-process
 
@@ -33,6 +35,27 @@ MATCH (a:HistoricalTerritory)-[:PARTITIONED_INTO]->(b:HistoricalTerritory)
 RETURN a.canonical_name, b.canonical_name, b.established_year
 ORDER BY b.established_year LIMIT 20
 ```
+
+## Quick start: notebook tour
+
+```bash
+pip install -r requirements.txt
+python3 scripts/load_falkordb.py --reset    # creates ./empire.db
+jupyter notebook notebooks/quick_tour.ipynb
+```
+
+The notebook builds three visualizations directly from FalkorDB Cypher
+queries:
+
+1. Schema-level stats (label and relationship-type breakdowns)
+2. Lineage of modern Canada (predecessor tree via `EVOLVED_INTO` /
+   `PARTITIONED_INTO`)
+3. Southeast Asia regional subgraph (Malaysia formation, Singapore
+   separation), colored by colonial type
+
+Both rendered HTML graphs (`notebooks/canada_lineage.html`,
+`notebooks/se_asia.html`) are checked in so you can preview without
+running.
 
 > **Note**: the canonical export uses Neo4j-flavored Cypher
 > (`CREATE CONSTRAINT`, `datetime(...)`, `point({srid: 4326, ...})`). The

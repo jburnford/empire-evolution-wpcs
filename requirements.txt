@@ -1,3 +1,9 @@
 # Embedded FalkorDB — lets readers spin up the graph in-process,
 # no Docker, no Neo4j server. See scripts/load_falkordb.py.
 falkordblite>=0.10.0
+
+# Optional: notebooks/quick_tour.ipynb (graph viz demonstrations)
+jupyter
+networkx
+pyvis
+pandas
