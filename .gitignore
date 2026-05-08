@@ -1,0 +1,21 @@
+# Quarto
+/.quarto/
+/_freeze/
+/paper/_freeze/
+/paper/.quarto/
+/paper/empire-evolution-wpcs.html
+/paper/empire-evolution-wpcs.pdf
+/paper/empire-evolution-wpcs_files/
+
+# Editors
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env

@@ -1,0 +1,192 @@
+---
+title: "A Cypher Knowledge Graph of British Imperial Territorial Evolution"
+subtitle: "Hybrid dataset paper and method note on knowledge graphs for historical research"
+author:
+  - name: Jim Clifford
+    affiliation: University of Saskatchewan
+    email: jim.clifford@usask.ca
+date: today
+abstract: |
+  This paper presents a curated Cypher knowledge graph documenting the
+  territorial evolution of the British Empire from the early-modern period
+  through the late twentieth century, alongside an interactive Sankey-style
+  visualization of colonial successions, partitions, federations, and
+  independence transitions. The graph contains 751 historical territories
+  (313 colonial polities and 438 princely states) connected by 1,213 typed
+  relationships drawn from Wikidata-grounded entities. We argue that property
+  graphs in the Cypher query language offer a productive substrate for
+  historical research: they make the messy genealogies of empire — partitions,
+  reorganizations, post-imperial successor states — explicit and queryable
+  without forcing them into the cleaner abstractions of relational schemas.
+  We also argue that grounding historical entities to Wikidata QIDs creates
+  shared foundations across projects, allowing scholars to build on each
+  other's work rather than reproducing baseline structures from scratch.
+format:
+  html:
+    toc: true
+    number-sections: true
+  pdf:
+    toc: true
+    number-sections: true
+bibliography: references.bib
+---
+
+# Introduction
+
+<!--
+Brief framing: what historians of empire have done computationally, why
+property graphs are a useful next step, what this paper contributes.
+- Position relative to existing colonial-history datasets (Crawford, Linked
+  Open Data for empire, etc.)
+- The argument: Cypher + Wikidata = shared, queryable foundations
+- What's *not* in scope (people, events at fine grain, economic flows)
+-->
+
+The British Empire is among the most studied historical formations, but its
+*structural* evolution — which polities existed when, what succeeded what,
+how partitions and federations rearranged sovereignty — is surprisingly hard
+to trace at a glance. Conventional historiographical narratives treat
+territorial change as background; relational databases impose clean
+sovereign-state schemas that fit the post-1945 international order more
+comfortably than the messy genealogies of empire.
+
+This paper presents a Cypher property-graph dataset of 751 historical
+territories and 1,213 typed relationships, together with an interactive
+Sankey visualization that makes the genealogies legible
+(@fig-viz). The dataset is small. The argument is larger: that knowledge
+graphs in Cypher, with entities grounded to Wikidata QIDs, offer a
+productive *shared foundation* for historical research at this scale.
+
+# The dataset
+
+## Scope and coverage
+
+<!--
+- Time span: ~1580–1985
+- Geographic scope: British colonial territories worldwide
+- 313 colonial polities + 438 princely states
+- Excluded: dependencies of dependencies, very transient occupations,
+  post-1985 successor states (mostly)
+-->
+
+## Schema
+
+<!--
+Describe the node and relationship taxonomy.
+- :HistoricalTerritory base label
+- Specific subtypes: Colony, CrownColony, Protectorate, Dominion,
+  Mandate, PrincelyState, Federation, etc.
+- Relationship types: EVOLVED_INTO, PARTITIONED_INTO, MERGED_INTO,
+  FEDERATED_INTO, BECAME_INDEPENDENT, ADMINISTERED_UNDER, PART_OF, etc.
+- Why typed relationships matter: they distinguish *partition* (one entity
+  becomes several) from *succession* (one becomes the next) from
+  *administration* (one governs another concurrently)
+-->
+
+## Provenance and curation
+
+<!--
+- Original entities harvested from Wikidata via SPARQL
+- Hand-curated dates, reorganization events, edge typing
+- Princely-state inclusion criteria (gun-salute precedence)
+- Iteration with the visualization as a curation tool
+-->
+
+# Wikidata grounding as a shared foundation
+
+<!--
+The core methodological argument.
+- Every entity has a wikidata_id property (or is flagged when ungrounded)
+- Why this matters: cross-project compatibility, reuse, cumulative scholarship
+- Caveat: REST API is unreliable for disambiguation (the Sarnia / Walpole
+  Island problem); MCP vector search worked
+- Examples of where grounding helped: identifying that Northern Rhodesia
+  (1911–1964) and Northern Rhodesia (post-federation 1964) need separate
+  nodes despite sharing a Wikidata QID
+-->
+
+# The visualization
+
+<!--
+- Interactive Sankey diagram (D3.js)
+- What it reveals that tabular data doesn't: clusters of partition events,
+  the post-1945 cascade, the persistence of crown colonies into the 1980s
+- Curatorial decisions encoded visually: post-imperial entities in dashed
+  outline, non-British entities (Boer republics, Dutch interludes) marked
+- The visualization as a *check* on the data: drift between the embedded
+  data and the live graph surfaced through the reconciliation process
+-->
+
+::: {#fig-viz}
+![British Empire territorial evolution Sankey](../viz/empire_evolution.html)
+
+Sankey-style visualization of British colonial territorial evolution.
+Time runs left-to-right; each bar is a polity sized by duration.
+Flows trace successions, partitions, mergers, and independences.
+Color encodes region. Open the HTML file directly for the interactive
+version.
+:::
+
+# Discussion: Cypher knowledge graphs for historical research
+
+<!--
+The methodological claim, made carefully.
+- Property graphs vs. relational: when one is better than the other
+  - Relational: clean cardinalities, controlled vocabularies, statistical work
+  - Property graph: emergent typology, n-ary "becoming" relations,
+    exploration of paths
+- Cypher specifically: pattern-matching syntax that mirrors how historians
+  *think* about successions and lineages
+  - Example query: "find all territories that were once Dutch then British"
+  - MATCH (a)-[:EVOLVED_INTO*]->(b) — recursion is a research tool
+- Limits: property graphs do not enforce schemas; the curator's discipline
+  is the only thing keeping the graph coherent
+- Comparison to LINCS / linked-data approaches: complementary, not competing
+-->
+
+# Reproducibility and reuse
+
+The full dataset is in `data/britishempire_kg_export.cypher`. To load:
+
+```bash
+cypher-shell -u neo4j -p <password> -f data/britishempire_kg_export.cypher
+```
+
+Sample queries:
+
+```cypher
+-- All settlements that became independent through partition
+MATCH (a:HistoricalTerritory)-[:PARTITIONED_INTO]->(b:HistoricalTerritory)
+WHERE 'IndependentNation' IN labels(b)
+RETURN a.canonical_name, b.canonical_name, b.established_year
+ORDER BY b.established_year;
+
+-- Lineage of any territory back to its earliest predecessor
+MATCH path = (root:HistoricalTerritory)-[:EVOLVED_INTO|:PARTITIONED_INTO|:MERGED_INTO*]->
+  (target:HistoricalTerritory {canonical_name: 'Dominion of Canada'})
+WHERE NOT (()-[:EVOLVED_INTO|:PARTITIONED_INTO|:MERGED_INTO]->(root))
+RETURN path;
+```
+
+The visualization in `viz/empire_evolution.html` is self-contained; open in any
+browser.
+
+# Limitations and future work
+
+<!--
+Honest about what's missing.
+- Fine-grained boundary changes (e.g., 19th-century Indian district
+  reorganizations) are absent
+- Concurrent administrative arrangements (e.g., Aden Settlement vs. Aden
+  Colony) are partly conflated
+- Princely-state coverage is the major-states subset; full coverage of
+  the ~600+ states would require a larger curation effort
+- Future: extend to French / Dutch / Spanish colonial systems with shared
+  Wikidata foundations; couple with the Empire Officials KG (Colonial
+  Office List) to populate territories with personnel data
+-->
+
+# References {.unnumbered}
+
+::: {#refs}
+:::
