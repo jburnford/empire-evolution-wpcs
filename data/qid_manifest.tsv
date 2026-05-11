@@ -1,0 +1,745 @@
+colony_id	name	canonical_name	wikidata_id	modern_nation_qids	established_year	end_date	region	colony_type	capital	successor_dominion	qid_scope_note
+acadia_french_1604_1713	Acadia (French)	Acadia	Q207353	Q16	1604	1713-04-11	North America	Colonial Territory			
+achrol_1600_2000	Achrol		Q21075277				South Asia	Princely State		india	
+aden_1839_1963	Aden Province	Aden Province	Q17509767	Q805	1839	1937-03-31	Middle East	Colony/Protectorate			
+aden_colony_1937_1967	Aden Colony	Aden Colony	Q49910	Q805	1937	1967-11-30	Middle East	Crown Colony			
+aden_protectorate_1839_1967	Aden Protectorate	Aden Protectorate	Q1865132	Q805	1869	1967-11-30	Middle East	Protectorate			
+ahirwal	Ahirwal		Q4695139				South Asia	Princely State		india	
+ajaigarh_state_1765_1949	Ajaigarh State		Q5301066				South Asia	Princely State	Ajaigarh	india	
+ajmer_merwara_1818_1947		Ajmer-Merwara	Q412980		1818		South Asia	Province			Q412980 dissolved 1936 per WD (file 1947); 1936 was reorganization, administered until 1947.
+akkalkot_state_1725_1948	Akkalkot State		Q3963975				South Asia	Princely State		india	
+akora_1800_1849	Akora		Q28137490				South Asia	Princely State		pakistan	
+alampur	Alampur		Q28171846				South Asia	Princely State		india	
+alberta_1905		Alberta	Q1951		1905		North America	Province			
+aldabra_islands_1903_1965	Aldabra Islands	Aldabra Islands	Q1426882	Q1042	1903	1965-11-08	Africa (Islands)	Dependency			
+alipura_state_1757_1947	Alipura State		Q4726842				South Asia	Princely State		india	
+alirajpur_state_1437_1948	Alirajpur State		Q4726858				South Asia	Princely State		india	
+alwar_state_1770_1949	Alwar State		Q1553143				South Asia	Princely State	Alwar	india	
+amala_state	Amala State		Q11942776				South Asia	Princely State		india	
+amb_state_1900_1969	Amb State		Q2841472				South Asia	Princely State		pakistan	
+ambliara_state_1600_1943	Ambliara State		Q11905286				South Asia	Princely State		india	
+anandpur_state	Anandpur State		Q11905441				South Asia	Princely State		india	
+andaman_and_nicobar_islands_1789_1947		Andaman and Nicobar Islands	Q40888		1789		South Asia	Province			Q40888 is modern Indian union territory (since 1956); file row covers earlier British colonial period 1789-1947 not separately represented in WD.
+angadh_estate_1874_1947	Angadh Estate		Q104151568				South Asia	Princely State		india	
+anghar	Anghar		Q11905609				South Asia	Princely State		india	
+anguilla_1650_ongoing	Anguilla	Anguilla	Q25228	Q25228	1650		Caribbean	Crown Colony			
+antigua_colony_1632_1981	Antigua Colony	Antigua Colony	Q130386222	Q781	1632	1981-11-01	Caribbean	Crown Colony			Q130386222 Colony of Antigua covers a narrower period than file's full 1632-1981 (WD entity flag images dated 1956-1967); no broader colony entity in WD.
+ascension_island_1815_ongoing	Ascension Island	Ascension Island	Q46197	Q192184	1815		Africa (Islands)	Dependency			
+ashanti_1901_1957	Ashanti	Ashanti	Q96372444	Q117	1901	1957-01-01	West Africa	Crown Colony			
+assam_bengal_presidency_1826_1874	Assam (Bengal Presidency)	Assam (Bengal Presidency)	Q817165	Q668	1826	1874-02-06	South Asia	Province of British India			Q817165 is the parent Bengal Presidency (also assigned to bengal_presidency_company and bengal_presidency_crown rows); file row covers Assam-within-Bengal sub-period 1826-1874.
+assam_province_1874_1905	Assam Province (1874-1905)	Assam Province (1874-1905)	Q17513379	Q668	1874	1905-10-16	South Asia	Province			Q17513379 is the restored Assam Province 1912-1947 (also assigned to assam_province_restored_1912_1947); file row covers the earlier 1874-1905 Chief Commissioner's Province (no separate WD entity).
+assam_province_restored_1912_1947	Assam Province (Restored)	Assam Province (Restored)	Q17513379	Q668	1912	1947-08-15	South Asia				[QID_REUSED] Same Q17513379 also assigned to assam_province_1874_1905; this row is the correct match (inception 1912)
+athgarh_state_1178_1949	Athgarh State		Q2869051				South Asia	Princely State		india	
+athmallik_state_1874_1948	Athmallik State		Q17513838				South Asia	Princely State		india	
+aundh_state_1699_1948	Aundh State		Q2871819				South Asia	Princely State		india	
+australia_independent_1942		Australia	Q408		1942		Pacific	Independence			
+avchar_state	Avchar State		Q21075165				South Asia	Princely State		india	
+babariawad_1947	Babariawad		Q4837532				South Asia	Princely State		india	
+badu	Badu		Q11907536				South Asia	Princely State		india	
+baghal_state_1310_1948	Baghal State		Q2879034				South Asia	Princely State		india	
+baghat_state_1600_1948	Baghat State		Q520403				South Asia	Princely State		india	
+bahamas_colony_1666_1973	Bahamas Colony	Bahamas Colony	Q21815597	Q778	1666	1973-07-10	Caribbean	Crown Colony			Q21815597 inception 1718 (file's 1666 reflects earliest English settlement); 1973 dissolved exact match.
+bahawalpur_state_1690_1955	Bahawalpur State		Q800236				South Asia	Princely State	Bahawalpur	pakistan	
+bahrain_protectorate_1861_1971	Bahrain Protectorate	Bahrain Protectorate	Q21816225	Q398	1861	1971-08-15	Middle East	Protectorate			
+bajana_state	Bajana State		Q11907630				South Asia	Princely State		india	
+baker_island_1855_1898	Baker Island	Baker Island	Q46879	Q30	1897	1898-07-07	Pacific (Guano/Whaling)	Guano Island			
+bakhatgarh	Bakhatgarh		Q28419349				South Asia	Princely State		india	
+balasinor_state_1758_1948	Balasinor State		Q17514653				South Asia	Princely State	Balasinor	india	
+balladhdarh_state_1710_1867	Balladhdarh State		Q104152096				South Asia	Princely State		india	
+baluchistan_1877_1947	Baluchistan	Baluchistan	Q3303188	Q843	1877	1947-01-01	South Asia	Province			
+bamanbore_state	Bamanbore State		Q11907764				South Asia	Princely State	Bamanbore	india	
+bamra_state_1545_1948	Bamra State		Q806019				South Asia	Princely State		india	
+banda_1790_1858	Banda		Q806233				South Asia	Princely State		india	
+banda_islands_british_occupation_1810_1817	Banda Islands (British Occupation)	Banda Islands (British Occupation)	Q18639233	Q252	1810	1817-01-01	Southeast Asia	Military Administration			Q18639233 covers the broader French/British interregnum in the Dutch East Indies 1806-1816; file row covers Banda Islands sub-period of British rule 1810-1817.
+banganapalle_state_1790_1948	Banganapalle State		Q13389050				South Asia	Princely State	Banaganapalle	india	
+bansda_1781_1948	Bansda		Q4857117				South Asia	Princely State		india	
+banswara_state_1497_1949	Banswara State		Q806963				South Asia	Princely State	Banswara	india	
+bantva_manavadar_state_1760_1947	Bantva Manavadar State		Q918500				South Asia	Princely State		india	
+baoni_state_1784_1948	Baoni State		Q807069				South Asia	Princely State		india	
+baramba_state_1305_1949	Baramba State		Q2883798				South Asia	Princely State		india	
+baraundha_state_1169_1950	Baraundha State		Q807288				South Asia	Princely State		india	
+barbados_colony_1627_1966	Barbados Colony	Barbados Colony	Q63973349	Q244	1627	1966-11-30	Caribbean	Crown Colony			
+baria_state_1524_1948	Baria State		Q2884562				South Asia	Princely State		india	
+baroda_state_1721_1949	Baroda State		Q808575				South Asia	Princely State	Vadodara	india	
+barpali	Barpali		Q11908231				South Asia	Princely State		india	
+barwala_state	Barwala State		Q11908637				South Asia	Princely State		india	
+barwani_state_836_1948	Barwani State		Q809652				South Asia	Princely State	Barwani	india	
+bashahr_state_1412_1948	Bashahr State		Q809955				South Asia	Princely State		india	
+basoda_state_1753_1947	Basoda State		Q810432				South Asia	Princely State		india	
+bastar_state_1853_1948	Bastar State		Q810557				South Asia	Princely State	Jagdalpur	india	
+basutoland_1868_1966	Basutoland	Basutoland	Q2340665	Q1013	1868	1966-01-01	Southern Africa	Crown Colony			
+baudh_state_1874_1948	Baudh State		Q894995				South Asia	Princely State		india	
+bavra_state	Bavra State		Q11908840				South Asia	Princely State		india	
+bay_islands_1852_1859		Bay Islands	Q107987587		1852		Caribbean	Crown Colony			Q107987587 dissolved 1862 per WD (file 1859); minor end-date variance.
+bechuanaland_protectorate_1884_1966	Bechuanaland Protectorate	Bechuanaland Protectorate	Q747314	Q963	1884	1966-01-01	Southern Africa	Protectorate			
+beja_state_1800_1948	Beja State		Q2902467				South Asia	Princely State		india	
+benares_state_1770_1948	Benares State		Q1375154				South Asia	Princely State	Varanasi	india	
+bencoolen_bengkulu_1685_1824	Bencoolen (Bengkulu)	Bencoolen (Bengkulu)	Q4969562	Q252	1685	1824-03-17	Southeast Asia	Trading Post			
+bengal_presidency_company_1757_1858	Bengal Presidency (Company)	Bengal Presidency (Company)	Q817165	Q668;Q902	1757	1858-11-01	South Asia	Presidency			[QID_REUSED_TOO_BROAD] Q817165 covers full Bengal Presidency 1690-1947 (both Company rule 1757-1858 AND Crown rule 1858-1947); same QID assigned to bengal_presidency_crown_1858_1912; no narrower entity for the Company-rule sub-period found
+bengal_presidency_crown_1858_1912	Bengal Presidency (Crown)	Bengal Presidency (Crown)	Q817165	Q668;Q902	1858	1905-10-16	South Asia	Presidency			[QID_REUSED] Q817165 also assigned to bengal_presidency_company_1757_1858; this row's 1858-1947 Crown period is closer match to WD inception-dissolution but QID still spans both eras
+berbice_colony_1803_1831		Berbice	Q675322		1803		South America	Crown Colony			Q675322 covers Dutch+British Berbice 1627-1815 (merged into British Guiana); file row's 1803-1831 is the British sub-period.
+beri_state_1750_1950	Beri State		Q11909106				South Asia	Princely State		india	
+bermuda_1609_ongoing	Bermuda	Bermuda	Q23635	Q23635	1609		Atlantic	Crown Colony			
+bhabar_state	Bhabar State		Q21076367				South Asia	Princely State		india	
+bhadli_state	Bhadli State		Q11909248				South Asia	Princely State		india	
+bhadvana_state	Bhadvana State		Q21075443				South Asia	Princely State		india	
+bhaisunda_1812_1948	Bhaisunda		Q11909259				South Asia	Princely State		india	
+bhajji_state_1800_1948	Bhajji State		Q642037				South Asia	Princely State		india	
+bhalala	Bhalala		Q11909260				South Asia	Princely State		india	
+bhandaria	Bhandaria		Q11909266				South Asia	Princely State		india	
+bharatpur_state_1680_1948	Bharatpur State		Q854850				South Asia	Princely State	Bharatpur	india	
+bharauli_state	Bharauli State		Q11909267				South Asia	Princely State		india	
+bharejda	Bharejda		Q21075444				South Asia	Princely State		india	
+bhathan_state	Bhathan State		Q17588101				South Asia	Princely State		india	
+bhavnagar_state_1723_1948	Bhavnagar State		Q854917				South Asia	Princely State	Bhavnagar	india	
+bhayavadar	Bhayavadar		Q11909279				South Asia	Princely State		india	
+bhith_bhagwanpur_state_1711_1948	Bhith Bhagwanpur State		Q104152097				South Asia	Princely State		india	
+bhoika_state	Bhoika State		Q11909287				South Asia	Princely State		india	
+bhojavadar	Bhojavadar		Q21075445				South Asia	Princely State		india	
+bhopal_state_1723_1947	Bhopal State		Q855044				South Asia	Princely State	Bhopal	india	
+bhor_state_1697_1948	Bhor State		Q855058				South Asia	Princely State		india	
+bhowal_state	Bhowal State		Q21075310				South Asia	Princely State		india	
+bihar_and_orissa_1912_1947	Bihar and Orissa	Bihar and Orissa	Q4907084	Q668	1912	1947-08-15	South Asia	Province			[DATE_RANGE_MISMATCH] Q4907084 is correct entity (province of British India inception 1912) but Wikidata dissolved date is 1936 not 1947; in 1936 the unified province split into separate Bihar Province and Orissa Province (Q7102849); file row's 1912-1947 span covers a period when this unified entity did not exist (1936-1947)
+bihat_state	Bihat State		Q11909349				South Asia	Princely State		india	
+bihora_state	Bihora State		Q21075380				South Asia	Princely State		india	
+bijawar_state_1765_1950	Bijawar State		Q7905915				South Asia	Princely State	Bijawar	india	
+bikaner_state_1465_1947	Bikaner State		Q859966				South Asia	Princely State	Bikaner	india	
+bilbari_state	Bilbari State		Q11909369				South Asia	Princely State		india	
+bildi_state	Bildi State		Q11909376				South Asia	Princely State		india	
+birnie_island_1860_1979	Birnie Island	Birnie Island	Q45295	Q710	1860	1979-07-12	Pacific (Guano/Whaling)	Guano Island			
+bombay_presidency_company_1687_1858	Bombay Presidency (Company)	Bombay Presidency (Company)	Q891827	Q668	1687	1858-11-01	South Asia	Presidency			[QID_REUSED_TOO_BROAD] Q891827 covers full Bombay Presidency 1668-1947 (both Company rule 1687-1858 AND Crown rule 1858-1947); same QID assigned to bombay_presidency_crown_1858_1947; no narrower entity for the Company-rule sub-period found - same pattern as Bengal Presidency
+bombay_presidency_crown_1858_1947	Bombay Presidency (Crown)	Bombay Presidency (Crown)	Q891827	Q668	1858	1947-08-15	South Asia	Presidency			[QID_REUSED] Q891827 also assigned to bombay_presidency_company_1687_1858; this row's 1858-1947 Crown period is closer match to WD inception-dissolution but QID still spans both eras
+bonai_state_1200_1948	Bonai State		Q892061				South Asia	Princely State		india	
+bouvet_island_brief_claim_1825_1928	Bouvet Island (Brief Claim)	Bouvet Island (Brief Claim)	Q23408	Q31747	1825	1928-01-01	Antarctica	Remote Island			
+british_bechuanaland_1885_1895	British Bechuanaland	British Bechuanaland	Q4530733	Q963	1885	1895-01-01	Southern Africa	Crown colony			
+british_cameroons_1916_1961	British Cameroons	British Cameroons	Q1028835	Q1033;Q1009	1916	1961-01-01	West Africa	Mandate/Trust Territory			
+british_central_africa_protectorate_1891_1907	British Central Africa Protectorate	British Central Africa Protectorate	Q2642989	Q1020	1891	1907-07-06	Southern Africa	Protectorate			
+british_columbia_province_1871		British Columbia	Q1973		1871		North America	Province			
+british_gold_coast_1821_1874	British Gold Coast	British Gold Coast	Q503623	Q117	1821	1874-07-24	West Africa	Crown Colony			[QID_REUSED_TOO_BROAD] Q503623 covers full Gold Coast Colony 1821-1957 (capital Accra replaced by Ghana); same QID assigned to gold_coast_colony_1874_1957 (row 252); file's pre-1874 'British Gold Coast' sub-period and post-1874 'Gold Coast Colony' both map to single WD entity - same pattern as Bengal/Bombay Presidency
+british_guiana_1831_1966	British Guiana	British Guiana	Q918126	Q734	1831	1966-05-26	South America	Crown Colony			
+british_honduras_1862_1981	British Honduras	British Honduras	Q1643555	Q242	1862	1981-09-21	Caribbean	Crown Colony			
+british_new_guinea_1884_1906	British New Guinea	British New Guinea	Q2645837	Q691	1884	1906-09-01	Pacific	Protectorate			
+british_north_borneo_1882_1946	British North Borneo	British North Borneo	Q1147441	Q833	1882	1946-07-15	Southeast Asia	Company Territory			
+british_solomon_islands_1893_1978	British Solomon Islands	British Solomon Islands	Q13410267	Q685	1893	1978-07-07	Pacific	Protectorate			
+british_somaliland_1884_1960	British Somaliland	British Somaliland	Q662653	Q1045	1884	1960-01-01	Middle East	Protectorate			
+british_south_africa_company_territory_1889_1923	British South Africa Company Territory	British South Africa Company Territory	Q5155572	Q258	1889	1923-10-01	Southern Africa	Company Territory			
+british_togoland_1919_1957	British Togoland	British Togoland	Q797527	Q117	1919	1957-03-06	West Africa	Mandate			
+british_virgin_islands_1672_ongoing	British Virgin Islands	British Virgin Islands	Q25305	Q25305	1672		Caribbean	Crown Colony			
+british_western_pacific_territories_1877_1978	British Western Pacific Territories	British Western Pacific Territories	Q1545934	Q712;Q685;Q672;Q710	1877	1978-07-07	Pacific	Administration			
+british_windward_islands_1833_1959	British Windward Islands	British Windward Islands	Q2660774	Q760;Q757;Q784;Q769	1833	1959-01-01	Caribbean	Federal Colony			
+brunei_protectorate_1888_1984	Brunei Protectorate	Brunei Protectorate	Q921	Q921	1888	1984-01-01	Southeast Asia	Protectorate			
+bundi_state_1342_1949	Bundi State		Q4997536				South Asia	Princely State	Bundi	india	
+burma_british_india_1886_1937	Burma (British India)	Burma (British India)	Q2376315	Q668;Q843;Q902	1886	1937-04-01	South Asia	Province			[QID_REUSED_TOO_BROAD] Q2376315 covers full British rule in Myanmar 1824-1948 (capital Yangon); same QID assigned to burma_separate_colony_1937_1948 (row 133); file's pre-1937 'Burma as British India province' and post-1937 'Separate Colony' both map to single WD entity - same pattern as Bengal/Bombay/Gold Coast
+burma_separate_colony_1937_1948	Burma (Separate Colony)	Burma (Separate Colony)	Q2376315	Q836	1937	1948-01-04	South Asia	Crown Colony			[QID_REUSED] Q2376315 also assigned to burma_british_india_1886_1937; this row's 1937-1948 Separate Colony period is closer to WD dissolved date (1948-01-04) but QID still spans both 1824-1948 eras
+cambay_state_1730_1948	Cambay State		Q1028095				South Asia	Princely State		india	
+campbell_island_whaling_1810_1860	Campbell Island Whaling	Campbell Island Whaling	Q3593036	Q664	1810	1860-12-31	Pacific (Guano/Whaling)	Whaling Station			
+canada_dominion_of_1867_ongoing	Canada, Dominion of	Dominion of Canada	Q16	Q16	1867		North America	Dominion			
+canada_independent_1931		Canada	Q16		1931		North America	Independence			
+cape_breton_colony_1784_1820	Cape Breton Colony		Q107457458		1784		North America	Crown Colony			
+cape_coast_castle_1664_1821	Cape Coast Castle	Cape Coast Castle	Q1254826	Q117	1664	1821-03-07	West Africa	Trading Post			
+cape_colony_british_1795_1803_1795_1803	Cape Colony (British 1795-1803)	Cape Colony (British 1795-1803)	Q4806993	Q258	1795	1803-02-25	Southern Africa	Crown Colony			[QID_REUSED_TOO_BROAD] Q4806993 covers both British occupations of Cape Colony (1795-1802 first British period AND 1806-1910 second British period); same QID assigned to cape_colony_british_1806_1910 (row 141); WD description explicitly notes both periods - file split into two rows but only one WD entity exists
+cape_colony_british_1806_1910	Cape Colony (British)	Cape Colony (British)	Q4806993	Q258	1806	1910-05-31	Southern Africa	Crown Colony			[QID_REUSED] Q4806993 also assigned to cape_colony_british_1795_1803_1795_1803; this row's 1806-1910 second British period and the earlier 1795-1803 first period both map to single WD entity
+cape_colony_dutch_1652_1795	Cape Colony (Dutch)	Cape Colony (Dutch)	Q4807130	Q258	1652	1795-09-16	Southern Africa	Dutch Company Colony			[QID_REUSED_TOO_BROAD] Q4807130 covers both Dutch occupations of Cape Colony (1652-1795 first Dutch period AND 1802-1806 restored Dutch period); same QID assigned to cape_colony_dutch_restored_1803_1806 (row 143); WD description explicitly notes both periods
+cape_colony_dutch_restored_1803_1806	Cape Colony (Dutch Restored)	Cape Colony (Dutch Restored)	Q4807130	Q258	1803	1806-01-10	Southern Africa	Dutch Colony			[QID_REUSED] Q4807130 also assigned to cape_colony_dutch_1652_1795; this row's 1803-1806 restored Dutch period and earlier 1652-1795 first period both map to single WD entity
+carnatic_state_1692_1855	Carnatic state		Q3277580				South Asia	Princely State	Arcot	india	
+caroline_island_1868_1979	Caroline Island	Caroline Island	Q822151	Q710	1868	1979-07-12	Pacific (Guano/Whaling)	Guano Island			
+cayman_islands_1670_ongoing	Cayman Islands	Cayman Islands	Q5785	Q5785	1670		Caribbean	Crown Colony			
+central_provinces_1861_1947	Central Provinces	Central Provinces	Q521864	Q668	1861	1947-08-15	South Asia	Province			
+ceylon_1795_1948	Ceylon	Ceylon	Q918153	Q854	1795	1948-01-01	South Asia	Crown Colony			
+chagos_islands_mauritius_dependency_1814_1965	Chagos Islands (Mauritius Dependency)	Chagos Islands (Mauritius Dependency)	Q192188	Q1027	1814	1965-11-08	South Asia	Dependency			
+chamardi_state	Chamardi State		Q11913589				South Asia	Princely State		india	
+chamba_state_550_1948	Chamba State		Q1060520				South Asia	Princely State	Chamba	india	
+changbhakar_1790_1948	Changbhakar		Q932370				South Asia	Princely State		india	
+charkhari_state_1765_1947	Charkhari State		Q2624304				South Asia	Princely State	Charkhari	india	
+chaube_jagirs_1812_1948	Chaube Jagirs		Q11927113				South Asia	Princely State		india	
+chhatarpur_state_1785_1950	Chhatarpur State		Q1071493				South Asia	Princely State	Chhatarpur	india	
+chhota_udaipur_state_1743_1948	Chhota Udaipur State		Q17986421				South Asia	Princely State	Chhota Udepur	india	
+chhuikhadan_state_1750_1950	Chhuikhadan State		Q2963204				South Asia	Princely State		india	
+chinchli_gaded_state	Chinchli Gaded State		Q11913671				South Asia	Princely State		india	
+chitral_state_1571_1969	Chitral State		Q11317232				South Asia	Princely State	Chitral	pakistan	
+chobari_state	Chobari State		Q11913700				South Asia	Princely State		india	
+chorangla_state	Chorangla State		Q21075382				South Asia	Princely State		india	
+chota_nagpur_states_1821_1947	Chota Nagpur States		Q5105376				South Asia	Princely State		india	
+chotila	Chotila		Q11913712				South Asia	Princely State		india	
+christmas_island_1888_1958	Christmas Island	Christmas Island	Q31063	Q31063	1888	1958-10-01	Pacific	Crown Colony			Q31063 is modern Australian external territory (since 1958); file row covers earlier British colonial period 1888-1958 not separately represented in WD.
+christmas_island_line_islands_1857_1979	Christmas Island (Line Islands)	Christmas Island (Line Islands)	Q193331	Q710	1857	1979-07-12	Pacific (Guano/Whaling)	Guano Island			
+chuda_state	Chuda State		Q17318475				South Asia	Princely State		india	
+cocos_keeling_islands_1857_1955	Cocos (Keeling) Islands	Cocos (Keeling) Islands	Q36004	Q36004	1857	1955-11-23	Pacific	Crown Colony			Q36004 is modern Australian external territory (since 1955); file row covers earlier British colonial period 1857-1955 not separately represented in WD.
+colony_and_protectorate_of_nigeria_1914_1960	Colony and Protectorate of Nigeria	Colony and Protectorate of Nigeria	Q2046345	Q1033	1914	1960-01-01	West Africa	Colony/Protectorate			
+colony_of_natal_1843_1910	Colony of Natal	Colony of Natal	Q1301901	Q258	1843	1910-05-31	Southern Africa	Crown Colony			
+colony_of_newfoundland_1610_1949	Colony of Newfoundland	Colony of Newfoundland	Q2984260	Q16	1610	1949-03-31	North America	Crown Colony			[DATE_RANGE_MISMATCH] Q2984260 is correct entity (Newfoundland Colony inception 1610 capital St Johns) but Wikidata dissolved date is 1907 not 1949; in 1907 it became Dominion of Newfoundland (separate entity); file row's 1610-1949 conflates colonial period and Dominion period (which ended when Newfoundland joined Canada)
+commonwealth_of_australia_1901_ongoing	Commonwealth of Australia	Commonwealth of Australia	Q408	Q408	1901		Pacific	Dominion			
+connecticut_colony_1636_1783	Connecticut Colony	Connecticut Colony	Q951500	Q30	1636	1783-09-03	North America	Charter Colony			
+cooch_behar_1586_1949	Cooch Behar		Q509572				South Asia	Princely State		india	
+cook_islands_1888_1901	Cook Islands	Cook Islands	Q26988	Q26988	1888	1901-06-11	Pacific	Protectorate			Q26988 is modern Cook Islands self-governing state (since 1965); file row covers earlier British protectorate period 1888-1901 not separately represented in WD.
+coorg_province_1834_1947		Coorg	Q24905912		1834		South Asia	Province			Q24905912 dissolved 1950 per WD (file 1947); the 1947-1950 sub-period was post-independence Coorg State successor.
+corsica_1794_1796		Anglo-Corsican Kingdom	Q83536		1794		Europe	Protectorate			
+cutch_state_1147_1948	Cutch State		Q1720882				South Asia	Princely State	Bhuj	india	
+cyprus_1878_1960	Cyprus	Cyprus	Q15240466	Q229	1878	1960-08-16	Europe	Crown Colony			
+dabri_state	Dabri State		Q11916465				South Asia	Princely State		india	
+danta_state_1061_1948	Danta State		Q17513023				South Asia	Princely State		india	
+darkoti_1100_1948	Darkoti		Q3016348				South Asia	Princely State		india	
+daspalla_1498_1948	Daspalla		Q11916643				South Asia	Princely State		india	
+datarpur_1550_1849	Datarpur		Q11916665				South Asia	Princely State		india	
+datia_state_1626_1950	Datia State		Q1172600				South Asia	Princely State	Datia	india	
+dawa_state	Dawa State		Q11916720				South Asia	Princely State		india	
+deception_island_whaling_1906_1931	Deception Island Whaling	Deception Island Whaling	Q1045820	Q35086	1906	1931-12-31	Antarctica	Whaling Station			Modern_nation_qids field uses Q35086 (South Georgia & Sandwich BOT) but Deception Island is in the South Shetlands (part of British Antarctic Territory Q165783); minor data-quality variance.
+dedhrota	Dedhrota		Q131126101				South Asia	Princely State		india	
+dedhrota_1900_1947	Dedhrota		Q11916768				South Asia	Princely State		india	
+delaware_colony_1664_1783	Delaware Colony	Delaware Colony	Q2571194	Q30	1664	1783-09-03	North America	Proprietary Colony			
+deloli_state	Deloli State		Q21076401				South Asia	Princely State		india	
+demerara_colony_1803_1831		Demerara	Q1185346		1803		South America	Crown Colony			Q1185346 covers Dutch+British Demerara 1745-1815 (merged into British Guiana); file row's 1803-1831 is the British sub-period.
+deogarh	Deogarh		Q11916911				South Asia	Princely State		india	
+derbhavti_state	Derbhavti State		Q11916930				South Asia	Princely State		india	
+derol	Derol		Q11916942				South Asia	Princely State		india	
+desroches_islands_1903_1965	Desroches Islands	Desroches Islands	Q620506	Q1042	1903	1965-11-08	Africa (Islands)	Dependency			
+dewas_state_1728_1948	Dewas State		Q1207105				South Asia	Princely State	Dewas	india	
+dhadi	Dhadi		Q17600192				South Asia	Princely State		india	
+dhami_state_1815_1948	Dhami (state)		Q3025690				South Asia	Princely State		india	
+dhar_state_1728_1947	Dhar State		Q1207561				South Asia	Princely State	Dhar	india	
+dharampur_state_1262_1948	Dharampur State		Q5269129				South Asia	Princely State	Dharampur	india	
+dhenkanal_state_1529_1948	Dhenkanal State		Q1207641				South Asia	Princely State		india	
+dholpur_state_1806_1948	Dholpur State		Q657861				South Asia	Princely State	Dholpur	india	
+dhrangadhra_state_1742_1948	Dhrangadhra State		Q16829581				South Asia	Princely State	Dhrangadhra	india	
+dhrol_state_1595_1948	Dhrol State		Q18111824				South Asia	Princely State		india	
+dhurwai_1690_1950	Dhurwai		Q11917045				South Asia	Princely State		india	
+dir_state_1900_1969	Dir State		Q3243592				South Asia	Princely State	Dir	pakistan	
+dodka	Dodka		Q11917542				South Asia	Princely State		india	
+dominica_colony_1763_1978	Dominica Colony	Dominica Colony	Q784	Q784	1763	1978-11-03	Caribbean	Crown Colony			Q784 is modern Dominica sovereign state (since 1978); file row's 1763-1978 colonial precursor not separately represented in WD.
+dominion_of_india_1947_1950	Dominion of India	Dominion of India	Q1775277	Q668;Q843;Q902	1947	1950-01-26	South Asia	Dominion			
+dominion_of_new_zealand_1907_1947		Dominion of New Zealand	Q664		1907		Pacific	Dominion			
+dominion_of_newfoundland_1907_1934	Dominion of Newfoundland	Dominion of Newfoundland	Q38610	Q16	1907	1949-03-31	North America	Dominion			
+dominion_of_pakistan_1947_1956	Dominion of Pakistan	Dominion of Pakistan	Q2006542	Q843	1947	1956-03-23	South Asia	Dominion			
+ducie_island_1902_ongoing	Ducie Island	Ducie Island	Q1122663	Q35672	1902		Pacific (Guano/Whaling)	Remote Island			Q1122663 is the geographic atoll; file row tracks British administrative period via Pitcairn Islands.
+dumraon_raj	Dumraon Raj		Q21076409				South Asia	Princely State		india	
+dungarpur_state_1197_1947	Dungarpur State		Q973433				South Asia	Princely State	Dungarpur	india	
+east_africa_protectorate_1895_1920	East Africa Protectorate	East Africa Protectorate	Q876185	Q114	1895	1920-07-23	East Africa	Protectorate			
+east_florida_1763_1783	East Florida		Q1770351		1763		North America	Crown Colony			
+eastern_bengal_and_assam_1905_1912	Eastern Bengal and Assam	Eastern Bengal and Assam	Q4126447	Q668;Q902	1905	1912-12-12	South Asia	Province			
+egypt_1882_1922	Egypt	Egypt	Q2474428	Q79	1882	1922-01-01	Middle East	Occupation/Protectorate			
+ellice_islands_1976_1978	Ellice Islands	Ellice Islands	Q109039320	Q672	1976	1978-10-01	Pacific	Crown Colony			Q109039320 WD inception 1975 (file 1976); 1975 referendum, 1976 formal split from Gilbert.
+ellice_islands_separate_1892_1916	Ellice Islands (Separate)	Ellice Islands (Separate)	Q3593530	Q672	1892	1916-01-12	Pacific	Crown Colony			
+enderbury_island_1860_1979	Enderbury Island	Enderbury Island	Q30638	Q710	1860	1979-07-12	Pacific (Guano/Whaling)	Guano Island			
+essequibo_colony_1803_1831		Essequibo	Q1368792		1803		South America	Crown Colony			Q1368792 covers Dutch+British Essequibo 1616-1815 (merged into British Guiana); file row's 1803-1831 is the British sub-period.
+factory_at_surat_1612_1857	Factory at Surat	Factory at Surat	Q19898523	Q668	1612	1857-05-10	South Asia	Trading Post			
+falkland_islands_1833_ongoing	Falkland Islands	Falkland Islands	Q9648	Q9648	1833		Atlantic	British Overseas Territory			
+faridkot_state_1803_1947	Faridkot State		Q1396700				South Asia	Princely State	Faridkot	india	
+farquhar_islands_1903_1965	Farquhar Islands	Farquhar Islands	Q967943	Q1042	1903	1965-11-08	Africa (Islands)	Dependency			
+farrukhabad	Farrukhabad		Q11921599				South Asia	Princely State		india	
+federal_colony_leeward_islands_1833-1960	Federal Colony of the Leeward Islands	British Leeward Islands	Q1796551	Q781;Q763;Q13353;Q25305	1833	1960-01-01	Caribbean				
+federated_malay_states_1895_1946	Federated Malay States	Federated Malay States	Q1400154	Q833	1895	1946-04-01	Southeast Asia	Protectorate			
+federation_of_malaya_1948_1957	Federation of Malaya	Federation of Malaya	Q1479726	Q833	1948	1957-08-31	Southeast Asia	Federation			
+federation_of_rhodesia_and_nyasaland_1953_1963	Federation of Rhodesia and Nyasaland	Federation of Rhodesia and Nyasaland	Q654342	Q954;Q953	1953	1963-12-31	Southern Africa	Federation			
+fernando_po_british_1827_1843	Fernando Po (British)	Fernando Po (British)	Q205022	Q983	1827	1843-01-01	Africa (Islands)	Possession			
+fiji_1874_1970	Fiji	Fiji	Q5148320	Q712	1874	1970-01-01	Pacific	Crown Colony			
+flint_island_1866_1979	Flint Island	Flint Island	Q741650	Q710	1866	1979-07-12	Pacific (Guano/Whaling)	Guano Island			
+fort_william_calcutta_1696_1857	Fort William (Calcutta)	Fort William (Calcutta)	Q2750027	Q668	1696	1857-05-10	South Asia	Trading Post			
+gadvi_state	Gadvi State		Q21075179				South Asia	Princely State		india	
+gadwal_samsthanam	Gadwal Samsthanam		Q11923490				South Asia	Princely State		india	
+gambia_colony_1816_1888	Gambia Colony	Gambia Colony	Q3557236	Q1005	1816	1888-01-01	West Africa	Crown Colony			[QID_REUSED_TOO_BROAD] Q3557236 covers full Gambia Colony and Protectorate 1821-1965 (both pre-1888 colony-only phase AND 1888-1965 colony-plus-protectorate phase); same QID assigned to gambia_colony_and_protectorate_1816_1965 (row 240); WD has only one entity for both phases - same pattern as Bengal/Bombay/Burma/Gold Coast/Cape
+gambia_colony_and_protectorate_1816_1965	Gambia Colony and Protectorate	Gambia Colony and Protectorate	Q3557236	Q1005	1888	1965-01-01	West Africa	Crown Colony			[QID_REUSED] Q3557236 also assigned to gambia_colony_1816_1888 (row 239); this row's 1888-1965 colony-plus-protectorate period is closer match to WD inception-dissolution but QID still spans both phases
+gangpur_state_1821_1948	Gangpur State		Q16838406				South Asia	Princely State		india	
+garh_state	Garh State		Q11923790				South Asia	Princely State		india	
+garhwal_kingdom_1358_1949	Garhwal Kingdom		Q1381495				South Asia	Princely State		india	
+gaurihar_state_1807_1950	Gaurihar State		Q11923882				South Asia	Princely State		india	
+georgia_colony_1732_1783	Georgia Colony	Georgia Colony	Q785035	Q30	1732	1783-09-03	North America	Royal Colony			
+german_east_africa_british_occupied_1916_1922	German East Africa (British Occupied)	German East Africa (British Occupied)	Q158725	Q924	1916	1922-01-01	East Africa	Military Administration			Q158725 Tanganyika Territory inception 1922; file row covers the pre-mandate British military occupation 1916-1922 of the same territory.
+gharra_state	Gharra State		Q11924173				South Asia	Princely State		india	
+ghodasar	Ghodasar		Q11924185				South Asia	Princely State		india	
+gibraltar_1704_ongoing	Gibraltar	Gibraltar	Q1410	Q1410	1704		Europe	British Overseas Territory			
+gilbert_and_ellice_islands_1916_1976	Gilbert and Ellice Islands	Gilbert and Ellice Islands	Q1050859	Q710	1916	1976-01-01	Pacific	Crown Colony			
+gilbert_islands_1976_1979	Gilbert Islands	Gilbert Islands	Q271876	Q710	1976	1979-07-12	Pacific	Crown Colony			Q271876 is the geographic Gilbert Islands chain; file row covers the brief 1976-1979 separate-colony sub-period before Kiribati independence (no separate WD colony entity).
+gold_coast_colony_1874_1957	Gold Coast Colony	Gold Coast Colony	Q503623	Q117	1874	1957-03-06	West Africa	Crown Colony			
+gond_umri	Gond-Umri		Q11924463				South Asia	Princely State		india	
+gondal_state_1634_1949	Gondal State		Q16839606				South Asia	Princely State	Gondal	india	
+grenada_colony_1763_1974	Grenada Colony	Grenada Colony	Q3116419	Q769	1763	1974-02-07	Caribbean	Crown Colony			Q3116419 is the geographic island; no separate Colony of Grenada entity in WD; file row covers British colonial period 1763-1974.
+griqualand_west_1871_1880	Griqualand West	Griqualand West	Q2547918	Q258	1871	1880-01-15	Southern Africa	Crown Colony			
+guler_state_1415_1813	Guler State		Q17311418				South Asia	Princely State		india	
+gwalior_state_1761_1948	Gwalior State		Q1557792				South Asia	Princely State	Ujjain	india	
+hapa_state	Hapa State		Q11925218				South Asia	Princely State		india	
+hasht_bhaiya_1690_1948	Hasht-Bhaiya		Q17297442				South Asia	Princely State		india	
+heard_and_mcdonald_islands_1833_1947	Heard and McDonald Islands	Heard and McDonald Islands	Q131198	Q408	1833	1947-12-26	Antarctica	Remote Island			Q131198 transferred from UK to Australia 1953; file row covers the British colonial period 1833-1947.
+heligoland_1807_1890		Heligoland	Q3129772		1807		Europe	Crown Colony			Q3129772 is the geographic German island; British colonial period 1807-1890 not separately represented in WD.
+henderson_island_1902_ongoing	Henderson Island	Henderson Island	Q379759	Q35672	1902		Pacific	Crown Colony			Q379759 is the geographic atoll; file row tracks British administrative period (annexed via Pitcairn Islands 1902).
+hindol_state_1554_1948	Hindol State		Q11925661				South Asia	Princely State		india	
+hong_kong_1841_1997	Hong Kong	Hong Kong	Q1054923	Q8646	1841	1997-01-01	Southeast Asia	Crown Colony			
+howland_island_1857_1898	Howland Island	Howland Island	Q131305	Q30	1857	1898-07-07	Pacific (Guano/Whaling)	Guano Island			
+hunza_state_1600_1974	Hunza State		Q14957246				South Asia	Princely State	Karimabad	pakistan	
+hyderabad_state_1724_1948	Hyderabad State		Q1240096				South Asia	Princely State		india	
+icha	Icha		Q11926391				South Asia	Princely State		india	
+idar_state_1257_1948	Idar State		Q649310				South Asia	Princely State		india	
+ile_royale_1713_1763	Île Royale (French)	Île Royale	Q3593199	Q16	1713	1763-02-10	North America	Colonial Territory			
+imperial_british_east_africa_company_territory_1888_1895	Imperial British East Africa Company Territory	Imperial British East Africa Company Territory	Q926921	Q114	1888	1895-07-01	East Africa	Company Territory			
+indian_empire_british_raj_1858_1947	Indian Empire (British Raj)	Indian Empire (British Raj)	Q129286	Q668;Q843;Q902	1858	1947-01-01	South Asia	Colony/Empire			
+indore_state_1732_1948	Indore State		Q716890				South Asia	Princely State	Indore	india	
+ionian_islands_1815_1864	Ionian Islands	Ionian Islands	Q1063498	Q41	1815	1864-05-29	Europe	Protectorate			
+iraq_1932_ongoing	Iraq	Iraq	Q796	Q796	1932		Middle East	Independence			Q796 modern Iraq covers monarchy (1932-1958) + republic (1958-onwards) as one continuous entity.
+ireland_uk_1801_1922		Ireland (UK)	Q174193		1801		Europe	Union			
+irish_free_state_1922_1937		Irish Free State	Q31747		1922		Europe	Dominion			
+isle_de_france_british_occupation_1810_1814	Isle de France (British Occupation)	Isle de France (British Occupation)	Q12053604	Q1027	1810	1814-05-30	Africa (Islands)	Military Administration			[QID_REUSED_TOO_BROAD] Q12053604 covers full British Mauritius 1810-1968 (including both 1810-1814 military occupation under name 'Isle de France' AND 1814-1968 formal Crown Colony 'Mauritius'); same QID assigned to mauritius_1814_1968 (row 417); WD has only one entity for both phases - same pattern as Bengal/Bombay/Burma/Gold Coast/Cape/Gambia
+itwad_state	Itwad State		Q11926997				South Asia	Princely State		india	
+jafarabad_state_1650_1948	Jafarabad State		Q16849282				South Asia	Princely State		india	
+jaipur_state_1727_1949	Jaipur State		Q6124144				South Asia	Princely State		india	
+jaisalmer_state_1156_1947	Jaisalmer State		Q1678784				South Asia	Princely State	Jaisalmer	india	
+jaitpur_state_1731_1849	Jaitpur State		Q1678787				South Asia	Princely State		india	
+jalaun_state_1806_1840	Jalaun State		Q18126183				South Asia	Princely State		india	
+jamaica_1655_1962	Jamaica	Jamaica	Q2526023	Q766	1655	1962-01-01	Caribbean	Crown Colony			
+jambughoda_state_1400_1948	Jambughoda State		Q11927151				South Asia	Princely State		india	
+james_island_trading_post_1661_1816	James Island Trading Post	James Island Trading Post	Q23498700	Q1005	1661	1816-01-01	West Africa	Trading Post			Q23498700 is the fort/building entity (Fort James Island); file row covers the British trading post period 1661-1816 on the island now called Kunta Kinteh Island.
+jamkhandi_state_1811_1948	Jamkhandi State		Q1681450				South Asia	Princely State		india	
+jammu_and_kashmir_1846_1947	Jammu and Kashmir		Q2571484				South Asia	Princely State	Srinagar	india	
+jandol_state_1830_1948	Jandol State		Q28172756				South Asia	Princely State	Samar Bagh	pakistan	
+janjira_state_1489_1948	Janjira State		Q18126222				South Asia	Princely State	Murud-Janjira	india	
+jaoli_state_1700_1700	Jaoli State		Q6156427				South Asia	Princely State		india	
+jaora_state_1817_1948	Jaora State		Q1683106				South Asia	Princely State	Jaora	india	
+jarvis_island_1857_1898	Jarvis Island	Jarvis Island	Q62218	Q30	1857	1898-07-07	Pacific (Guano/Whaling)	Guano Island			
+jasdan_state_1665_1948	Jasdan State		Q1683756				South Asia	Princely State		india	
+jashpur_state_1800_1948	Jashpur State		Q1683780				South Asia	Princely State		india	
+jaso_state_1732_1948	Jaso State		Q11927206				South Asia	Princely State		india	
+jasrota_1020_1820	Jasrota		Q104151575				South Asia	Princely State	Jasrota	india	
+jaswan_1170_1849	Jaswan		Q6164350				South Asia	Princely State		india	
+jath_state_1642_1948	Jath State		Q933413				South Asia	Princely State		india	
+jawhar_state_1343_1947	Jawhar State		Q11927430				South Asia	Princely State	Jawhar	india	
+jesar_state	Jesar State		Q65063637				South Asia	Princely State	Jesar	india	
+jhabua_state_1584_1948	Jhabua State		Q1688822				South Asia	Princely State		india	
+jhalawan_state_1955	Jhalawan State		Q6190797				South Asia	Princely State		pakistan	
+jhalawar_state_1838_1949	Jhalawar State		Q1261339				South Asia	Princely State	Jhalawar	india	
+jhansi_state_1804_1853	Jhansi State		Q11927544				South Asia	Princely State		india	
+jhari_gharkhadi_state	Jhari Gharkhadi State		Q11927468				South Asia	Princely State		india	
+jigni_state_1730_1950	Jigni State		Q11927549				South Asia	Princely State		india	
+jind_state_1763_1948	Jind State		Q1252744				South Asia	Princely State	Sangrur	india	
+jiral_1870	Jiral		Q11927559				South Asia	Princely State		india	
+jobat_state_1500_1948	Jobat State		Q6206774				South Asia	Princely State		india	
+jodhpur_state_1226_1949	Jodhpur State		Q6207845				South Asia	Princely State		india	
+jubbal_state_1815_1948	Jubbal State		Q3187887				South Asia	Princely State		india	
+junagadh_state_1748_1948	Junagadh State		Q14491604				South Asia	Princely State	Junagadh	india	
+kahlur_state_697_1948	Kahlur State		Q860407				South Asia	Princely State	Bilaspur, Himachal Pradesh	india	
+kalahandi_state_1005_1948	Kalahandi State		Q1535236				South Asia	Princely State	Bhawanipatna	india	
+kalakankar	Kalakankar		Q17607099				South Asia	Princely State		india	
+kalsia_state_1760_1948	Kalsia State		Q932359				South Asia	Princely State		india	
+kamta_rajaula_1812_1948	Kamta-Rajaula		Q11929623				South Asia	Princely State		india	
+kangra_lambagraon_1400_1948	Kangra-Lambagraon		Q3192661				South Asia	Princely State		india	
+kanjarda	Kanjarda		Q11929630				South Asia	Princely State		india	
+kanker_state_200_1947	Kanker State		Q12816977				South Asia	Princely State		india	
+kapshi_estate_1750_1956	Kapshi Estate		Q11929645				South Asia	Princely State		india	
+kapurthala_state_1772_1947	Kapurthala State		Q1728782				South Asia	Princely State	Kapurthala	india	
+karauli_state_1348_1948	Karauli State		Q6368814				South Asia	Princely State	Karauli	india	
+kari_state	Kari State		Q21099425				South Asia	Princely State		india	
+kawardha_state_1751_1948	Kawardha State		Q18126687				South Asia	Princely State		india	
+kenya_colony_and_protectorate_of_1920_1963	Kenya, Colony & Protectorate of	Kenya, Colony & Protectorate of	Q2538511	Q114	1920	1963-01-01	East Africa	Crown Colony			
+keonjhar_state_1200_1948	Keonjhar State		Q19792051				South Asia	Princely State		india	
+keonthal_state_1800_1948	Keonthal State		Q3195357				South Asia	Princely State		india	
+kesaria	Kesaria		Q17607189				South Asia	Princely State		india	
+khairagarh_state_1833_1948	Khairagarh State		Q11929746				South Asia	Princely State		india	
+khairpur_state_1775_1955	Khairpur State		Q3249587				South Asia	Princely State	Khairpur	pakistan	
+khanate_of_kalat_1638_1955	Khanate of Kalat		Q139948				South Asia	Princely State	Kalat	pakistan	
+khandpara_state_1599_1948	Khandpara State		Q11929762				South Asia	Princely State		india	
+khaniadhana_state_1724_1948	Khaniadhana State		Q16852121				South Asia	Princely State		india	
+khaniyadhana	Khaniyadhana		Q2120351				South Asia	Princely State		india	
+kharagpur_state	Kharagpur State		Q11929766				South Asia	Princely State		india	
+kharan_state_1697_1955	Kharan State		Q2989491				South Asia	Princely State	Kharan	pakistan	
+kharsawan_state_1650_1948	Kharsawan State		Q18126780				South Asia	Princely State		india	
+khilchipur_state_1544_1948	Khilchipur State		Q6401617				South Asia	Princely State		india	
+kingdom_of_cochin_1500_1949	Kingdom of Cochin		Q150056				South Asia	Princely State	Thrippunithura	india	
+kingdom_of_coorg_1834	Kingdom of Coorg		Q19892830				South Asia	Princely State		india	
+kingdom_of_ireland_1541_1801		Kingdom of Ireland	Q215530		1541		Europe	Kingdom			Q215530 inception 1542 per WD (file 1541); 1-year variance reflects Crown of Ireland Act 1542.
+kingdom_of_mysore_1399_1950	Kingdom of Mysore		Q266923				South Asia	Princely State	Mysore	india	
+kingdom_of_sikkim_1642_1975	Kingdom of Sikkim		Q3960459				South Asia	Princely State		india	
+kingdom_of_thiruvithamkoor_1729_1949	Travancore	Travancore	Q150058				South Asia	Princely State	Thiruvananthapuram	india	
+kinhi	Kinhi		Q17607217				South Asia	Princely State		india	
+kirli_state	Kirli State		Q21075184				South Asia	Princely State		india	
+kirnapur	Kirnapur		Q11929872				South Asia	Princely State		india	
+kishangarh_state_1611_1947	Kishangarh State		Q6416549				South Asia	Princely State	Kishangarh	india	
+koela_state	Koela State		Q11929890				South Asia	Princely State		india	
+kolhapur_state_1707_1949	Kolhapur State		Q657946				South Asia	Princely State	Kolhapur	india	
+koriya_1600_1948	Koriya		Q1784316				South Asia	Princely State		india	
+kota_state_1613_1949	Kota State		Q1785349				South Asia	Princely State	Kota	india	
+kotharia_state_rajasthan_1527_2000	Kotharia State, Rajasthan		Q104152099				South Asia	Princely State		india	
+kotharia_state_rajkot_1733_2000	Kotharia State, Rajkot		Q104152100				South Asia	Princely State		india	
+kothi_state_1800_1950	Kothi State		Q23136942				South Asia	Princely State		india	
+kotra_pitha	Kotra Pitha		Q11929937				South Asia	Princely State		india	
+kulpahar_state_1700_1858	Kulpahar State		Q104152101				South Asia	Princely State		india	
+kumharsain_state_1500_1947	Kumharsain State		Q104152102				South Asia	Princely State		india	
+kurundvad_junior_1733_1948	Kurundvad Junior		Q18127026				South Asia	Princely State		india	
+kurundvad_senior_1733_1948	Kurundvad Senior		Q18127028				South Asia	Princely State		india	
+kurwai_state_1707_1948	Kurwai State		Q6447564				South Asia	Princely State		india	
+kuthar_1700_1900	Kuthar		Q3200690				South Asia	Princely State		india	
+kutlehar_state_1803_1825	Kutlehar State		Q6448442				South Asia	Princely State		india	
+kuwait_1899_1961	Kuwait	Kuwait	Q3480281	Q817	1899	1961-01-01	Middle East	Protectorate			
+labuan_1846_1963	Labuan	Labuan	Q6420545	Q833	1846	1963-09-16	Southeast Asia	Crown Colony			
+lagos_protectorate_1887_1906	Lagos Protectorate	Lagos Colony	Q472146	Q1033	1862	1906-01-01	West Africa	Protectorate			
+laira_state	Laira State		Q11931111				South Asia	Princely State		india	
+lakhtar_state_1604_1947	Lakhtar State		Q11931118				South Asia	Princely State		india	
+las_bela_state_1742_1955	Las Bela State		Q1806438				South Asia	Princely State	Bela	pakistan	
+lathi_state_1340_1948	Lathi State		Q104152103				South Asia	Princely State		india	
+lawa_thikana_1772_1947	Lawa Thikana		Q6503547				South Asia	Princely State		india	
+leeward_islands_colony_1671_1816	Leeward Islands Colony (1671-1816)	Leeward Islands Colony	Q1796551	Q781;Q763;Q13353;Q25305	1671	1816-01-01	Caribbean	Federal Colony			[QID_REUSED_TOO_BROAD] Q1796551 covers full British Leeward Islands history (1671-1816 first colony AND 1833-1960 federal colony reunited); same QID assigned to federal_colony_leeward_islands_1833-1960 (row 229); WD description explicitly notes both periods - file split into two rows but only one WD entity exists
+limbda_1780_1948	Limbda		Q21075471				South Asia	Princely State		india	
+limbdi_state_1500_1947	Limbdi State		Q3241025				South Asia	Princely State	Limbdi	india	
+line_islands_british_1888_1979	Line Islands (British)	Line Islands (British)	Q234796	Q710	1888	1979-07-12	Pacific	Crown Colony			
+lohara_sahaspur	Lohara Sahaspur		Q21075186				South Asia	Princely State		india	
+loharu_state_1806_1947	Loharu State		Q3258086				South Asia	Princely State	Loharu	india	
+lower_burma_1824_1886	British Territories in Burma	Lower Burma	Q1937196	Q836	1824	1886-01-01	South Asia	Crown Colony			
+lower_canada_1791_1841	Lower Canada	Lower Canada	Q1134180	Q16	1791	1841-01-01	North America	Crown Colony			
+lunavada	Lunavada		Q2240915				South Asia	Princely State		india	
+lunavada_state_1434_1948	Lunavada State		Q18127558				South Asia	Princely State		india	
+madanpur_state	Madanpur State		Q11934520				South Asia	Princely State		india	
+madras_presidency_company_1640_1858	Madras Presidency (Company)	Madras Presidency (Company)	Q1772596	Q668	1640	1858-11-01	South Asia	Presidency			[QID_REUSED_TOO_BROAD] Q1772596 covers full Madras Presidency 1652-1950 (both Company rule 1640-1858 AND Crown rule 1858-1947); same QID assigned to madras_presidency_crown_1858_1947 (row 388); WD has only one entity for both phases - same pattern as Bengal/Bombay Presidency
+madras_presidency_crown_1858_1947	Madras Presidency (Crown)	Madras Presidency (Crown)	Q1772596	Q668	1858	1947-08-15	South Asia	Presidency			[QID_REUSED] Q1772596 also assigned to madras_presidency_company_1640_1858 (row 387); this row's 1858-1947 Crown period and earlier Company period both map to single WD entity
+mahlog_state_1768_1948	Mahlog State		Q6734208				South Asia	Princely State		india	
+maihar_state_1778_1948	Maihar State		Q999297				South Asia	Princely State		india	
+mainland_british_columbia_1858_1866	British Columbia (Colony)	Colony of British Columbia (Mainland)	Q918861	Q16	1858	1866-08-06	North America	Crown Colony			
+makrai_state_1663_1948	Makrai State		Q18127719				South Asia	Princely State		india	
+makran_1701_1955	Makran		Q2989469				South Asia	Princely State	Turbat	pakistan	
+malacca_settlement_1824_1826	Malacca Settlement	Malacca Settlement	Q7621163	Q833	1824	1826-01-01	Southeast Asia	Crown Colony			
+malaya_independent_1957_1963	Malaya (Independent)	Malaya (Independent)	Q1479726	Q833	1957	1963-09-16	Southeast Asia	Independence			[QID_REUSED] Q1479726 is Federation of Malaya 1948-1963 (covers both colonial Federation 1948-1957 AND independent Malaya 1957-1963); same QID assigned to federation_of_malaya_1948_1957 (row 231); WD treats both phases as single entity since the polity continued through independence
+malayan_union_1946_1948	Malayan Union	Malayan Union	Q976099	Q833	1946	1948-02-01	Southeast Asia	Crown Colony			
+malaysia_1963		Malaysia	Q833		1963		Southeast Asia	Independence			
+maldives_protectorate_1887_1965	Maldives Protectorate	Maldives Protectorate	Q11344632	Q826	1887	1965-07-26	South Asia	Protectorate			
+malerkotla_state_1657_1948	Malerkotla State		Q11934705				South Asia	Princely State	Malerkotla	india	
+malia_state	Malia State		Q17618884				South Asia	Princely State		india	
+malpur_state_1466_1943	Malpur State		Q17618911				South Asia	Princely State		india	
+malta_1800_1964	Malta	Malta	Q6744657	Q233	1800	1964-09-21	Europe	Crown Colony			
+manalikkara	Manalikkara		Q16894556				South Asia	Princely State		india	
+manda_zamindari_1542_1947	Manda (zamindari)		Q6747689				South Asia	Princely State		india	
+mandatory_iraq_1920_1932	Mandatory Iraq	Mandatory Iraq	Q146720	Q796	1920	1932-10-03	Middle East	Mandate			
+mandholi	Mandholi		Q11934828				South Asia	Princely State		india	
+mandi_state_1290_1948	Mandi State		Q6748050				South Asia	Princely State	Mandi	india	
+mandwa_state	Mandwa State		Q11934840				South Asia	Princely State		india	
+mangal_state	Mangal State		Q3285692				South Asia	Princely State		india	
+manipur_state_1110_1949	Manipur State		Q889030				South Asia	Princely State	Imphal	india	
+manra_sydney_island_1860_1979	Manra (Sydney Island)	Manra (Sydney Island)	Q48478	Q710	1860	1979-07-12	Pacific (Guano/Whaling)	Guano Island			
+mansa_state	Mansa State		Q17619012				South Asia	Princely State		india	
+marwar	Marwar		Q1419618				South Asia	Princely State		india	
+maryland_colony_1634_1783	Maryland Colony	Maryland Colony	Q2452027	Q30	1634	1783-09-03	North America	Proprietary Colony			
+massachusetts_bay_colony_1630_1783	Massachusetts Bay Colony	Massachusetts Bay Colony	Q1191350	Q30	1630	1783-09-03	North America	Charter Colony			[DATE_RANGE_MISMATCH] Q1191350 is correct entity (English possession 1628-1684) but Wikidata dissolved date is 1684 (with second value 1691) not 1783; in 1691 colony became Province of Massachusetts Bay (separate entity); file row's 1630-1783 conflates colony and province periods
+maurha_state_1894_1949	Maurha State		Q104151601				South Asia	Princely State	Maurha	india	
+mauritius_1814_1968	Mauritius	Mauritius	Q12053604	Q1027	1814	1968-01-01	Africa (Islands)	Crown Colony			
+mayurbhanj_state_1790_1949	Mayurbhanj State		Q18127928				South Asia	Princely State		india	
+mckean_island_1860_1979	McKean Island	McKean Island	Q1050899	Q710	1860	1979-07-12	Pacific (Guano/Whaling)	Guano Island			
+minorca_first_1708_1756		Minorca (1st British)	Q52636		1708		Europe	Crown Colony			Q52636 is the modern Spanish island Menorca (also assigned to minorca_second and minorca_third); British colonial period 1708-1756 (1st of 3 occupations) not separately represented in WD.
+minorca_second_1763_1782		Minorca (2nd British)	Q52636		1763		Europe	Crown Colony			Q52636 is the modern Spanish island Menorca (also assigned to minorca_first and minorca_third); British colonial period 1763-1782 (2nd of 3 occupations) not separately represented in WD.
+minorca_third_1798_1802		Minorca (3rd British)	Q52636		1798		Europe	Crown Colony			Q52636 is the modern Spanish island Menorca (also assigned to minorca_first and minorca_second); British colonial period 1798-1802 (3rd of 3 occupations) not separately represented in WD.
+miraj_junior_1820_1948	Miraj Junior		Q3315863				South Asia	Princely State		india	
+miraj_senior_1820_1948	Miraj Senior		Q932487				South Asia	Princely State		india	
+mohanpur_state_1227_1948	Mohanpur State		Q11937172				South Asia	Princely State		india	
+mohrampur_jagir_state_1580_1948	Mohrampur Jagir State		Q104152105				South Asia	Princely State		india	
+montserrat_1632_ongoing	Montserrat	Montserrat	Q13353	Q13353	1632		Caribbean	Crown Colony			
+morvi_state_1698_1948	Morvi State		Q922317				South Asia	Princely State	Morbi	india	
+mosquito_coast_1638_1860		Mosquito Coast	Q6037274		1638		Caribbean	Protectorate			Q6037274 (Mosquitia) WD inception 1687 dissolved 1894; file's 1638-1860 reflects different start (early English contact) and end (Kingdom of Mosquitia phase).
+mudhol_state_1465_1948	Mudhol State		Q1951726				South Asia	Princely State	Mudhol	india	
+muhammadgarh_state_1853_1947	Muhammadgarh State		Q1951905				South Asia	Princely State		india	
+muli_state_1470	Muli State		Q11937876				South Asia	Princely State		india	
+mundru_state_1621_1818	Mundru State		Q104152106				South Asia	Princely State		india	
+mursan_state	Mursan State		Q11938026				South Asia	Princely State		india	
+muscat_and_oman_protectorate_1891_1971	Muscat and Oman Protectorate	Muscat and Oman Protectorate	Q157734	Q842	1891	1971-01-01	Middle East	Protectorate			
+nabha_state_1763_1947	Nabha State		Q929357				South Asia	Princely State		india	
+nagar_state_1400_1974	Nagar State		Q372426				South Asia	Princely State	Nagarkhas	pakistan	
+nagod_state_1344_1950	Nagod State		Q1963593				South Asia	Princely State		india	
+nahara_state	Nahara State		Q28126531				South Asia	Princely State		india	
+naila_state	Naila State		Q11938347				South Asia	Princely State		india	
+nalagarh_1100_1948	Nalagarh		Q1682371				South Asia	Princely State		india	
+nandgaon_state_1833_1948	Nandgaon State		Q1964552				South Asia	Princely State		india	
+narsinghgarh_state_1681_1948	Narsinghgarh State		Q976913				South Asia	Princely State		india	
+narsinghpur_state_1292_1948	Narsinghpur State		Q19669126				South Asia	Princely State		india	
+narwar_state	Narwar State		Q19669125				South Asia	Princely State		india	
+nasvadi	Nasvadi		Q122955960				South Asia	Princely State		india	
+natalia_republic_1839_1843	Natalia Republic	Natalia Republic	Q1029847	Q258	1839	1843-08-04	Southern Africa	Boer Republic			
+naugaon	Naugaon		Q11938469				South Asia	Princely State		india	
+nauru_1920_1968	Nauru	Nauru	Q21816219	Q697	1920	1968-01-01	Pacific	Mandate			[DATE_RANGE_MISMATCH] Q21816219 is the post-WWII UN Trust Territory of Nauru (1947-11-01 to 1968); file row covers 1920-1968 which includes the earlier League of Nations Mandate period (1920-1947); needs separate Mandate-era QID or use a broader umbrella entity
+nawalpur	Nawalpur		Q11938484				South Asia	Princely State		india	
+nawanagar_state_1540_1948	Nawanagar State		Q1545942				South Asia	Princely State		india	
+nayagarh_state_1500_1948	Nayagarh State		Q10797411				South Asia	Princely State		india	
+nazargunj_1899_2000	Nazargunj		Q16932578				South Asia	Princely State		india	
+new_brunswick_1784_1867	New Brunswick	New Brunswick	Q107499350	Q16	1784	1867-07-01	North America	Crown Colony			
+new_brunswick_province_1867		New Brunswick (Province)	Q1965		1867		North America	Province			
+new_france_1608_1763	New France	New France	Q170604	Q16	1608	1763-02-10	North America	Colonial Empire			
+new_hampshire_colony_1623_1783	New Hampshire Colony	New Hampshire Colony	Q1617382	Q30	1629	1783-09-03	North America	Royal Colony			
+new_hebrides_1906_1980	New Hebrides	New Hebrides	Q752431	Q686	1906	1980-07-30	Pacific	Anglo-French Condominium			
+new_jersey_colony_1664_1783	New Jersey Colony	New Jersey Colony	Q2335128	Q30	1664	1783-09-03	North America	Royal Colony			
+new_south_wales_original_1788_1901	New South Wales (Original)	New South Wales	Q18348382	Q408	1788	1901-01-01	Pacific	Penal Colony			
+new_york_colony_1664_1783	New York Colony	New York Colony	Q769668	Q30	1664	1783-09-03	North America	Royal Colony			
+new_zealand_colony_1840_1907		New Zealand Colony	Q664		1840		Pacific	Crown Colony			
+new_zealand_independent_1947		New Zealand	Q664		1947		Pacific	Independence			
+newfoundland_commission_1934_1949		Newfoundland (Commission)	Q38610		1934		North America	Crown Colony			Q38610 Dominion of Newfoundland covers 1907-1949; file row tracks the 1934-1949 Commission of Government sub-period (no separate territorial WD entity for the Commission).
+newfoundland_province_1949		Newfoundland and Labrador	Q2003		1949		North America	Province			
+niger_coast_protectorate_1893_1900	Niger Coast Protectorate	Niger Coast Protectorate	Q2566427	Q1033	1893	1900-01-01	West Africa	Protectorate			[QID_REUSED] Q2566427 covers full protectorate 1891-1900 (originally named Oil Rivers Protectorate 1891-1893 then renamed Niger Coast Protectorate 1893-1900); same QID assigned to oil_rivers_protectorate_1885_1893 (row 488); WD treats it as one entity with name change
+nilgiri_state_1125_1949	Nilgiri State		Q7037080				South Asia	Princely State		india	
+nirmali_state	Nirmali State		Q11938840				South Asia	Princely State		india	
+norfolk_island_1788_1914	Norfolk Island	Norfolk Island	Q31057	Q31057	1788	1914-07-01	Pacific	Crown Colony			Q31057 is modern Australian external territory; file row covers earlier British colonial penal period 1788-1914 not separately represented in WD.
+norfolk_island_whaling_station_1830_1870	Norfolk Island Whaling Station	Norfolk Island Whaling Station	Q31057	Q31057	1830	1870-12-31	Pacific (Guano/Whaling)	Whaling Station			Q31057 is modern Australian external territory (also assigned to norfolk_island_1788_1914); file row covers a whaling sub-period not separately represented in WD.
+north_borneo_crown_colony_1946_1963	North Borneo Crown Colony	North Borneo Crown Colony	Q16933920	Q833	1946	1963-09-16	Southeast Asia	Crown Colony			
+north_carolina_colony_1663_1783	North Carolina Colony	North Carolina Colony	Q2334526	Q30	1663	1783-09-03	North America	Royal Colony			
+north_west_frontier_province_1901_1947	North-West Frontier Province	North-West Frontier Province	Q4412467	Q843	1901	1947-08-15	South Asia	Province			
+north_western_territory_1670_1870	North-Western Territory	North-Western Territory	Q1998931	Q16	1670	1870-07-15	North America	Territory			
+northern_ireland_1920		Northern Ireland	Q26		1920		Europe	Devolved Government			
+northern_nigeria_1900_1914	Northern Nigeria	Northern Nigeria	Q585408	Q1033	1900	1914-01-01	West Africa	Protectorate			
+northern_rhodesia_colony_1924_1953	Northern Rhodesia Colony	Northern Rhodesia Colony	Q953903	Q954;Q953	1924	1953-08-01	Southern Africa	Crown Colony			[QID_REUSED_TOO_BROAD] Q953903 covers full Northern Rhodesia 1924-1964 (both pre-federation 1924-1953 AND post-federation 1963-1964 phases); same QID assigned to northern_rhodesia_post_federation_1964 (row 478); WD has only one entity covering all phases
+northern_rhodesia_post_federation_1964		Northern Rhodesia	Q953903		1963		Southern Africa	Transitional			[QID_REUSED] Q953903 also assigned to northern_rhodesia_colony_1924_1953 (row 477); WD treats Northern Rhodesia as continuous entity through Federation and after
+northern_territories_gold_coast_1897_1957		Northern Territories of the Gold Coast	Q1998749		1897		West Africa				
+nova_scotia_post_1784_1867		Nova Scotia	Q98931415		1784		North America	Crown Colony			[QID_REUSED_TOO_BROAD] Q98931415 covers full Nova Scotia colony 1713-1867 (both pre-Cape-Breton-split 1713-1784 AND post-split 1784-1867 phases); same QID assigned to nova_scotia_pre_1713_1784 (row 481); WD has only one entity for the colony
+nova_scotia_pre_1713_1784		Nova Scotia	Q98931415		1713		North America	Crown Colony			[QID_REUSED] Q98931415 also assigned to nova_scotia_post_1784_1867 (row 480); WD treats Nova Scotia colony as continuous 1713-1867 entity
+nova_scotia_province_1867		Nova Scotia (Province)	Q1952		1867		North America	Province			
+nunavut_1999		Nunavut	Q2023		1999		North America	Territory			
+nyasaland_1891_1964	Nyasaland	Nyasaland	Q1649306	Q1020	1891	1964-01-01	Southern Africa	Protectorate			[QID_REUSED_TOO_BROAD] Q1649306 covers full Nyasaland Protectorate 1907-1964; same QID assigned to nyasaland_post_federation_1963 (row 485); WD has only one entity for both phases
+nyasaland_post_federation_1963	Nyasaland (Post-Federation)	Nyasaland	Q1649306	Q1020	1963	1964-07-06	Southern Africa	Transitional			[QID_REUSED] Q1649306 also assigned to nyasaland_1891_1964 (row 484); WD treats Nyasaland Protectorate as continuous 1907-1964 entity
+ocean_island_banaba_1900_1979	Ocean Island (Banaba)	Ocean Island (Banaba)	Q271901	Q710	1900	1979-07-12	Pacific	Crown Colony			
+oeno_island_1902_ongoing	Oeno Island	Oeno Island	Q940773	Q35672	1902		Pacific (Guano/Whaling)	Remote Island			Q940773 is the geographic atoll; file row tracks British administrative period via Pitcairn Islands.
+oil_rivers_protectorate_1885_1893	Oil Rivers Protectorate	Oil Rivers Protectorate	Q2566427	Q1033	1885	1893-05-12	West Africa	Protectorate			[QID_REUSED] Q2566427 covers full Niger Coast Protectorate 1891-1900 (which was named Oil Rivers Protectorate 1891-1893 before rename); same QID also assigned to niger_coast_protectorate_1893_1900 (row 466); WD inception (1891) is later than file row's start (1885) - protectorate's earlier informal phase pre-1891 may not be captured
+ontario_1867		Ontario	Q1904		1867		North America	Province			
+orange_free_state_1854_1900	Orange Free State	Orange Free State	Q218023	Q258	1854	1900-05-28	Southern Africa	Boer Republic			
+orange_river_colony_1900_1910	Orange River Colony	Orange River Colony	Q1142179	Q258	1900	1910-05-31	Southern Africa	Crown Colony			
+orange_river_sovereignty_1848_1854	Orange River Sovereignty	Orange River Sovereignty	Q3048062	Q258	1848	1854-02-23	Southern Africa	British Sovereignty			
+orchha_state_1501_1950	Orchha State		Q668415				South Asia	Princely State	Orchha	india	
+orissa_tributary_states_1888_1947	Orissa Tributary States		Q15630982				South Asia	Princely State		india	
+oudh_state_1732_1859	Oudh State		Q18129046				South Asia	Princely State		india	
+pahra_1812_1948	Pahra		Q11939770				South Asia	Princely State		india	
+pal_lahara_state_1100_1947	Pal Lahara State		Q7126114				South Asia	Princely State		india	
+palali_state	Palali State		Q11939827				South Asia	Princely State		india	
+palanpur_state_1370_1948	Palanpur State		Q7126720				South Asia	Princely State	Palanpur	india	
+palasvihir_state	Palasvihir State		Q11939836				South Asia	Princely State		india	
+paldeo_state_1812_1948	Paldeo State		Q7127047				South Asia	Princely State		india	
+palestine_1920_1948	Palestine	Palestine	Q193714	Q219060;Q801	1920	1948-01-01	Middle East	Mandate			
+palitana_state_1194_1948	Palitana State		Q7127625				South Asia	Princely State	Palitana	india	
+paliyad	Paliyad		Q11939904				South Asia	Princely State		india	
+pandaria_state	Pandaria State		Q11939961				South Asia	Princely State		india	
+panna_state_1731_1950	Panna State		Q1588594				South Asia	Princely State	Panna	india	
+patan_state_rajasthan_1200_2000	Patan State, Rajasthan		Q104152107				South Asia	Princely State		india	
+pataudi_1804_1947	Pataudi		Q17991935				South Asia	Princely State	Pataudi	india	
+patdi_state_1741_1947	Patdi State		Q11940483				South Asia	Princely State		india	
+pathari_state_1794_1948	Pathari State		Q104152108				South Asia	Princely State		india	
+patiala_state_1761_1947	Patiala State		Q917553				South Asia	Princely State	Patiala	india	
+patna_state_1191_1948	Patna State		Q2056970				South Asia	Princely State		india	
+payagpur	Payagpur		Q11940634				South Asia	Princely State		india	
+peelwa	Peelwa		Q11940753				South Asia	Princely State		india	
+penang_prince_of_wales_island_1786_1826	Penang (Prince of Wales Island)	Penang (Prince of Wales Island)	Q1150673	Q833	1786	1826-01-01	Southeast Asia	Trading Post			
+pennsylvania_colony_1681_1783	Pennsylvania Colony	Pennsylvania Colony	Q2475732	Q30	1681	1783-09-03	North America	Proprietary Colony			
+pethapur_state_1300_1940	Pethapur State		Q19605411				South Asia	Princely State		india	
+phaltan_state_1284_1948	Phaltan State		Q7180358				South Asia	Princely State		india	
+phoenix_islands_1937_1979	Phoenix Islands	Phoenix Islands	Q271674	Q710	1937	1979-07-12	Pacific	Crown Colony			
+phulra_1828_1950	Phulra		Q3246273				South Asia	Princely State		pakistan	
+pimpladevi_state	Pimpladevi State		Q11941639				South Asia	Princely State		india	
+pimpri_state	Pimpri State		Q134491987				South Asia	Princely State		india	
+piploda_state_1547_1948	Piploda State		Q7197455				South Asia	Princely State		india	
+pitcairn_islands_1838_ongoing	Pitcairn Islands	Pitcairn Islands	Q35672	Q35672	1838		Pacific	Crown Colony			
+porbandar_state_1193_1948	Porbandar State		Q14552167				South Asia	Princely State	Chhaya	india	
+potegaon	Potegaon		Q11942517				South Asia	Princely State		india	
+pratapgarh_state_1775_1949	Pratapgarh State		Q175934				South Asia	Princely State	Pratapgarh	india	
+prempur	Prempur		Q11942666				South Asia	Princely State		india	
+prince_edward_island_1769_1873	Prince Edward Island	Prince Edward Island	Q1978	Q16	1769	1873-01-01	North America	Crown Colony			Q1978 also assigned to prince_edward_island_province_1873; WD entity covers PEI continuously (colony 1769-1873 + province 1873-onwards). File row tracks the colony sub-period.
+prince_edward_island_province_1873		Prince Edward Island (Province)	Q1978		1873		North America	Province			
+princely_states_placeholder_1818_1947	Princely States (placeholder)	Princely States (placeholder)	Q1336152				South Asia	Princely State			
+province_of_canada_1841_1867	Province of Canada	Province of Canada	Q1121436	Q16	1841	1867-07-01	North America	United Province			
+province_of_freedom_1787_1792	Province of Freedom	Province of Freedom	Q3483448	Q1044	1787	1792-01-01	West Africa	Settlement			Q3483448 is the Sierra Leone Company (also assigned to sierra_leone_company_settlement_1792_1808); the Province of Freedom 1787-1792 was its early-period predecessor administration.
+province_of_quebec_british_1763_1791	Province of Quebec (British)	Province of Quebec (British)	Q251668	Q16	1763	1791-12-26	North America	Crown Colony			
+pudukkottai_state_1680_1948	Pudukkottai State		Q3535371				South Asia	Princely State	Pudukkottai	india	
+punadra	Punadra		Q11943892				South Asia	Princely State		india	
+punjab_province_1849_1947	Punjab Province	Punjab Province	Q2629708	Q668;Q843	1849	1947-08-15	South Asia	Province			
+q101242542_1825_1924	Kadana State		Q101242542				South Asia	Princely State	Kadana	india	
+q104152112_1733_1842	Surat State		Q104152112				South Asia	Princely State		india	
+q104152114_1640_1972	Yasin State		Q104152114				South Asia	Princely State		india	
+q11904734	Alaniawas		Q11904734				South Asia	Princely State		india	
+q11905355	Ammayanayakan		Q11905355				South Asia	Princely State		india	
+q11905439	Anakapalle		Q11905439				South Asia	Princely State		india	
+q11905698	Antarbella		Q11905698				South Asia	Princely State		india	
+q11908900	Bedam		Q11908900				South Asia	Princely State		india	
+q131080302	Sudasana State		Q131080302				South Asia	Princely State		india	
+q134436280	Bilkha		Q134436280				South Asia	Princely State		india	
+q1632695_1159_1948	Sanjeli State		Q1632695				South Asia	Princely State		india	
+q21044436	Edappalli		Q21044436				South Asia	Princely State		india	
+q21075438	Gopalpet		Q21075438				South Asia	Princely State		india	
+q21075439	Kaddatanad		Q21075439				South Asia	Princely State		india	
+q48838868_1759_1948	Tharad State		Q48838868				South Asia	Princely State		india	
+q48838869_1244_1948	Wao State		Q48838869				South Asia	Princely State		india	
+q48838872_1948	Santalpur State		Q48838872				South Asia	Princely State		india	
+q48838989_1755_1950	Sarila State		Q48838989				South Asia	Princely State		india	
+qatar_protectorate_1916_1971	Qatar Protectorate	Qatar Protectorate	Q105633777	Q846	1916	1971-09-03	Middle East	Protectorate			
+quebec_1867		Quebec	Q176		1867		North America	Province			
+queensland_1859_1901	Queensland	Queensland	Q28401203	Q408	1859	1901-01-01	Pacific	Crown Colony			
+radhanpur_state_1787_1948	Radhanpur State		Q18164260				South Asia	Princely State		india	
+raeka	Raeka		Q11944396				South Asia	Princely State		india	
+raghogarh_state_1673_1947	Raghogarh State		Q11944481				South Asia	Princely State		india	
+raigarh_state_1911_1947	Raigarh State		Q932393				South Asia	Princely State		india	
+rairakhol_state_1200_1948	Rairakhol State		Q2128542				South Asia	Princely State		india	
+rajgarh_state_1681_1948	Rajgarh State		Q2128715				South Asia	Princely State	Rajgarh	india	
+rajkot_state_1620_1948	Rajkot State		Q2128743				South Asia	Princely State	Rajkot	india	
+rajoli_zamindari_estate_1775_1948	Rajoli Zamindari Estate		Q7286362				South Asia	Princely State		india	
+rajouli_-400_1947	Rajouli		Q11944509				South Asia	Princely State		india	
+rajpara_state_1811_1949	Rajpara State		Q28179897				South Asia	Princely State		india	
+rajpipla_state_1340_1948	Rajpipla State		Q918204				South Asia	Princely State	Rajpipla	india	
+rajpur_kathiawar	Rajpur (Kathiawar)		Q21075480				South Asia	Princely State		india	
+rajpur_state_baroda	Rajpur State, Baroda		Q104152109				South Asia	Princely State	Rajpur, Baroda	india	
+ramanka	Ramanka		Q21075481				South Asia	Princely State		india	
+ramas_state	Ramas State		Q11944524				South Asia	Princely State		india	
+ramdurg_state_1742_1948	Ramdurg State		Q1776972				South Asia	Princely State		india	
+rampur_state_1719_1949	Rampur State		Q3454186				South Asia	Princely State	Rampur	india	
+ranasan_state_1700_1943	Ranasan State		Q11944704				South Asia	Princely State		india	
+randhia_state	Randhia State		Q21075482				South Asia	Princely State		india	
+ranpur_state_1700_1948	Ranpur State		Q17399594				South Asia	Princely State		india	
+ratlam_state_1652_1948	Ratlam State		Q1604981				South Asia	Princely State	Ratlam	india	
+rawaki_phoenix_island_1860_1979	Rawaki (Phoenix Island)	Rawaki (Phoenix Island)	Q1059295	Q710	1860	1979-07-12	Pacific (Guano/Whaling)	Guano Island			
+red_river_colony_1811_1870		Red River Colony	Q2032545		1811		North America	Colony			
+rewa_state_1755_1947	Rewa State		Q176466				South Asia	Princely State	Rewa	india	
+rhode_island_colony_1636_1783	Rhode Island Colony	Rhode Island Colony	Q2335224	Q30	1636	1783-09-03	North America	Charter Colony			
+rhodesia_udi_1965_1979	Rhodesia (UDI)	Rhodesia (UDI)	Q217169	Q954;Q953	1965	1979-06-01	Southern Africa	Unilateral Independence			
+rinsi_state	Rinsi State		Q11945665				South Asia	Princely State		india	
+rodrigues_1814_1968	Rodrigues	Rodrigues	Q208668	Q1027	1814	1968-03-12	Africa (Islands)	Dependency			
+royal_niger_company_territory_1886_1900	Royal Niger Company Territory	Royal Niger Company Territory	Q1806380	Q1033	1886	1900-01-01	West Africa	Company Territory			
+ruperts_land_1670_1870	Rupert\'s Land	Rupert\'s Land	Q738395	Q16	1670	1870-07-15	North America	Hudson\'s Bay Company Territory			
+sachin_state_1791_1948	Sachin State		Q1476723				South Asia	Princely State	Sachin	india	
+sahaspur	Sahaspur		Q11946624				South Asia	Princely State		india	
+sailana_state_1736_1948	Sailana State		Q1400780				South Asia	Princely State		india	
+saint_christopher_nevis_anguilla_1958_1983	Saint Christopher-Nevis-Anguilla	Saint Kitts and Nevis Colony	Q1637975	Q763	1624	1983-09-19	Caribbean	Crown Colony			
+saint_helena_ascension_and_tristan_da_cunha_1588_ongoing	Saint Helena, Ascension and Tristan da Cunha	Saint Helena, Ascension and Tristan da Cunha	Q192184	Q192184	1588		Atlantic	British Overseas Territory			
+saint_lucia_colony_1814_1979	Saint Lucia Colony	Saint Lucia Colony	Q15238409	Q760	1814	1979-02-22	Caribbean	Crown Colony			
+sakti_state_1800_1948	Sakti State		Q7403120				South Asia	Princely State		india	
+sambalpur_district_1493_1848	Sambalpur District		Q17315177				South Asia	Princely State		india	
+samla	Samla		Q28179818				South Asia	Princely State		india	
+samthar_state_1760_1950	Samthar State		Q1261743				South Asia	Princely State	Samthar State	india	
+sandur_state_1713_1949	Sandur State		Q532048				South Asia	Princely State		india	
+sangli_state_1801_1948	Sangli State		Q2221701				South Asia	Princely State	Sangli	india	
+sangri_state_1948	Sangri State		Q11946883				South Asia	Princely State		india	
+sant_state_1255_1948	Sant State		Q17198610				South Asia	Princely State		india	
+saraikela_state_1620_1948	Saraikela State		Q7422962				South Asia	Princely State		india	
+sarangarh_state_1948	Sarangarh State		Q1778255				South Asia	Princely State		india	
+sarawak_1841_1946	Sarawak	Sarawak	Q1658411	Q833	1841	1946-07-01	Southeast Asia	Personal Rule			
+sarawak_crown_colony_1946_1963	Sarawak Crown Colony	Sarawak Crown Colony	Q5589708	Q833	1946	1963-09-16	Southeast Asia	Crown Colony			
+sarawan	Sarawan		Q7423443				South Asia	Princely State		india	
+sardargarh_bantva_1760_1947	Sardargarh Bantva		Q7423761				South Asia	Princely State		india	
+sarwan_state	Sarwan State		Q21099444				South Asia	Princely State		india	
+saskatchewan_1905		Saskatchewan	Q1989		1905		North America	Province			
+satanones	Satanones		Q11947797				South Asia	Princely State	Satanones	india	
+satara_state_1818_1849	Satara state		Q2225895				South Asia	Princely State		india	
+sathamba_1948	Sathamba		Q11947838				South Asia	Princely State	Sathamba	india	
+savanur_state_1680_1948	Savanur State		Q1607154				South Asia	Princely State		india	
+sawantwadi_state_1627_1948	Sawantwadi State		Q18164343				South Asia	Princely State	Sawantwadi taluka	india	
+settlement_of_belize_1798_1862	Settlement of Belize	English settlement of Belize	Q115829224	Q242	1798	1862-01-01	Caribbean				
+seychelles_1903_1976	Seychelles	Seychelles	Q21821453	Q1042	1903	1976-01-01	Africa (Islands)	Crown Colony			[QID_REUSED_TOO_BROAD] Q21821453 is Crown Colony of Seychelles; same QID assigned to seychelles_mauritius_dependency_1814_1903 (row 618); WD has only one entity covering both Mauritius dependency phase (1814-1903) and Crown Colony phase (1903-1976)
+seychelles_mauritius_dependency_1814_1903	Seychelles (Mauritius Dependency)	Seychelles (Mauritius Dependency)	Q21821453	Q1027	1814	1903-08-31	Africa (Islands)	Dependency			[QID_REUSED] Q21821453 also assigned to seychelles_1903_1976 (row 617); WD treats Seychelles as continuous entity through both phases
+shahpur_state	Shahpur State		Q11942806				South Asia	Princely State		india	
+shahpura_state_1629_1949	Shahpura State		Q2276431				South Asia	Princely State	Shahpura, Bhilwara	india	
+shanghai_international_settlement_1863_1943	Shanghai International Settlement	Shanghai International Settlement	Q2170587	Q148	1863	1943-08-01	Southeast Asia	International Settlement			
+sheikhsar_state	Sheikhsar State		Q111016259				South Asia	Princely State	Sheikhsar	india	
+shergarh	Shergarh		Q11949670				South Asia	Princely State		india	
+shivbara_state	Shivbara State		Q11949678				South Asia	Princely State		india	
+siba_state_1450_1849	Siba State		Q11949691				South Asia	Princely State		india	
+sierra_leone_colony_1808_1896	Sierra Leone Colony	Sierra Leone Colony	Q30059027	Q1044	1808	1896-08-31	West Africa	Crown Colony			[QID_REUSED_TOO_BROAD] Q30059027 covers full Sierra Leone Colony and Protectorate 1808-1961; same QID assigned to sierra_leone_colony_and_protectorate_1787_1961 (row 627); WD has only one entity for both pre-protectorate (1808-1896) and post-protectorate (1896-1961) phases
+sierra_leone_colony_and_protectorate_1787_1961	Sierra Leone Colony and Protectorate	Sierra Leone Colony and Protectorate	Q30059027	Q1044	1896	1961-01-01	West Africa	Colony/Protectorate			[QID_REUSED] Q30059027 also assigned to sierra_leone_colony_1808_1896 (row 626); WD covers 1808-1961
+sierra_leone_company_settlement_1792_1808	Sierra Leone Company Settlement	Sierra Leone Company Settlement	Q3483448	Q1044	1792	1808-01-01	West Africa	Company Settlement			Q3483448 also assigned to province_of_freedom_1787_1792; the Sierra Leone Company entity covers both periods.
+sihora_state	Sihora State		Q11949750				South Asia	Princely State		india	
+sikar	Sikar		Q104924924				South Asia	Princely State		india	
+sind_division_bombay_1843_1936		Sind Division	Q7522081	Q843	1843	1936-04-01	South Asia	Division			
+sind_province_1936_1947		Sind Province	Q7522091	Q843	1936	1947-08-14	South Asia	Province	Karachi	pakistan	
+singapore_crown_colony_1946_1963	Singapore Crown Colony	Singapore Crown Colony	Q4373718	Q334	1946	1963-09-16	Southeast Asia	Crown Colony			
+singapore_independent_1965		Singapore	Q334		1965		Southeast Asia	Independence			
+singapore_settlement_1819_1826	Singapore Settlement	Singapore Settlement	Q4420036	Q334	1819	1826-01-01	Southeast Asia	Trading Post			
+sirmoor_state_1616_1948	Sirmoor State		Q1541353				South Asia	Princely State	Nahan	india	
+sirohi_state_1405_1949	Sirohi State		Q7530545				South Asia	Princely State	Sirohi	india	
+sirsi	Sirsi		Q11949891				South Asia	Princely State		india	
+sitamau_state_1701_1948	Sitamau State		Q2290502				South Asia	Princely State	Sitamau	india	
+socotra_island_1886_1967	Socotra Island	Socotra Island	Q82859	Q805	1886	1967-11-30	Middle East	Protectorate			
+sohawal_state_1550_1950	Sohawal State		Q3488924				South Asia	Princely State		india	
+somali_republic_1960		Somali Republic	Q1045		1960		Middle East	Independence			
+somna_state_1900_1949	Somna State		Q104152111				South Asia	Princely State		india	
+sonepur_state_1556_1948	Sonepur State		Q1798703				South Asia	Princely State		india	
+south_african_republic_restored_1881_1900	South African Republic (Restored)	South African Republic (Restored)	Q550374	Q258	1881	1900-10-25	Southern Africa	Boer Republic			[QID_REUSED_TOO_BROAD] Q550374 covers full SAR 1852-1902 (both 1852-1877 pre-annexation phase AND 1881-1902 post-restoration phase); same QID assigned to south_african_republic_transvaal_1852_1877 (row 645); WD has only one entity for the Transvaal republic across both phases
+south_african_republic_transvaal_1852_1877	South African Republic (Transvaal)	South African Republic (Transvaal)	Q550374	Q258	1852	1877-04-12	Southern Africa	Boer Republic			[QID_REUSED] Q550374 also assigned to south_african_republic_restored_1881_1900 (row 644); WD treats SAR as continuous entity 1852-1902
+south_australia_1836_1901	South Australia	South Australia	Q35715	Q408	1836	1901-01-01	Pacific	Planned Colony			
+south_carolina_colony_1663_1783	South Carolina Colony	South Carolina Colony	Q2513167	Q30	1663	1783-09-03	North America	Royal Colony			
+south_georgia_1775_ongoing	South Georgia	South Georgia	Q35086	Q35086	1775		Antarctica	Dependency			[QID_REUSED_TOO_BROAD] Q35086 is South Georgia and the South Sandwich Islands BOT covering all three: south_georgia_1775_ongoing (row 648) south_georgia_whaling_stations_1904_1965 (row 649) south_sandwich_islands_1775_ongoing (row 650); also wrongly assigned to heard_and_mcdonald_islands_1833_1947 (row 261) - 4-row reuse
+south_georgia_whaling_stations_1904_1965	South Georgia Whaling Stations	South Georgia Whaling Stations	Q35086	Q35086	1904		Antarctica	Whaling Station			Q35086 is the parent South Georgia and the South Sandwich Islands BOT (also assigned to south_georgia, south_sandwich_islands rows); file row covers the whaling-stations sub-period not separately represented in WD.
+south_sandwich_islands_1775_ongoing	South Sandwich Islands	South Sandwich Islands	Q35086	Q35086	1775		Antarctica	Dependency			[QID_REUSED_TOO_BROAD] Q35086 is the combined South Georgia + South Sandwich Islands BOT; file row is specifically for South Sandwich Islands (a sub-part of the BOT); same QID assigned to rows 648 and 649
+south_shetland_islands_whaling_1820_1959	South Shetland Islands Whaling	South Shetland Islands Whaling	Q140948	Q35086	1820	1959-12-01	Antarctica	Whaling Station			
+south_yemen_1967_1990	South Yemen	South Yemen	Q199841	Q805	1967	1990-05-22	Middle East	Independence			
+southern_nigeria_protectorate_1900_1914	Southern Nigeria Protectorate	Southern Nigeria Protectorate	Q2062030	Q1033	1900	1914-01-01	West Africa	Protectorate			
+southern_rhodesia_colony_1923_1953	Southern Rhodesia Colony	Southern Rhodesia Colony	Q750583	Q954;Q953	1923	1953-08-01	Southern Africa	Self-governing Colony			[QID_REUSED_TOO_BROAD] Q750583 covers full Southern Rhodesia 1923-1980; same QID assigned to southern_rhodesia_post_federation_1963 (row 655) and southern_rhodesia_restored_1979_1980 (row 656); WD has only one entity covering all three sub-periods
+southern_rhodesia_post_federation_1963		Southern Rhodesia	Q750583		1963		Southern Africa	Self-governing Colony			[QID_REUSED] Q750583 also assigned to rows 654 and 656; WD covers full 1923-1980
+southern_rhodesia_restored_1979_1980	Southern Rhodesia (Restored)	Southern Rhodesia (Restored)	Q750583	Q954;Q953	1979	1980-04-18	Southern Africa	Crown Colony			[QID_REUSED] Q750583 also assigned to rows 654 and 655; WD covers full 1923-1980
+st._helena_1659_ongoing	St. Helena	St. Helena	Q34497	Q192184	1659		Africa (Islands)	Crown Colony			
+st_vincent_colony_1763_1979	St. Vincent Colony	St. Vincent Colony	Q15240384	Q757	1763	1979-10-27	Caribbean	Crown Colony			
+starbuck_island_1866_1979	Starbuck Island	Starbuck Island	Q911028	Q710	1866	1979-07-12	Pacific (Guano/Whaling)	Guano Island			
+state_of_israel_1948		State of Israel	Q801		1948		Middle East	Independence			
+stok_jair_state_1842_1948	Stok jair State		Q104152110				South Asia	Princely State		india	
+straits_settlements_1826_1946	Straits Settlements	Straits Settlements	Q376178	Q833;Q334	1826	1946-04-01	Southeast Asia	Crown Colony			
+sudan_anglo-egyptian_1899_1956	Sudan, Anglo-Egyptian	Sudan, Anglo-Egyptian	Q541455	Q1049	1899	1956-01-01	Middle East	Condominium			
+suket_state_765_1948	Suket State		Q3503368				South Asia	Princely State		india	
+sundem_1555_1935	Sundem		Q11950532				South Asia	Princely State		india	
+surgana_state_1800_1948	Surgana State		Q17298275				South Asia	Princely State		india	
+surguja_state_1613_1948	Surguja State		Q2368545				South Asia	Princely State		india	
+swains_island_1856_1925	Swains Island	Swains Island	Q1128488	Q30	1856	1925-02-16	Pacific (Guano/Whaling)	Guano Island			
+swan_river_colony_1829_1832	Swan River Colony	Swan River Colony	Q1162123	Q408	1829	1832-01-01	Pacific	Free Settlement Colony			
+swat_state_1849_1955	Swat State		Q3246260				South Asia	Princely State	Saidu Sharif	pakistan	
+swaziland_1903_1968	Swaziland	Swaziland	Q1050	Q1050	1903	1968-09-06	Southern Africa	Protectorate			
+talcher_state_1200_1948	Talcher State		Q17244162				South Asia	Princely State		india	
+tanganyika_1961_1964	Tanganyika	Tanganyika	Q158725	Q924	1961	1964-04-26	East Africa	Independence			[QID_REUSED] Q158725 is Tanganyika Territory (Mandate/Trust Territory 1922-1961); same QID assigned to tanganyika_territory_1922_1961 (row 674) which is the correct match; this row 673 covers 1961-1964 independent Tanganyika before merging with Zanzibar to form Tanzania - WD entity actually dissolved 1961 so this row's era extends past QID's dissolution
+tanganyika_territory_1922_1961	Tanganyika Territory	Tanganyika Territory	Q158725	Q924	1922	1961-01-01	East Africa	Mandate/Trust Territory			[QID_REUSED] Q158725 also assigned to tanganyika_1961_1964 (row 673); this row is the correct primary match - WD dates 1922-1961 align with file
+tanzania_1964		Tanzania	Q924		1964		East Africa	Independence			
+taraon_state_1812_1948	Taraon State		Q18008280				South Asia	Princely State		india	
+tasgaon_state	Tasgaon State		Q11950935				South Asia	Princely State		india	
+tasmania_1856_1901	Tasmania	Tasmania	Q5148519	Q408	1856	1901-01-01	Pacific	Self-governing Colony			
+tavi	Tavi		Q11950971				South Asia	Princely State		india	
+territory_of_new_guinea_1920_1975	Territory of New Guinea	Territory of New Guinea	Q1443945	Q691	1920	1975-09-16	Pacific	Mandate			
+territory_of_papua_1906_1949	Territory of Papua	Territory of Papua	Q530560	Q691	1906	1949-12-01	Pacific	Territory			
+territory_of_papua_and_new_guinea_1949_1975	Territory of Papua and New Guinea	Territory of Papua and New Guinea	Q2301972	Q691	1949	1975-09-16	Pacific	Trust Territory			
+thanjavur_maratha_kingdom_1674_1855	Thanjavur Maratha kingdom		Q3530610				South Asia	Princely State	Thanjavur	india	
+the_punial_state_1948	The Punial State		Q7260195				South Asia	Princely State		india	
+theog_state	Theog State		Q11951769				South Asia	Princely State		india	
+tigiria_state_1600_1948	Tigiria State		Q11951827				South Asia	Princely State		india	
+tonga_protectorate_1900_1970	Tonga Protectorate	Tonga Protectorate	Q17197946	Q678	1900	1970-06-04	Pacific	Protectorate			
+tonk_state_1817_1949	Tonk State		Q914031				South Asia	Princely State	Tonk	india	
+torawati_1200_2000	Torawati		Q7825423				South Asia	Princely State		india	
+tori_fatehpur_1690_1950	Tori Fatehpur		Q11952191				South Asia	Princely State		india	
+transjordan_1922_1946	Transjordan	Transjordan	Q1121819	Q810	1922	1946-05-25	Middle East	Mandate			
+transvaal_colony_first_british_1877_1881	Transvaal Colony (First British)	Transvaal Colony (First British)	Q1187978	Q258	1877	1881-08-03	Southern Africa	Crown Colony			[QID_REUSED_TOO_BROAD] Q1187978 is Transvaal Colony (1902-1910 second British annexation period); same QID assigned to transvaal_colony_second_british_1900_1910 (row 693); WD only covers second British period - first British period (1877-1881) is actually wrong era for this QID
+transvaal_colony_second_british_1900_1910	Transvaal Colony (Second British)	Transvaal Colony (Second British)	Q1187978	Q258	1900	1910-05-31	Southern Africa	Crown Colony			[QID_REUSED] Q1187978 also assigned to transvaal_colony_first_british_1877_1881 (row 692); this row 693 is the correct match - WD entity covers 1902-1910 (close to file's 1900-1910)
+trinidad_and_tobago_1889_1962	Trinidad and Tobago	Colony of Trinidad and Tobago	Q116282722	Q754	1889	1962-01-01	Caribbean	Crown Colony			[QID_REUSED] Q116282722 covers Colony of Trinidad and Tobago 1889-1962 (the unified colony after Tobago joined Trinidad); same QID assigned to trinidad_and_tobago_colony_1797_1962 (row 695); WD inception 1889 matches row 694 but row 695 extends back to 1797 covering Trinidad-only period
+trinidad_and_tobago_colony_1797_1962	Trinidad and Tobago Colony	Trinidad Colony	Q116282722	Q754	1797	1962-08-31	Caribbean	Crown Colony			[QID_REUSED_TOO_BROAD] Q116282722 covers post-1889 unified Colony of Trinidad and Tobago (1889-1962); same QID also assigned to trinidad_and_tobago_1889_1962 (row 694); file's earlier date 1797 (Trinidad capture from Spain) before unification not captured by this QID
+tripura_1809_1949	Tripura		Q17342164				South Asia	Princely State	Agartala	india	
+tristan_da_cunha_1816_ongoing	Tristan da Cunha	Tristan da Cunha	Q220982	Q192184	1816		Africa (Islands)	Dependency			
+trucial_states_1820_1971	Trucial States	Trucial States	Q1852345	Q878	1820	1971-12-02	Middle East	Protectorate			
+tulsipur_state_1600_1859	Tulsipur State		Q5915498				South Asia	Princely State		india	
+turks_and_caicos_islands_1799_ongoing	Turks and Caicos Islands	Turks and Caicos Islands	Q18221	Q18221	1799		Caribbean	Crown Colony			
+udaipur_state	Udaipur State		Q130642141				South Asia	Princely State	Udaipur	india	
+udaipur_state_1818_1948	Udaipur State		Q1457519				South Asia	Princely State		india	
+uganda_1894_1962	Uganda	Uganda	Q1097943	Q1036	1894	1962-01-01	East Africa	Protectorate			
+umari_state	Umari State		Q11953931				South Asia	Princely State		india	
+umri_1000_1948	Umri		Q11953949				South Asia	Princely State		india	
+unfederated_malay_states_1909_1946	Unfederated Malay States	Unfederated Malay States	Q1973084	Q833	1909	1946-04-01	Southeast Asia	Protectorate			
+union_of_south_africa_1910_1961	Union of South Africa	Union of South Africa	Q193619	Q258	1910	1961-05-31	Southern Africa	Dominion			
+united_colony_of_bc_1866_1871	United Colony of British Columbia	United Colony of British Columbia	Q2514958	Q16	1866	1871-07-20	North America				
+united_provinces_1877_1947	United Provinces	United Provinces	Q2160037	Q668	1877	1947-08-15	South Asia	Province			
+united_states_1776		United States of America	Q30		1776		North America	Independence			
+united_states_of_america_1783		United States of America	Q30		1783		North America	Former Colony (Independent)			
+upper_canada_1791_1841	Upper Canada	Upper Canada	Q795427	Q16	1791	1841-01-01	North America	Crown Colony			
+vadhyawan_state	Vadhyawan State		Q11954165				South Asia	Princely State		india	
+vadia_state	Vadia State		Q11954167				South Asia	Princely State		india	
+vakhtapur_1948	Vakhtapur		Q2771763				South Asia	Princely State		india	
+vallabhi_1740_1948	Vallabhi		Q1534153				South Asia	Princely State		india	
+vallavpur_state_1434_1949	Vallavpur State		Q104152104				South Asia	Princely State		india	
+vallbhapur_state_1600_1948	Vallbhapur State		Q104152246				South Asia	Princely State		india	
+van_diemens_land_1803_1856	Van Diemen\'s Land	Van Diemen\'s Land	Q1780114	Q408	1803	1856-01-01	Pacific	Penal Colony			
+vancouver_island_1849_1866	Colony of Vancouver Island	Colony of Vancouver Island	Q2510000	Q16	1849	1866-08-06	North America	Crown Colony			
+varsoda_state_745_1948	Varsoda State		Q101242375				South Asia	Princely State	Varsoda	india	
+vasavad	Vasavad		Q11954379				South Asia	Princely State		india	
+vasurna_state	Vasurna State		Q11954387				South Asia	Princely State		india	
+victoria_colony_1851_1901	Victoria (Colony)	Victoria (Colony)	Q56850459	Q408	1851	1901-01-01	Pacific	Crown Colony			
+vijaipur_state_1542_1947	Vijaipur State		Q104152343				South Asia	Princely State		india	
+vijaynagar_state_1577_1948	Vijaynagar State		Q17267634				South Asia	Princely State		india	
+virginia_colony_1607_1783	Virginia Colony	Virginia Colony	Q1070529	Q30	1607	1783-09-03	North America	Royal Colony			
+virpur_kherdi_state_1600_1948	Virpur-Kherdi State		Q16258513				South Asia	Princely State		india	
+vostok_island_1866_1979	Vostok Island	Vostok Island	Q976570	Q710	1866	1979-07-12	Pacific (Guano/Whaling)	Guano Island			
+wadagam_state_1800_1948	Wadagam State		Q11954352				South Asia	Princely State		india	
+wadhwan_state_1630_1948	Wadhwan State		Q180235				South Asia	Princely State		india	
+wankaner_state_1807_1947	Wankaner State		Q2548416				South Asia	Princely State	Wankaner	india	
+warahi_state_1943	Warahi State		Q2510553				South Asia	Princely State		india	
+weihaiwei_1898_1930	Weihaiwei	Weihaiwei	Q15939896	Q148	1898	1930-10-01	Southeast Asia	Leased Territory			
+west_florida_1763_1783	West Florida		Q4971241		1763		North America	Crown Colony			
+west_indies_federation_1958_1962	West Indies Federation	West Indies Federation	Q652560	Q766;Q754;Q244;Q769;Q760;Q757;Q784;Q781;Q763	1958	1962-01-01	Caribbean	Federation			
+western_australia_1832_1901	Western Australia	Western Australia	Q57676556	Q408	1832	1901-01-01	Pacific	Crown Colony			
+western_samoa_1920_1962	Western Samoa	Western Samoa	Q7988268	Q683	1920	1962-01-01	Pacific	Mandate			
+yukon_territory_1898		Yukon Territory	Q2009		1898		North America	Territory			
+zainabad_1300_1948	Zainabad		Q144395				South Asia	Princely State		india	
+zanzibar_1890_1963	Zanzibar	Zanzibar	Q3574782	Q924	1890	1963-01-01	East Africa	Protectorate			
+zanzibar_independent_1963_1964	Zanzibar (Independent)	Zanzibar (Independent)	Q48769061	Q924	1963	1964-04-26	East Africa	Independence			
+zimbabwe_rhodesia_1979_1979	Zimbabwe Rhodesia	Zimbabwe Rhodesia	Q890120	Q954;Q953	1979	1979-12-12	Southern Africa	Transitional			
+zululand_1887_1897	Zululand	Zululand	Q729768	Q258	1887	1897-12-30	Southern Africa	Crown Colony			
