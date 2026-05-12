@@ -61,13 +61,19 @@ def cypher_escape(s: str) -> str:
     return s.replace("\\", "\\\\").replace("'", "\\'")
 
 def update_field(block: str, field: str, new_value: str) -> str:
-    """Replace `field: '...'` with `field: 'new_value'` in block (first occurrence)."""
+    """Replace `field: '...'` with `field: 'new_value'` in block (first occurrence).
+
+    The regex matches a Cypher single-quoted string with escape handling
+    (`\\'` inside is part of the value, not a closing quote).
+    """
     if not new_value:
         # TSV value empty: leave any existing Cypher value as-is. Cypher may have
         # historical info the TSV doesn't track (e.g. some rows have empty
         # canonical_name in TSV but populated name in Cypher).
         return block
-    pattern = re.compile(rf"({re.escape(field)}:\s*)'[^']*'")
+    # `'(?:\\.|[^'\\])*'` matches a Cypher single-quoted string with backslash
+    # escapes, so we don't truncate at the apostrophe inside `'Rupert\'s Land'`.
+    pattern = re.compile(rf"({re.escape(field)}:\s*)'(?:\\.|[^'\\])*'")
     if pattern.search(block):
         return pattern.sub(lambda m: f"{m.group(1)}'{cypher_escape(new_value)}'", block, count=1)
     return block

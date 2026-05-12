@@ -9917,7 +9917,7 @@ SET c += {
 MERGE (c:HistoricalTerritory:Colony {colony_id: 'ruperts_land_1670_1870'})
 SET c += {
   administrative_status: 'Hudson\'s Bay Company Territory',
-  canonical_name: 'Rupert\\\'s Land's Land's Land',
+  canonical_name: 'Rupert\'s Land',
   colony_id: 'ruperts_land_1670_1870',
   colony_type: 'Hudson\'s Bay Company Territory',
   comments: 'Vast HBC territory, sold to Canada 1870, became Manitoba and Northwest Territories',
@@ -12360,7 +12360,7 @@ SET c += {
 MERGE (c:HistoricalTerritory:Colony {colony_id: 'van_diemens_land_1803_1856'})
 SET c += {
   administrative_status: 'Penal Colony',
-  canonical_name: 'Van Diemen\\\'s Land's Land's Land',
+  canonical_name: 'Van Diemen\'s Land',
   colony_id: 'van_diemens_land_1803_1856',
   colony_type: 'Penal Colony',
   comments: 'Separate colony from 1825, renamed to Tasmania 1856',
@@ -13156,8 +13156,6 @@ MATCH (a:HistoricalTerritory {colony_id: 'datia_state_1626_1950'}), (b:Historica
 MATCH (a:HistoricalTerritory {colony_id: 'datia_state_1626_1950'}), (b:HistoricalTerritory {colony_id: 'indian_empire_british_raj_1858_1947'}) MERGE (a)-[:ADMINISTERED_UNDER]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'dawa_state'}), (b:HistoricalTerritory {colony_id: 'dominion_of_india_1947_1950'}) MERGE (a)-[:EVOLVED_INTO]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'dawa_state'}), (b:HistoricalTerritory {colony_id: 'indian_empire_british_raj_1858_1947'}) MERGE (a)-[:ADMINISTERED_UNDER]->(b);
-MATCH (a:HistoricalTerritory {colony_id: 'dedhrota'}), (b:HistoricalTerritory {colony_id: 'dominion_of_india_1947_1950'}) MERGE (a)-[:EVOLVED_INTO]->(b);
-MATCH (a:HistoricalTerritory {colony_id: 'dedhrota'}), (b:HistoricalTerritory {colony_id: 'indian_empire_british_raj_1858_1947'}) MERGE (a)-[:ADMINISTERED_UNDER]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'dedhrota_1900_1947'}), (b:HistoricalTerritory {colony_id: 'dominion_of_india_1947_1950'}) MERGE (a)-[:EVOLVED_INTO]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'dedhrota_1900_1947'}), (b:HistoricalTerritory {colony_id: 'indian_empire_british_raj_1858_1947'}) MERGE (a)-[:ADMINISTERED_UNDER]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'delaware_colony_1664_1783'}), (b:HistoricalTerritory {colony_id: 'united_states_1776'}) MERGE (a)-[:EVOLVED_INTO]->(b);
@@ -13407,8 +13405,6 @@ MATCH (a:HistoricalTerritory {colony_id: 'khandpara_state_1599_1948'}), (b:Histo
 MATCH (a:HistoricalTerritory {colony_id: 'khandpara_state_1599_1948'}), (b:HistoricalTerritory {colony_id: 'indian_empire_british_raj_1858_1947'}) MERGE (a)-[:ADMINISTERED_UNDER]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'khaniadhana_state_1724_1948'}), (b:HistoricalTerritory {colony_id: 'dominion_of_india_1947_1950'}) MERGE (a)-[:EVOLVED_INTO]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'khaniadhana_state_1724_1948'}), (b:HistoricalTerritory {colony_id: 'indian_empire_british_raj_1858_1947'}) MERGE (a)-[:ADMINISTERED_UNDER]->(b);
-MATCH (a:HistoricalTerritory {colony_id: 'khaniyadhana'}), (b:HistoricalTerritory {colony_id: 'dominion_of_india_1947_1950'}) MERGE (a)-[:EVOLVED_INTO]->(b);
-MATCH (a:HistoricalTerritory {colony_id: 'khaniyadhana'}), (b:HistoricalTerritory {colony_id: 'indian_empire_british_raj_1858_1947'}) MERGE (a)-[:ADMINISTERED_UNDER]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'kharagpur_state'}), (b:HistoricalTerritory {colony_id: 'dominion_of_india_1947_1950'}) MERGE (a)-[:EVOLVED_INTO]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'kharagpur_state'}), (b:HistoricalTerritory {colony_id: 'indian_empire_british_raj_1858_1947'}) MERGE (a)-[:ADMINISTERED_UNDER]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'kharan_state_1697_1955'}), (b:HistoricalTerritory {colony_id: 'dominion_of_india_1947_1950'}) MERGE (a)-[:EVOLVED_INTO]->(b);
@@ -13492,8 +13488,6 @@ MATCH (a:HistoricalTerritory {colony_id: 'lower_burma_1824_1886'}), (b:Historica
 MATCH (a:HistoricalTerritory {colony_id: 'lower_canada_1791_1841'}), (b:HistoricalTerritory {colony_id: 'new_brunswick_1784_1867'}) MERGE (a)-[:BORDERS_WITH {created_date: 1753058509072, source: 'historical_borders'}]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'lower_canada_1791_1841'}), (b:HistoricalTerritory {colony_id: 'province_of_canada_1841_1867'}) MERGE (a)-[:MERGED_INTO {description: 'Lower Canada merged with Upper Canada to form Province of Canada (Act of Union 1840)', detail: 'MERGED_INTO', year: 1841}]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'lower_canada_1791_1841'}), (b:HistoricalTerritory {colony_id: 'upper_canada_1791_1841'}) MERGE (a)-[:BORDERS_WITH {created_date: 1753058509064, source: 'historical_borders'}]->(b);
-MATCH (a:HistoricalTerritory {colony_id: 'lunavada'}), (b:HistoricalTerritory {colony_id: 'dominion_of_india_1947_1950'}) MERGE (a)-[:EVOLVED_INTO]->(b);
-MATCH (a:HistoricalTerritory {colony_id: 'lunavada'}), (b:HistoricalTerritory {colony_id: 'indian_empire_british_raj_1858_1947'}) MERGE (a)-[:ADMINISTERED_UNDER]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'lunavada_state_1434_1948'}), (b:HistoricalTerritory {colony_id: 'dominion_of_india_1947_1950'}) MERGE (a)-[:EVOLVED_INTO]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'lunavada_state_1434_1948'}), (b:HistoricalTerritory {colony_id: 'indian_empire_british_raj_1858_1947'}) MERGE (a)-[:ADMINISTERED_UNDER]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'madanpur_state'}), (b:HistoricalTerritory {colony_id: 'dominion_of_india_1947_1950'}) MERGE (a)-[:EVOLVED_INTO]->(b);
@@ -13543,8 +13537,6 @@ MATCH (a:HistoricalTerritory {colony_id: 'manipur_state_1110_1949'}), (b:Histori
 MATCH (a:HistoricalTerritory {colony_id: 'manipur_state_1110_1949'}), (b:HistoricalTerritory {colony_id: 'indian_empire_british_raj_1858_1947'}) MERGE (a)-[:ADMINISTERED_UNDER]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'mansa_state'}), (b:HistoricalTerritory {colony_id: 'dominion_of_india_1947_1950'}) MERGE (a)-[:EVOLVED_INTO]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'mansa_state'}), (b:HistoricalTerritory {colony_id: 'indian_empire_british_raj_1858_1947'}) MERGE (a)-[:ADMINISTERED_UNDER]->(b);
-MATCH (a:HistoricalTerritory {colony_id: 'marwar'}), (b:HistoricalTerritory {colony_id: 'dominion_of_india_1947_1950'}) MERGE (a)-[:EVOLVED_INTO]->(b);
-MATCH (a:HistoricalTerritory {colony_id: 'marwar'}), (b:HistoricalTerritory {colony_id: 'indian_empire_british_raj_1858_1947'}) MERGE (a)-[:ADMINISTERED_UNDER]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'maryland_colony_1634_1783'}), (b:HistoricalTerritory {colony_id: 'united_states_1776'}) MERGE (a)-[:EVOLVED_INTO]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'maryland_colony_1634_1783'}), (b:HistoricalTerritory {colony_id: 'united_states_of_america_1783'}) MERGE (a)-[:EVOLVED_INTO {year: 1783}]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'massachusetts_bay_colony_1630_1783'}), (b:HistoricalTerritory {colony_id: 'united_states_1776'}) MERGE (a)-[:EVOLVED_INTO]->(b);
@@ -13732,8 +13724,6 @@ MATCH (a:HistoricalTerritory {colony_id: 'prempur'}), (b:HistoricalTerritory {co
 MATCH (a:HistoricalTerritory {colony_id: 'prince_edward_island_1769_1873'}), (b:HistoricalTerritory {colony_id: 'canada_dominion_of_1867_ongoing'}) MERGE (a)-[:FEDERATED_INTO {description: 'Prince Edward Island joined Confederation as 7th province', detail: 'JOINED', year: 1873}]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'prince_edward_island_1769_1873'}), (b:HistoricalTerritory {colony_id: 'prince_edward_island_province_1873'}) MERGE (a)-[:EVOLVED_INTO {year: 1873}]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'prince_edward_island_province_1873'}), (b:HistoricalTerritory {colony_id: 'canada_dominion_of_1867_ongoing'}) MERGE (a)-[:PART_OF]->(b);
-MATCH (a:HistoricalTerritory {colony_id: 'princely_states_placeholder_1818_1947'}), (b:HistoricalTerritory {colony_id: 'dominion_of_india_1947_1950'}) MERGE (a)-[:EVOLVED_INTO]->(b);
-MATCH (a:HistoricalTerritory {colony_id: 'princely_states_placeholder_1818_1947'}), (b:HistoricalTerritory {colony_id: 'dominion_of_pakistan_1947_1956'}) MERGE (a)-[:PARTITIONED_INTO]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'province_of_canada_1841_1867'}), (b:HistoricalTerritory {colony_id: 'canada_dominion_of_1867_ongoing'}) MERGE (a)-[:FEDERATED_INTO {description: 'Province of Canada split into Ontario and Quebec, joined Confederation as Dominion of Canada', detail: 'CONFEDERATED_INTO', year: 1867}]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'province_of_canada_1841_1867'}), (b:HistoricalTerritory {colony_id: 'lower_canada_1791_1841'}) MERGE (a)-[:SUCCEEDED {description: 'Lower Canada merged with Upper Canada to form Province of Canada (Act of Union 1840)', detail: 'MERGED_INTO', succession_type: 'COMPLEX_SUCCESSION', year: 1841}]->(b);
 MATCH (a:HistoricalTerritory {colony_id: 'province_of_canada_1841_1867'}), (b:HistoricalTerritory {colony_id: 'ontario_1867'}) MERGE (a)-[:EVOLVED_INTO {year: 1867}]->(b);

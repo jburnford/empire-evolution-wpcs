@@ -261,7 +261,7 @@ function init() {
   // Add Red River Colony (Selkirk Settlement) — carved from Rupert's Land, became Manitoba
   RAW.nodes.push({
     id: 'red_river_colony_1811_1870', name: "Red River Colony", est: 1811, ind: 1870,
-    region: 'North America', type: 'Colony', qid: 'Q1143638',
+    region: 'North America', type: 'Colony', qid: 'Q2032545',
   });
 
   // Australia — Dominion ended 1942 (Statute of Westminster Adoption Act), fully independent
@@ -338,7 +338,7 @@ function init() {
   // Colony (1610-1907) → Dominion (1907-1934) → Commission of Government (1934-1949) → Canada (1949)
   RAW.nodes.push({
     id: 'newfoundland_commission_1934_1949', name: 'Newfoundland (Commission)', est: 1934, ind: 1949,
-    region: 'North America', type: 'Crown Colony', qid: 'Q48378',
+    region: 'North America', type: 'Crown Colony', qid: 'Q38610',
   });
   RAW.edges.push(
     { source: 'colony_of_newfoundland_1610_1949', target: 'dominion_of_newfoundland_1907_1934', type: 'EVOLVED_INTO' },
@@ -471,11 +471,11 @@ function init() {
   // Add missing Indian provinces (not in KG export)
   RAW.nodes.push(
     { id: 'coorg_province_1834_1947', name: 'Coorg', est: 1834, ind: 1947,
-      region: 'Asia', type: 'Province', qid: 'Q864930' },
+      region: 'Asia', type: 'Province', qid: 'Q24905912' },
     { id: 'ajmer_merwara_1818_1947', name: 'Ajmer-Merwara', est: 1818, ind: 1947,
-      region: 'Asia', type: 'Province', qid: 'Q4700553' },
-    { id: 'sind_province_1843_1947', name: 'Sind', est: 1936, ind: 1947,
-      region: 'Asia', type: 'Province', qid: 'Q7523949' },
+      region: 'Asia', type: 'Province', qid: 'Q412980' },
+    { id: 'sind_province_1936_1947', name: 'Sind', est: 1936, ind: 1947,
+      region: 'Asia', type: 'Province', qid: 'Q7522091' },
     { id: 'andaman_and_nicobar_islands_1789_1947', name: 'Andaman and Nicobar Islands', est: 1789, ind: 1947,
       region: 'Asia', type: 'Province', qid: 'Q40888' },
   );
@@ -487,8 +487,8 @@ function init() {
   );
   // Sind was part of Bombay Presidency, carved out as separate province in 1936
   RAW.edges.push(
-    { source: 'bombay_presidency_crown_1858_1947', target: 'sind_province_1843_1947', type: 'PARTITIONED_INTO' },
-    { source: 'sind_province_1843_1947', target: 'dominion_of_pakistan_1947_1956', type: 'EVOLVED_INTO' },
+    { source: 'bombay_presidency_crown_1858_1947', target: 'sind_province_1936_1947', type: 'PARTITIONED_INTO' },
+    { source: 'sind_province_1936_1947', target: 'dominion_of_pakistan_1947_1956', type: 'EVOLVED_INTO' },
   );
   // Post-1947 entities removed — too complex for this visualization.
   // The Dominion bars serve as partition endpoints.
@@ -560,17 +560,17 @@ function init() {
   //   1798-1802 (recaptured, returned to Spain by Treaty of Amiens)
   RAW.nodes.push(
     { id: 'minorca_first_1708_1756', name: 'Minorca (1st British)', est: 1708, ind: 1756,
-      region: 'Europe', type: 'Crown Colony', qid: 'Q173095' },
+      region: 'Europe', type: 'Crown Colony', qid: 'Q52636' },
     { id: 'minorca_second_1763_1782', name: 'Minorca (2nd British)', est: 1763, ind: 1782,
-      region: 'Europe', type: 'Crown Colony', qid: 'Q173095' },
+      region: 'Europe', type: 'Crown Colony', qid: 'Q52636' },
     { id: 'minorca_third_1798_1802', name: 'Minorca (3rd British)', est: 1798, ind: 1802,
-      region: 'Europe', type: 'Crown Colony', qid: 'Q173095' },
+      region: 'Europe', type: 'Crown Colony', qid: 'Q52636' },
     // Anglo-Corsican Kingdom: brief British protectorate under George III
     { id: 'corsica_1794_1796', name: 'Anglo-Corsican Kingdom', est: 1794, ind: 1796,
-      region: 'Europe', type: 'Protectorate', qid: 'Q2259576' },
+      region: 'Europe', type: 'Protectorate', qid: 'Q83536' },
     // Heligoland: captured from Denmark 1807, ceded to Germany 1890 (Heligoland-Zanzibar Treaty)
     { id: 'heligoland_1807_1890', name: 'Heligoland', est: 1807, ind: 1890,
-      region: 'Europe', type: 'Crown Colony', qid: 'Q3104' },
+      region: 'Europe', type: 'Crown Colony', qid: 'Q3129772' },
   );
   // Minorca succession: 1st → 2nd → 3rd (same island recaptured each time)
   RAW.edges.push(
@@ -585,7 +585,7 @@ function init() {
   // Northern Ireland (1920-ongoing): Remained in the UK after partition.
   RAW.nodes.push(
     { id: 'kingdom_of_ireland_1541_1801', name: 'Kingdom of Ireland', est: 1541, ind: 1801,
-      region: 'Europe', type: 'Kingdom', qid: 'Q179876' },
+      region: 'Europe', type: 'Kingdom', qid: 'Q215530' },
     { id: 'ireland_uk_1801_1922', name: 'Ireland (UK)', est: 1801, ind: 1922,
       region: 'Europe', type: 'Union', qid: 'Q174193' },
     { id: 'irish_free_state_1922_1937', name: 'Irish Free State', est: 1922, ind: 1937,
@@ -699,11 +699,11 @@ function init() {
   // Pre-British Guiana: Essequibo, Demerara, Berbice (British 1803, merged 1831)
   RAW.nodes.push(
     { id: 'essequibo_colony_1803_1831', name: 'Essequibo', est: 1803, ind: 1831,
-      region: 'South America', type: 'Crown Colony', qid: 'Q2199929' },
+      region: 'South America', type: 'Crown Colony', qid: 'Q1368792' },
     { id: 'demerara_colony_1803_1831', name: 'Demerara', est: 1803, ind: 1831,
-      region: 'South America', type: 'Crown Colony', qid: 'Q2399707' },
+      region: 'South America', type: 'Crown Colony', qid: 'Q1185346' },
     { id: 'berbice_colony_1803_1831', name: 'Berbice', est: 1803, ind: 1831,
-      region: 'South America', type: 'Crown Colony', qid: 'Q861922' },
+      region: 'South America', type: 'Crown Colony', qid: 'Q675322' },
   );
   RAW.edges.push(
     { source: 'essequibo_colony_1803_1831', target: 'british_guiana_1831_1966', type: 'EVOLVED_INTO' },
@@ -714,9 +714,9 @@ function init() {
   // Central American protectorates
   RAW.nodes.push(
     { id: 'mosquito_coast_1638_1860', name: 'Mosquito Coast', est: 1638, ind: 1860,
-      region: 'Caribbean', type: 'Protectorate', qid: 'Q1948981' },
+      region: 'Caribbean', type: 'Protectorate', qid: 'Q6037274' },
     { id: 'bay_islands_1852_1859', name: 'Bay Islands', est: 1852, ind: 1859,
-      region: 'Caribbean', type: 'Crown Colony', qid: 'Q1553529' },
+      region: 'Caribbean', type: 'Crown Colony', qid: 'Q107987587' },
   );
 
   // Dead-end successors
@@ -881,7 +881,7 @@ function init() {
     'factory_at_surat_1612_1857': 'South Asia',
     'coorg_province_1834_1947': 'South Asia',
     'ajmer_merwara_1818_1947': 'South Asia',
-    'sind_province_1843_1947': 'South Asia',
+    'sind_province_1936_1947': 'South Asia',
     'andaman_and_nicobar_islands_1789_1947': 'South Asia',
     'maldives_protectorate_1887_1965': 'South Asia',
     'chagos_islands_mauritius_dependency_1814_1965': 'South Asia',

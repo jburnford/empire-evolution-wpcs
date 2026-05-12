@@ -8,8 +8,8 @@ Search* (WPCS).
 
 - `paper/empire-evolution-wpcs.qmd` — Quarto source for the paper
 - `paper/references.bib` — bibliography
-- `data/britishempire_kg_export.cypher` — full graph: 751 historical
-  territories (313 colonial polities + 438 princely states) and 1,213 typed
+- `data/britishempire_kg_export.cypher` — full graph: 747 historical
+  territories (314 colonial polities + 433 princely states) and 1,203 typed
   relationships
 - `viz/empire_evolution.html` — self-contained D3.js Sankey visualization
 - `scripts/load_falkordb.py` — load the graph into an embedded FalkorDB instance
@@ -24,7 +24,7 @@ pip install -r requirements.txt
 python3 scripts/load_falkordb.py --interactive
 ```
 
-This loads the 751 nodes / 1,213 edges into an embedded FalkorDB
+This loads the 747 nodes / 1,203 edges into an embedded FalkorDB
 ("FalkorDBLite") instance saved to `./empire.db` and drops you into a
 Cypher REPL. No Neo4j installation, no Docker, no Java.
 
