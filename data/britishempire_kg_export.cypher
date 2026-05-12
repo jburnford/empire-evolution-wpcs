@@ -383,7 +383,8 @@ SET c += {
   whg_aat_types: ['300387506'],
   whg_ccodes: ['KY'],
   whg_fclasses: ['A'],
-  wikidata_id: 'Q25228'
+  wikidata_id: 'Q25228',
+  qid_scope_note: 'Q25228 is the modern British Overseas Territory; file row\'s 1650 start date predates the WD entity\'s effective inception as a separate BOT.'
 };
 
 MERGE (c:HistoricalTerritory:CrownColony:Colony {colony_id: 'antigua_colony_1632_1981'})
@@ -607,7 +608,8 @@ SET c += {
   established_year: 1942,
   region: 'Pacific',
   type: 'Independence',
-  wikidata_id: 'Q408'
+  wikidata_id: 'Q408',
+  qid_scope_note: '[QID_REUSED] Q408 modern sovereign Australia; also assigned to commonwealth_of_australia_1901_ongoing.'
 };
 
 MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'avchar_state'})
@@ -1407,7 +1409,8 @@ SET c += {
   whg_aat_types: ['300387506'],
   whg_ccodes: ['BM'],
   whg_fclasses: ['A'],
-  wikidata_id: 'Q23635'
+  wikidata_id: 'Q23635',
+  qid_scope_note: 'Q23635 is the modern British Overseas Territory; file row\'s 1609 start date predates the WD entity\'s effective inception.'
 };
 
 MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'bhabar_state'})
@@ -2184,7 +2187,8 @@ SET c += {
   whg_aat_types: ['300387506'],
   whg_ccodes: ['VG'],
   whg_fclasses: ['A'],
-  wikidata_id: 'Q25305'
+  wikidata_id: 'Q25305',
+  qid_scope_note: 'Q25305 is the modern British Overseas Territory; file row\'s 1672 start date predates the WD entity\'s effective inception.'
 };
 
 MERGE (c:HistoricalTerritory:Colony {colony_id: 'british_western_pacific_territories_1877_1978'})
@@ -2258,7 +2262,8 @@ SET c += {
   whg_aat_types: ['300387178'],
   whg_ccodes: ['BN'],
   whg_fclasses: ['A'],
-  wikidata_id: 'Q921'
+  wikidata_id: 'Q921',
+  qid_scope_note: 'Q921 is modern sovereign Brunei; file row\'s 1888-1984 covers the British protectorate sub-period not separately represented in WD.'
 };
 
 MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'bundi_state_1342_1949'})
@@ -2385,7 +2390,8 @@ SET c += {
   verified_date: datetime('2025-08-06T14:14:36.062000000+00:00'),
   whg_aat_types: ['300387506'],
   whg_fclasses: ['A'],
-  wikidata_id: 'Q16'
+  wikidata_id: 'Q16',
+  qid_scope_note: '[QID_REUSED] Q16 modern Canada; also assigned to canada_independent_1931. File row\'s 1867 start date is the Dominion\'s inception which the WD modern-Canada entity inherits.'
 };
 
 MERGE (c:HistoricalTerritory:Colony {colony_id: 'canada_independent_1931'})
@@ -2396,7 +2402,8 @@ SET c += {
   established_year: 1931,
   region: 'North America',
   type: 'Independence',
-  wikidata_id: 'Q16'
+  wikidata_id: 'Q16',
+  qid_scope_note: '[QID_REUSED] Q16 modern Canada; also assigned to canada_dominion_of_1867_ongoing.'
 };
 
 MERGE (c:HistoricalTerritory:Colony {colony_id: 'cape_breton_colony_1784_1820'})
@@ -2604,7 +2611,8 @@ SET c += {
   whg_aat_types: ['300387506'],
   whg_ccodes: ['KY'],
   whg_fclasses: ['A'],
-  wikidata_id: 'Q5785'
+  wikidata_id: 'Q5785',
+  qid_scope_note: 'Q5785 is the modern British Overseas Territory; file row\'s 1670 start date predates the WD entity\'s effective inception.'
 };
 
 MERGE (c:HistoricalTerritory:Province:Colony {colony_id: 'central_provinces_1861_1947'})
@@ -3043,7 +3051,8 @@ SET c += {
   whg_aat_types: ['300387506'],
   whg_ccodes: ['AU'],
   whg_fclasses: ['A'],
-  wikidata_id: 'Q408'
+  wikidata_id: 'Q408',
+  qid_scope_note: '[QID_REUSED] Q408 modern sovereign Australia; also assigned to australia_independent_1942. File row\'s 1901 start date is federation inception which the WD modern-Australia entity inherits.'
 };
 
 MERGE (c:HistoricalTerritory:Colony {colony_id: 'connecticut_colony_1636_1783'})
@@ -3310,7 +3319,8 @@ SET c += {
   region: 'South Asia',
   source: 'wikidata_sparql_Q1336152',
   successor_dominion: 'india',
-  wikidata_id: 'Q11916768'
+  wikidata_id: 'Q11916768',
+  qid_scope_note: '[POSSIBLE_FILE_DUPLICATE] Sister row \'dedhrota\' (Q131126101) also maps to a \'Dedhrota princely state\' entity in WD. Pending Pass D human review to decide merge or keep both.'
 };
 
 MERGE (c:HistoricalTerritory:Colony {colony_id: 'delaware_colony_1664_1783'})
@@ -3640,7 +3650,8 @@ SET c += {
   independence_year: 1947,
   region: 'Pacific',
   type: 'Dominion',
-  wikidata_id: 'Q664'
+  wikidata_id: 'Q664',
+  qid_scope_note: '[QID_REUSED] Q664 covers continuous NZ state; also assigned to new_zealand_colony_1840_1907 and new_zealand_independent_1947.'
 };
 
 MERGE (c:HistoricalTerritory:Dominion:Colony {colony_id: 'dominion_of_newfoundland_1907_1934'})
@@ -3666,7 +3677,8 @@ SET c += {
   whg_aat_types: ['300387346'],
   whg_ccodes: ['CA'],
   whg_fclasses: ['A'],
-  wikidata_id: 'Q38610'
+  wikidata_id: 'Q38610',
+  qid_scope_note: '[QID_REUSED] Q38610 also assigned to newfoundland_commission_1934_1949; WD entity covers full 1907-1949 Dominion span.'
 };
 
 MERGE (c:HistoricalTerritory:Dominion:Colony {colony_id: 'dominion_of_pakistan_1947_1956'})
@@ -3960,7 +3972,8 @@ SET c += {
   whg_aat_types: ['300387506'],
   whg_ccodes: [],
   whg_fclasses: ['A'],
-  wikidata_id: 'Q9648'
+  wikidata_id: 'Q9648',
+  qid_scope_note: 'Q9648 is the modern British Overseas Territory; file row\'s 1833 start date predates the WD entity\'s effective inception.'
 };
 
 MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'faridkot_state_1803_1947'})
@@ -4037,7 +4050,8 @@ SET c += {
   whg_aat_types: ['300387506'],
   whg_ccodes: ['AG', 'KN'],
   whg_fclasses: ['A'],
-  wikidata_id: 'Q1796551'
+  wikidata_id: 'Q1796551',
+  qid_scope_note: '[QID_REUSED] Q1796551 also assigned to leeward_islands_colony_1671_1816; WD entity covers both 1671-1816 first colony AND 1833-1960 federal colony.'
 };
 
 MERGE (c:HistoricalTerritory:Protectorate:Colony {colony_id: 'federated_malay_states_1895_1946'})
@@ -4085,7 +4099,8 @@ SET c += {
   whg_aat_types: ['300387506'],
   whg_ccodes: ['MY'],
   whg_fclasses: ['A'],
-  wikidata_id: 'Q1479726'
+  wikidata_id: 'Q1479726',
+  qid_scope_note: '[QID_REUSED] Q1479726 also assigned to malaya_independent_1957_1963; WD Federation of Malaya 1948-1963 covers both colonial Federation and independent phases.'
 };
 
 MERGE (c:HistoricalTerritory:Federation:Colony {colony_id: 'federation_of_rhodesia_and_nyasaland_1953_1963'})
@@ -4433,7 +4448,8 @@ SET c += {
   whg_aat_types: ['300387506'],
   whg_ccodes: ['GI'],
   whg_fclasses: ['A'],
-  wikidata_id: 'Q1410'
+  wikidata_id: 'Q1410',
+  qid_scope_note: 'Q1410 is the modern British Overseas Territory; file row\'s 1704 start date predates the WD entity\'s effective inception.'
 };
 
 MERGE (c:HistoricalTerritory:CrownColony:Colony {colony_id: 'gilbert_and_ellice_islands_1916_1976'})
@@ -4505,7 +4521,8 @@ SET c += {
   whg_aat_types: ['300387506'],
   whg_ccodes: ['GH'],
   whg_fclasses: ['A'],
-  wikidata_id: 'Q503623'
+  wikidata_id: 'Q503623',
+  qid_scope_note: '[QID_REUSED] Q503623 also assigned to british_gold_coast_1821_1874; WD entity covers full Gold Coast Colony 1821-1957 (both file sub-periods).'
 };
 
 MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'gond_umri'})
@@ -5858,7 +5875,8 @@ SET c += {
   region: 'South Asia',
   source: 'wikidata_sparql_Q1336152',
   successor_dominion: 'india',
-  wikidata_id: 'Q2120351'
+  wikidata_id: 'Q2120351',
+  qid_scope_note: '[POSSIBLE_FILE_DUPLICATE] Sister row \'khaniadhana_state_1724_1948\' (Q16852121) also maps to Khaniadhana princely state. Spelling variant of same place. Pending Pass D human review.'
 };
 
 MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'kharagpur_state'})
@@ -6556,7 +6574,8 @@ SET c += {
   region: 'South Asia',
   source: 'wikidata_sparql_Q1336152',
   successor_dominion: 'india',
-  wikidata_id: 'Q18127558'
+  wikidata_id: 'Q18127558',
+  qid_scope_note: '[POSSIBLE_FILE_DUPLICATE] Sister row \'lunavada\' (Q2240915) also maps to Lunavada princely state. Pending Pass D human review to decide merge or keep both.'
 };
 
 MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'madanpur_state'})
@@ -7035,7 +7054,8 @@ SET c += {
   region: 'South Asia',
   source: 'wikidata_sparql_Q1336152',
   successor_dominion: 'india',
-  wikidata_id: 'Q1419618'
+  wikidata_id: 'Q1419618',
+  qid_scope_note: '[POSSIBLE_FILE_DUPLICATE] Sister row \'jodhpur_state_1226_1949\' (Q6207845) maps to Kingdom of Marwar (the polity); this row is the region. Pending Pass D human review.'
 };
 
 MERGE (c:HistoricalTerritory:Colony {colony_id: 'maryland_colony_1634_1783'})
@@ -7128,7 +7148,8 @@ SET c += {
   whg_aat_types: ['300387506'],
   whg_ccodes: ['MU'],
   whg_fclasses: ['A'],
-  wikidata_id: 'Q12053604'
+  wikidata_id: 'Q12053604',
+  qid_scope_note: '[QID_REUSED] Q12053604 British Mauritius also assigned to isle_de_france_british_occupation_1810_1814; WD entity covers full 1810-1968 British rule.'
 };
 
 MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'mayurbhanj_state_1790_1949'})
@@ -7328,7 +7349,8 @@ SET c += {
   whg_aat_types: ['300387506'],
   whg_ccodes: ['HK'],
   whg_fclasses: ['A'],
-  wikidata_id: 'Q13353'
+  wikidata_id: 'Q13353',
+  qid_scope_note: 'Q13353 is the modern British Overseas Territory; file row\'s 1632 start date predates the WD entity\'s effective inception.'
 };
 
 MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'morvi_state_1698_1948'})
@@ -7920,7 +7942,8 @@ SET c += {
   independence_year: 1907,
   region: 'Pacific',
   type: 'Crown Colony',
-  wikidata_id: 'Q664'
+  wikidata_id: 'Q664',
+  qid_scope_note: '[QID_REUSED] Q664 covers continuous NZ state; also assigned to dominion_of_new_zealand_1907_1947 and new_zealand_independent_1947.'
 };
 
 MERGE (c:HistoricalTerritory:Colony {colony_id: 'new_zealand_independent_1947'})
@@ -7931,7 +7954,8 @@ SET c += {
   established_year: 1947,
   region: 'Pacific',
   type: 'Independence',
-  wikidata_id: 'Q664'
+  wikidata_id: 'Q664',
+  qid_scope_note: '[QID_REUSED] Q664 covers continuous NZ state; also assigned to new_zealand_colony_1840_1907 and dominion_of_new_zealand_1907_1947.'
 };
 
 MERGE (c:HistoricalTerritory:Colony {colony_id: 'newfoundland_commission_1934_1949'})
@@ -8994,7 +9018,8 @@ SET c += {
   whg_aat_types: ['300387506'],
   whg_ccodes: [],
   whg_fclasses: ['A'],
-  wikidata_id: 'Q35672'
+  wikidata_id: 'Q35672',
+  qid_scope_note: 'Q35672 is the modern British Overseas Territory; file row\'s 1838 start date predates the WD entity\'s effective inception.'
 };
 
 MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'porbandar_state_1193_1948'})
@@ -9085,7 +9110,8 @@ SET c += {
   established_year: 1873,
   region: 'North America',
   verified: true,
-  wikidata_id: 'Q1978'
+  wikidata_id: 'Q1978',
+  qid_scope_note: '[QID_REUSED] Q1978 also assigned to prince_edward_island_1769_1873; WD entity covers PEI continuously (colony 1769-1873 + province 1873-onwards).'
 };
 
 MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'princely_states_placeholder_1818_1947'})
@@ -9099,7 +9125,8 @@ SET c += {
   region: 'South Asia',
   source: 'manual_placeholder',
   type: 'Princely State',
-  wikidata_id: 'Q1336152'
+  wikidata_id: 'Q1336152',
+  qid_scope_note: '[PLACEHOLDER_NOT_ENTITY] Q1336152 is the CLASS \'princely state\' (instance-of type), not a specific entity. File row is a meta/aggregate placeholder; pending Pass D human review (likely deletion).'
 };
 
 MERGE (c:HistoricalTerritory:Province:Colony {colony_id: 'province_of_canada_1841_1867'})
@@ -10057,7 +10084,8 @@ SET c += {
   whg_aat_types: ['300387506'],
   whg_ccodes: [],
   whg_fclasses: ['A'],
-  wikidata_id: 'Q192184'
+  wikidata_id: 'Q192184',
+  qid_scope_note: 'Q192184 is the modern British Overseas Territory (current consolidated form since 2009); file row\'s 1588 start date covers earlier colonial history not separately represented in WD.'
 };
 
 MERGE (c:HistoricalTerritory:CrownColony:Colony {colony_id: 'saint_lucia_colony_1814_1979'})
@@ -11070,7 +11098,8 @@ SET c += {
   whg_aat_types: ['300000776'],
   whg_ccodes: [],
   whg_fclasses: ['T'],
-  wikidata_id: 'Q140948'
+  wikidata_id: 'Q140948',
+  qid_scope_note: 'Q140948 is the geographic archipelago (part of British Antarctic Territory); file row tracks the 1820-1959 whaling-period administrative use of the islands (no separate temporal entity in WD).'
 };
 
 MERGE (c:HistoricalTerritory:IndependentNation {colony_id: 'south_yemen_1967_1990'})
@@ -11508,7 +11537,8 @@ SET c += {
   whg_aat_types: ['300387506'],
   whg_ccodes: ['SZ'],
   whg_fclasses: ['A'],
-  wikidata_id: 'Q1050'
+  wikidata_id: 'Q1050',
+  qid_scope_note: 'Q1050 is modern sovereign Eswatini; file row\'s 1903-1968 covers the British protectorate sub-period not separately represented in WD.'
 };
 
 MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'talcher_state_1200_1948'})
@@ -12079,7 +12109,8 @@ SET c += {
   whg_aat_types: ['300387506'],
   whg_ccodes: [],
   whg_fclasses: ['A'],
-  wikidata_id: 'Q18221'
+  wikidata_id: 'Q18221',
+  qid_scope_note: 'Q18221 is the modern British Overseas Territory; file row\'s 1799 start date predates the WD entity\'s effective inception.'
 };
 
 MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'udaipur_state'})
@@ -12104,7 +12135,8 @@ SET c += {
   region: 'South Asia',
   source: 'wikidata_sparql_Q1336152',
   successor_dominion: 'india',
-  wikidata_id: 'Q1457519'
+  wikidata_id: 'Q1457519',
+  qid_scope_note: '[POSSIBLE_FILE_DUPLICATE] Sister row \'udaipur_state\' (Q130642141) also maps to Udaipur State. Pending Pass D human review to decide merge or keep both.'
 };
 
 MERGE (c:HistoricalTerritory:Protectorate:Colony {colony_id: 'uganda_1894_1962'})
@@ -12268,7 +12300,8 @@ SET c += {
   established_year: 1776,
   region: 'North America',
   type: 'Independence',
-  wikidata_id: 'Q30'
+  wikidata_id: 'Q30',
+  qid_scope_note: '[QID_REUSED] Q30 modern USA; also assigned to united_states_of_america_1783. File row tracks Declaration of Independence sub-period; WD entity is the continuous modern state.'
 };
 
 MERGE (c:HistoricalTerritory:Colony {colony_id: 'united_states_of_america_1783'})
@@ -12279,7 +12312,8 @@ SET c += {
   established_year: 1783,
   region: 'North America',
   verified: true,
-  wikidata_id: 'Q30'
+  wikidata_id: 'Q30',
+  qid_scope_note: '[QID_REUSED] Q30 modern USA; also assigned to united_states_1776. File row tracks Treaty of Paris recognition sub-period; WD entity is the continuous modern state.'
 };
 
 MERGE (c:HistoricalTerritory:CrownColony:Colony {colony_id: 'upper_canada_1791_1841'})
