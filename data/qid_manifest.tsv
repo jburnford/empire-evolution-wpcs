@@ -184,8 +184,7 @@ datarpur_1550_1849	Datarpur		Q11916665				South Asia	Princely State		india
 datia_state_1626_1950	Datia State		Q1172600				South Asia	Princely State	Datia	india	
 dawa_state	Dawa State		Q11916720				South Asia	Princely State		india	
 deception_island_whaling_1906_1931	Deception Island Whaling	Deception Island Whaling	Q1045820	Q35086	1906	1931-12-31	Antarctica	Whaling Station			Modern_nation_qids field uses Q35086 (South Georgia & Sandwich BOT) but Deception Island is in the South Shetlands (part of British Antarctic Territory Q165783); minor data-quality variance.
-dedhrota	Dedhrota		Q131126101				South Asia	Princely State		india	
-dedhrota_1900_1947	Dedhrota		Q11916768				South Asia	Princely State		india	[POSSIBLE_FILE_DUPLICATE] Sister row 'dedhrota' (Q131126101) also maps to a 'Dedhrota princely state' entity in WD. Pending Pass D human review to decide merge or keep both.
+dedhrota_1900_1947	Dedhrota		Q11916768				South Asia	Princely State		india	
 delaware_colony_1664_1783	Delaware Colony	Delaware Colony	Q2571194	Q30	1664	1783-09-03	North America	Proprietary Colony			
 deloli_state	Deloli State		Q21076401				South Asia	Princely State		india	
 demerara_colony_1803_1831		Demerara	Q1185346		1803		South America	Crown Colony			Q1185346 covers Dutch+British Demerara 1745-1815 (merged into British Guiana); file row's 1803-1831 is the British sub-period.
@@ -335,7 +334,6 @@ khairpur_state_1775_1955	Khairpur State		Q3249587				South Asia	Princely State	K
 khanate_of_kalat_1638_1955	Khanate of Kalat		Q139948				South Asia	Princely State	Kalat	pakistan	
 khandpara_state_1599_1948	Khandpara State		Q11929762				South Asia	Princely State		india	
 khaniadhana_state_1724_1948	Khaniadhana State		Q16852121				South Asia	Princely State		india	
-khaniyadhana	Khaniyadhana		Q2120351				South Asia	Princely State		india	[POSSIBLE_FILE_DUPLICATE] Sister row 'khaniadhana_state_1724_1948' (Q16852121) also maps to Khaniadhana princely state. Spelling variant of same place. Pending Pass D human review.
 kharagpur_state	Kharagpur State		Q11929766				South Asia	Princely State		india	
 kharan_state_1697_1955	Kharan State		Q2989491				South Asia	Princely State	Kharan	pakistan	
 kharsawan_state_1650_1948	Kharsawan State		Q18126780				South Asia	Princely State		india	
@@ -381,8 +379,7 @@ lohara_sahaspur	Lohara Sahaspur		Q21075186				South Asia	Princely State		india
 loharu_state_1806_1947	Loharu State		Q3258086				South Asia	Princely State	Loharu	india	
 lower_burma_1824_1886	British Territories in Burma	Lower Burma	Q1937196	Q836	1824	1886-01-01	South Asia	Crown Colony			
 lower_canada_1791_1841	Lower Canada	Lower Canada	Q1134180	Q16	1791	1841-01-01	North America	Crown Colony			
-lunavada	Lunavada		Q2240915				South Asia	Princely State		india	
-lunavada_state_1434_1948	Lunavada State		Q18127558				South Asia	Princely State		india	[POSSIBLE_FILE_DUPLICATE] Sister row 'lunavada' (Q2240915) also maps to Lunavada princely state. Pending Pass D human review to decide merge or keep both.
+lunavada_state_1434_1948	Lunavada State		Q18127558				South Asia	Princely State		india	
 madanpur_state	Madanpur State		Q11934520				South Asia	Princely State		india	
 madras_presidency_company_1640_1858	Madras Presidency (Company)	Madras Presidency (Company)	Q1772596	Q668	1640	1858-11-01	South Asia	Presidency			[QID_REUSED_TOO_BROAD] Q1772596 covers full Madras Presidency 1652-1950 (both Company rule 1640-1858 AND Crown rule 1858-1947); same QID assigned to madras_presidency_crown_1858_1947 (row 388); WD has only one entity for both phases - same pattern as Bengal/Bombay Presidency
 madras_presidency_crown_1858_1947	Madras Presidency (Crown)	Madras Presidency (Crown)	Q1772596	Q668	1858	1947-08-15	South Asia	Presidency			[QID_REUSED] Q1772596 also assigned to madras_presidency_company_1640_1858 (row 387); this row's 1858-1947 Crown period and earlier Company period both map to single WD entity
@@ -410,7 +407,6 @@ mangal_state	Mangal State		Q3285692				South Asia	Princely State		india
 manipur_state_1110_1949	Manipur State		Q889030				South Asia	Princely State	Imphal	india	
 manra_sydney_island_1860_1979	Manra (Sydney Island)	Manra (Sydney Island)	Q48478	Q710	1860	1979-07-12	Pacific (Guano/Whaling)	Guano Island			
 mansa_state	Mansa State		Q17619012				South Asia	Princely State		india	
-marwar	Marwar		Q1419618				South Asia	Princely State		india	[POSSIBLE_FILE_DUPLICATE] Sister row 'jodhpur_state_1226_1949' (Q6207845) maps to Kingdom of Marwar (the polity); this row is the region. Pending Pass D human review.
 maryland_colony_1634_1783	Maryland Colony	Maryland Colony	Q2452027	Q30	1634	1783-09-03	North America	Proprietary Colony			
 massachusetts_bay_colony_1630_1783	Massachusetts Bay Colony	Massachusetts Bay Colony	Q1191350	Q30	1630	1783-09-03	North America	Charter Colony			[DATE_RANGE_MISMATCH] Q1191350 is correct entity (English possession 1628-1684) but Wikidata dissolved date is 1684 (with second value 1691) not 1783; in 1691 colony became Province of Massachusetts Bay (separate entity); file row's 1630-1783 conflates colony and province periods
 maurha_state_1894_1949	Maurha State		Q104151601				South Asia	Princely State	Maurha	india	
@@ -528,7 +524,6 @@ pratapgarh_state_1775_1949	Pratapgarh State		Q175934				South Asia	Princely Stat
 prempur	Prempur		Q11942666				South Asia	Princely State		india	
 prince_edward_island_1769_1873	Prince Edward Island	Prince Edward Island	Q1978	Q16	1769	1873-01-01	North America	Crown Colony			Q1978 also assigned to prince_edward_island_province_1873; WD entity covers PEI continuously (colony 1769-1873 + province 1873-onwards). File row tracks the colony sub-period.
 prince_edward_island_province_1873		Prince Edward Island (Province)	Q1978		1873		North America	Province			[QID_REUSED] Q1978 also assigned to prince_edward_island_1769_1873; WD entity covers PEI continuously (colony 1769-1873 + province 1873-onwards).
-princely_states_placeholder_1818_1947	Princely States (placeholder)	Princely States (placeholder)	Q1336152				South Asia	Princely State			[PLACEHOLDER_NOT_ENTITY] Q1336152 is the CLASS 'princely state' (instance-of type), not a specific entity. File row is a meta/aggregate placeholder; pending Pass D human review (likely deletion).
 province_of_canada_1841_1867	Province of Canada	Province of Canada	Q1121436	Q16	1841	1867-07-01	North America	United Province			
 province_of_freedom_1787_1792	Province of Freedom	Province of Freedom	Q3483448	Q1044	1787	1792-01-01	West Africa	Settlement			Q3483448 is the Sierra Leone Company (also assigned to sierra_leone_company_settlement_1792_1808); the Province of Freedom 1787-1792 was its early-period predecessor administration.
 province_of_quebec_british_1763_1791	Province of Quebec (British)	Province of Quebec (British)	Q251668	Q16	1763	1791-12-26	North America	Crown Colony			
@@ -699,8 +694,8 @@ tristan_da_cunha_1816_ongoing	Tristan da Cunha	Tristan da Cunha	Q220982	Q192184	
 trucial_states_1820_1971	Trucial States	Trucial States	Q1852345	Q878	1820	1971-12-02	Middle East	Protectorate			
 tulsipur_state_1600_1859	Tulsipur State		Q5915498				South Asia	Princely State		india	
 turks_and_caicos_islands_1799_ongoing	Turks and Caicos Islands	Turks and Caicos Islands	Q18221	Q18221	1799		Caribbean	Crown Colony			Q18221 is the modern British Overseas Territory; file row's 1799 start date predates the WD entity's effective inception.
-udaipur_state	Udaipur State		Q130642141				South Asia	Princely State	Udaipur	india	
-udaipur_state_1818_1948	Udaipur State		Q1457519				South Asia	Princely State		india	[POSSIBLE_FILE_DUPLICATE] Sister row 'udaipur_state' (Q130642141) also maps to Udaipur State. Pending Pass D human review to decide merge or keep both.
+udaipur_state	Udaipur State	Udaipur State (Mewar)	Q130642141				South Asia	Princely State	Udaipur	india	Q130642141 is Udaipur State in the Kingdom of Mewar (Rajasthan); distinct from the same-named udaipur_state_1818_1948 row which is the unrelated Udaipur State in Chhattisgarh.
+udaipur_state_1818_1948	Udaipur State	Udaipur State (Chhattisgarh)	Q1457519				South Asia	Princely State		india	Q1457519 is Udaipur State in Chhattisgarh (1818-1948); distinct from the same-named udaipur_state row which is the unrelated Udaipur State in the Kingdom of Mewar (Rajasthan).
 uganda_1894_1962	Uganda	Uganda	Q1097943	Q1036	1894	1962-01-01	East Africa	Protectorate			
 umari_state	Umari State		Q11953931				South Asia	Princely State		india	
 umri_1000_1948	Umri		Q11953949				South Asia	Princely State		india	

@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
-"""Sync data/britishempire_kg_export.cypher with corrected data/qid_manifest.tsv.
+"""Sync data/britishempire_kg_export.cypher with data/qid_manifest.tsv.
 
-For each MERGE block in the Cypher file, look up the colony_id in the TSV and:
-  1. Update wikidata_id if it differs (Pass A/B/C QID swaps).
-  2. Update successor_dominion if it differs (Pass A2 india→pakistan).
-  3. Inject qid_scope_note property if the TSV row has one (Pass E).
-  4. Rename colony_id 'sind_province_1843_1947' → 'sind_division_bombay_1843_1936'
-     (and apply its other field updates).
-  5. Append a new MERGE block for the new sind_province_1936_1947 row.
+This is a full bidirectional reconciliation:
+  - DELETE Cypher MERGE blocks whose colony_id is not in the TSV
+    (e.g. Pass D row deletions).
+  - UPDATE wikidata_id, successor_dominion, canonical_name, name on each
+    Cypher block to match the TSV.
+  - UPDATE qid_scope_note: add if non-empty and missing, replace if content
+    differs, remove if TSV now has empty note.
+  - APPEND new MERGE blocks for TSV rows not yet in Cypher
+    (e.g. sind_province_1936_1947).
+
+Renames (old colony_id → new colony_id) are applied first so block lookup
+can use the post-rename id.
 """
 from __future__ import annotations
 
@@ -22,13 +27,29 @@ CYPHER = REPO / "data" / "britishempire_kg_export.cypher"
 
 MERGE_RE = re.compile(r"^MERGE \(c:[^)]*\{colony_id:\s*'([^']+)'\}\)")
 
-# Old colony_id (in current Cypher) → new colony_id (in updated TSV)
+# Old colony_id (in current Cypher) → new colony_id (in updated TSV).
+# Applied to the Cypher file BEFORE block-by-block reconciliation, so the
+# downstream lookup uses the post-rename id.
 RENAMES = {
     "sind_province_1843_1947": "sind_division_bombay_1843_1936",
 }
 
+# Explicit set of colony_ids to delete from Cypher. Use this for Pass D
+# row removals. Blocks not in TSV but not in this set are KEPT as-is —
+# the Cypher includes Cypher-only territory blocks that lack a wikidata_id
+# (e.g. java_british_occupation_1811_1816) and shouldn't be auto-deleted.
+DELETIONS = {
+    "dedhrota",
+    "khaniyadhana",
+    "lunavada",
+    "marwar",
+    "princely_states_placeholder_1818_1947",
+}
+
+# Fields we keep in sync from TSV → Cypher per block.
+SYNC_FIELDS = ["wikidata_id", "successor_dominion", "canonical_name", "name"]
+
 def load_tsv() -> dict[str, dict[str, str]]:
-    """Return {colony_id: {wikidata_id, successor_dominion, qid_scope_note, ...}}."""
     out: dict[str, dict[str, str]] = {}
     with TSV.open("r", encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f, delimiter="\t")
@@ -37,94 +58,140 @@ def load_tsv() -> dict[str, dict[str, str]]:
     return out
 
 def cypher_escape(s: str) -> str:
-    """Escape single quotes for Cypher string literal."""
     return s.replace("\\", "\\\\").replace("'", "\\'")
 
-def update_block(block: str, target_cid: str, tsv: dict[str, dict[str, str]]) -> str:
-    """Apply TSV-driven updates to one MERGE block string."""
-    # Determine target row
-    if target_cid in tsv:
-        row = tsv[target_cid]
-    else:
-        return block  # no TSV row found; leave block unchanged
-
-    new_qid = row["wikidata_id"]
-    new_succ = row["successor_dominion"]
-    new_note = row.get("qid_scope_note", "")
-
-    # 1. Update wikidata_id line
-    block = re.sub(
-        r"(wikidata_id:\s*)'[^']*'",
-        lambda m: f"{m.group(1)}'{new_qid}'" if new_qid else m.group(0),
-        block,
-        count=1,
-    )
-
-    # 2. Update successor_dominion line (only if it exists in current block AND TSV value differs)
-    if "successor_dominion:" in block:
-        if new_succ:
-            block = re.sub(
-                r"(successor_dominion:\s*)'[^']*'",
-                lambda m: f"{m.group(1)}'{cypher_escape(new_succ)}'",
-                block,
-                count=1,
-            )
-
-    # 3. Inject qid_scope_note property if non-empty and not already present
-    if new_note and "qid_scope_note:" not in block:
-        # Insert before the closing '};' line, alphabetically positioned
-        # (the SET block keys are alphabetical). Insert just before 'region:' or
-        # at end of property list — simplest: insert just before the closing brace.
-        # Using a careful regex: locate the last property line before "};" or "}".
-        escaped = cypher_escape(new_note)
-        # Find the line immediately before the closing brace.
-        lines = block.split("\n")
-        # Find closing brace line (looks like "};" possibly with whitespace)
-        brace_idx = None
-        for i in range(len(lines) - 1, -1, -1):
-            if re.match(r"^\s*\}\s*;?\s*$", lines[i]):
-                brace_idx = i
-                break
-        if brace_idx is not None and brace_idx > 0:
-            # Add comma to the line before, then insert our line
-            prev = lines[brace_idx - 1]
-            if not prev.rstrip().endswith(","):
-                lines[brace_idx - 1] = prev.rstrip() + ","
-            lines.insert(brace_idx, f"  qid_scope_note: '{escaped}'")
-            block = "\n".join(lines)
-
+def update_field(block: str, field: str, new_value: str) -> str:
+    """Replace `field: '...'` with `field: 'new_value'` in block (first occurrence)."""
+    if not new_value:
+        # TSV value empty: leave any existing Cypher value as-is. Cypher may have
+        # historical info the TSV doesn't track (e.g. some rows have empty
+        # canonical_name in TSV but populated name in Cypher).
+        return block
+    pattern = re.compile(rf"({re.escape(field)}:\s*)'[^']*'")
+    if pattern.search(block):
+        return pattern.sub(lambda m: f"{m.group(1)}'{cypher_escape(new_value)}'", block, count=1)
     return block
+
+def sync_scope_note(block: str, note: str) -> str:
+    """Add / update / remove qid_scope_note property to match TSV.
+
+    Implemented by removing the existing qid_scope_note line entirely (more
+    robust than regex-replacing the value, which fails on Cypher-escaped
+    quotes like \\'), then re-inserting the new note if non-empty.
+    """
+    lines = block.split("\n")
+    # Strip any existing qid_scope_note line(s).
+    cleaned_lines = [ln for ln in lines if "qid_scope_note:" not in ln]
+    # If we removed a line, the line before may now have a trailing comma
+    # that needs to stay valid Cypher. Cypher does NOT allow trailing commas
+    # in property maps, so trim a trailing comma if the next non-stripped
+    # line is the closing brace.
+    for i in range(len(cleaned_lines) - 1):
+        nxt = cleaned_lines[i + 1].strip()
+        if nxt.startswith("}"):
+            # Previous line ends the property list; trim trailing comma.
+            cleaned_lines[i] = re.sub(r",\s*$", "", cleaned_lines[i])
+
+    if not note.strip():
+        return "\n".join(cleaned_lines)
+
+    # Insert new note as last property before the closing brace.
+    escaped = cypher_escape(note)
+    brace_idx = None
+    for i in range(len(cleaned_lines) - 1, -1, -1):
+        if re.match(r"^\s*\}\s*;?\s*$", cleaned_lines[i]):
+            brace_idx = i
+            break
+    if brace_idx is not None and brace_idx > 0:
+        prev = cleaned_lines[brace_idx - 1]
+        if not prev.rstrip().endswith(","):
+            cleaned_lines[brace_idx - 1] = prev.rstrip() + ","
+        cleaned_lines.insert(brace_idx, f"  qid_scope_note: '{escaped}'")
+    return "\n".join(cleaned_lines)
+
+def update_block(block: str, cid: str, tsv: dict[str, dict[str, str]]) -> str:
+    row = tsv[cid]
+    for field in SYNC_FIELDS:
+        block = update_field(block, field, row.get(field, ""))
+    # Also sync canonical_name → Cypher's `name` field where the TSV
+    # canonical_name disambiguates (e.g. Udaipur State (Mewar)) and the
+    # Cypher's name field is the un-disambiguated form.
+    canon = row.get("canonical_name", "").strip()
+    if canon and "(" in canon:
+        # Disambiguation hint present in canonical_name; mirror to `name`.
+        block = update_field(block, "name", canon)
+    return sync_scope_note(block, row.get("qid_scope_note", ""))
+
+def render_new_block(row: dict[str, str], label_suffix: str = "Province") -> str:
+    """Render a new MERGE block for a row that doesn't exist in Cypher yet."""
+    cid = row["colony_id"]
+    lines = [
+        "",
+        f"MERGE (c:HistoricalTerritory:{label_suffix} {{colony_id: '{cid}'}})",
+        "SET c += {",
+    ]
+    # Required-ish fields
+    fields_to_include = [
+        ("canonical_name", row["canonical_name"]),
+        ("capital", row["capital"]),
+        ("colony_id", cid),
+        ("colony_type", row["colony_type"]),
+        ("end_date", row["end_date"]),
+        ("modern_nation_qids", row["modern_nation_qids"]),
+        ("region", row["region"]),
+        ("successor_dominion", row["successor_dominion"]),
+        ("qid_scope_note", row["qid_scope_note"]),
+    ]
+    props = []
+    for k, v in fields_to_include:
+        v = (v or "").strip()
+        if not v:
+            continue
+        if k == "modern_nation_qids":
+            # Render as list literal
+            props.append(f"  {k}: ['{cypher_escape(v)}']")
+        else:
+            props.append(f"  {k}: '{cypher_escape(v)}'")
+    # established_year is integer
+    if row.get("established_year"):
+        props.append(f"  established_year: {row['established_year']}")
+    # wikidata_id last (matches existing style)
+    if row["wikidata_id"]:
+        props.append(f"  wikidata_id: '{row['wikidata_id']}'")
+    # Add commas (all but last)
+    for i in range(len(props) - 1):
+        props[i] = props[i] + ","
+    lines.extend(props)
+    lines.append("};")
+    return "\n".join(lines)
 
 def main() -> int:
     tsv = load_tsv()
     cypher_text = CYPHER.read_text(encoding="utf-8")
 
-    # Apply renames in MERGE-line and inside-block colony_id property
+    # Apply renames
     for old, new in RENAMES.items():
-        # Replace MERGE line colony_id
         cypher_text = re.sub(
             rf"(MERGE \(c:[^)]*\{{colony_id:\s*)'{re.escape(old)}'(\}}\))",
             rf"\1'{new}'\2",
             cypher_text,
         )
-        # Replace inside-SET colony_id property
         cypher_text = cypher_text.replace(
             f"colony_id: '{old}'", f"colony_id: '{new}'"
         )
 
-    # Now process block-by-block
-    # A territory MERGE block ends at the first line starting with "};"
-    # Strategy: split on lines, walk forward, accumulate blocks
+    # Walk block-by-block
     out_lines: list[str] = []
     lines = cypher_text.split("\n")
+    cypher_block_cids: set[str] = set()
     i = 0
-    blocks_processed = 0
+    blocks_kept = 0
+    blocks_deleted = 0
     while i < len(lines):
         line = lines[i]
         m = MERGE_RE.match(line)
         if m:
             cid = m.group(1)
-            # Collect block until a line == "};" (with trailing whitespace tolerated)
             block_lines = [line]
             i += 1
             while i < len(lines):
@@ -134,40 +201,34 @@ def main() -> int:
                     break
                 i += 1
             block = "\n".join(block_lines)
-            new_block = update_block(block, cid, tsv)
-            out_lines.append(new_block)
-            blocks_processed += 1
+            if cid in DELETIONS:
+                # Explicit Pass D deletion.
+                blocks_deleted += 1
+            elif cid in tsv:
+                new_block = update_block(block, cid, tsv)
+                out_lines.append(new_block)
+                cypher_block_cids.add(cid)
+                blocks_kept += 1
+            else:
+                # Cypher-only block without a TSV row (e.g. territories
+                # without a wikidata_id). Keep unchanged.
+                out_lines.append(block)
+                blocks_kept += 1
         else:
             out_lines.append(line)
             i += 1
 
-    print(f"Processed {blocks_processed} MERGE blocks", file=sys.stderr)
+    print(f"Blocks kept/updated: {blocks_kept}, deleted: {blocks_deleted}", file=sys.stderr)
 
-    # Append new MERGE block for sind_province_1936_1947
-    sind_new_cid = "sind_province_1936_1947"
-    if sind_new_cid in tsv and f"colony_id: '{sind_new_cid}'" not in cypher_text:
-        row = tsv[sind_new_cid]
-        scope_note = row.get("qid_scope_note", "")
-        new_block_lines = [
-            "",
-            f"MERGE (c:HistoricalTerritory:Province {{colony_id: '{sind_new_cid}'}})",
-            "SET c += {",
-            f"  canonical_name: '{cypher_escape(row['canonical_name'])}',",
-            f"  capital: '{cypher_escape(row['capital'])}',",
-            f"  colony_id: '{sind_new_cid}',",
-            f"  colony_type: '{cypher_escape(row['colony_type'])}',",
-            f"  end_date: '{cypher_escape(row['end_date'])}',",
-            f"  established_year: {row['established_year']},",
-            f"  modern_nation_qids: ['{cypher_escape(row['modern_nation_qids'])}'],",
-            f"  region: '{cypher_escape(row['region'])}',",
-            f"  successor_dominion: '{cypher_escape(row['successor_dominion'])}',",
-        ]
-        if scope_note:
-            new_block_lines.append(f"  qid_scope_note: '{cypher_escape(scope_note)}',")
-        new_block_lines.append(f"  wikidata_id: '{row['wikidata_id']}'")
-        new_block_lines.append("};")
-        out_lines.extend(new_block_lines)
-        print(f"Appended new MERGE block for {sind_new_cid}", file=sys.stderr)
+    # Append any TSV rows that aren't in the Cypher yet
+    missing_in_cypher = [
+        cid for cid in tsv
+        if cid not in cypher_block_cids
+    ]
+    for cid in missing_in_cypher:
+        new_block = render_new_block(tsv[cid])
+        out_lines.append(new_block)
+        print(f"Appended new MERGE block for {cid}", file=sys.stderr)
 
     CYPHER.write_text("\n".join(out_lines), encoding="utf-8")
     return 0

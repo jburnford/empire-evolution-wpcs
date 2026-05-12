@@ -15,7 +15,7 @@ CREATE CONSTRAINT territory_id_unique IF NOT EXISTS FOR (n:HistoricalTerritory) 
 MERGE (c:HistoricalTerritory:Colony {colony_id: 'acadia_french_1604_1713'})
 SET c += {
   administrative_status: 'Colonial Territory',
-  canonical_name: 'Acadia',
+  canonical_name: 'Acadia (French)',
   colony_id: 'acadia_french_1604_1713',
   colony_type: 'Colonial Territory',
   comments: 'French colony in Maritime provinces, ceded to Britain 1713. End date: Treaty of Utrecht 1713.',
@@ -2371,7 +2371,7 @@ SET c += {
 MERGE (c:HistoricalTerritory:Dominion:Colony {colony_id: 'canada_dominion_of_1867_ongoing'})
 SET c += {
   administrative_status: 'Dominion',
-  canonical_name: 'Dominion of Canada',
+  canonical_name: 'Canada, Dominion of',
   colony_id: 'canada_dominion_of_1867_ongoing',
   colony_type: 'Dominion',
   comments: 'Formed by federation of Canada, New Brunswick, Nova Scotia provinces',
@@ -3298,16 +3298,6 @@ SET c += {
   qid_scope_note: 'Modern_nation_qids field uses Q35086 (South Georgia & Sandwich BOT) but Deception Island is in the South Shetlands (part of British Antarctic Territory Q165783); minor data-quality variance.'
 };
 
-MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'dedhrota'})
-SET c += {
-  colony_id: 'dedhrota',
-  colony_type: 'Princely State',
-  name: 'Dedhrota',
-  region: 'South Asia',
-  source: 'wikidata_sparql_Q1336152',
-  successor_dominion: 'india',
-  wikidata_id: 'Q131126101'
-};
 
 MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'dedhrota_1900_1947'})
 SET c += {
@@ -3319,8 +3309,7 @@ SET c += {
   region: 'South Asia',
   source: 'wikidata_sparql_Q1336152',
   successor_dominion: 'india',
-  wikidata_id: 'Q11916768',
-  qid_scope_note: '[POSSIBLE_FILE_DUPLICATE] Sister row \'dedhrota\' (Q131126101) also maps to a \'Dedhrota princely state\' entity in WD. Pending Pass D human review to decide merge or keep both.'
+  wikidata_id: 'Q11916768'
 };
 
 MERGE (c:HistoricalTerritory:Colony {colony_id: 'delaware_colony_1664_1783'})
@@ -4031,7 +4020,7 @@ SET c += {
 MERGE (c:HistoricalTerritory:Federation:Colony {colony_id: 'federal_colony_leeward_islands_1833-1960'})
 SET c += {
   administrative_status: 'Federal Colony',
-  canonical_name: 'British Leeward Islands',
+  canonical_name: 'Federal Colony of the Leeward Islands',
   colony_id: 'federal_colony_leeward_islands_1833-1960',
   comments: 'Re-established federal colony that administered various British islands until its dissolution in 1960.',
   end_date: '1960-01-01',
@@ -4835,7 +4824,7 @@ SET c += {
 MERGE (c:HistoricalTerritory:Colony {colony_id: 'ile_royale_1713_1763'})
 SET c += {
   administrative_status: 'Colonial Territory',
-  canonical_name: 'Île Royale',
+  canonical_name: 'Île Royale (French)',
   colony_id: 'ile_royale_1713_1763',
   colony_type: 'Colonial Territory',
   comments: 'French colony on Cape Breton Island, site of Fortress Louisbourg',
@@ -5867,17 +5856,6 @@ SET c += {
   wikidata_id: 'Q16852121'
 };
 
-MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'khaniyadhana'})
-SET c += {
-  colony_id: 'khaniyadhana',
-  colony_type: 'Princely State',
-  name: 'Khaniyadhana',
-  region: 'South Asia',
-  source: 'wikidata_sparql_Q1336152',
-  successor_dominion: 'india',
-  wikidata_id: 'Q2120351',
-  qid_scope_note: '[POSSIBLE_FILE_DUPLICATE] Sister row \'khaniadhana_state_1724_1948\' (Q16852121) also maps to Khaniadhana princely state. Spelling variant of same place. Pending Pass D human review.'
-};
 
 MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'kharagpur_state'})
 SET c += {
@@ -6308,7 +6286,7 @@ SET c += {
 MERGE (c:HistoricalTerritory:Protectorate:Colony {colony_id: 'lagos_protectorate_1887_1906'})
 SET c += {
   administrative_status: 'Protectorate',
-  canonical_name: 'Lagos Colony',
+  canonical_name: 'Lagos Protectorate',
   colony_id: 'lagos_protectorate_1887_1906',
   colony_type: 'Protectorate',
   comments: 'Governed from Lagos Colony, incorporated into Southern Nigeria',
@@ -6399,7 +6377,7 @@ SET c += {
 MERGE (c:HistoricalTerritory:Federation:Colony {colony_id: 'leeward_islands_colony_1671_1816'})
 SET c += {
   administrative_status: 'Federal Colony',
-  canonical_name: 'Leeward Islands Colony',
+  canonical_name: 'Leeward Islands Colony (1671-1816)',
   colony_id: 'leeward_islands_colony_1671_1816',
   colony_type: 'Federal Colony',
   comments: 'The first British federal colony in the Leeward Islands, which was dissolved in 1816.',
@@ -6506,7 +6484,7 @@ SET c += {
 MERGE (c:HistoricalTerritory:CrownColony:Colony {colony_id: 'lower_burma_1824_1886'})
 SET c += {
   administrative_status: 'Crown Colony',
-  canonical_name: 'Lower Burma',
+  canonical_name: 'British Territories in Burma',
   colony_id: 'lower_burma_1824_1886',
   colony_type: 'Crown Colony',
   comments: 'Territories in Lower Burma annexed by Britain after the First and Second Anglo-Burmese Wars, administered as part of British India.',
@@ -6553,16 +6531,6 @@ SET c += {
   wikidata_id: 'Q1134180'
 };
 
-MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'lunavada'})
-SET c += {
-  colony_id: 'lunavada',
-  colony_type: 'Princely State',
-  name: 'Lunavada',
-  region: 'South Asia',
-  source: 'wikidata_sparql_Q1336152',
-  successor_dominion: 'india',
-  wikidata_id: 'Q2240915'
-};
 
 MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'lunavada_state_1434_1948'})
 SET c += {
@@ -6574,8 +6542,7 @@ SET c += {
   region: 'South Asia',
   source: 'wikidata_sparql_Q1336152',
   successor_dominion: 'india',
-  wikidata_id: 'Q18127558',
-  qid_scope_note: '[POSSIBLE_FILE_DUPLICATE] Sister row \'lunavada\' (Q2240915) also maps to Lunavada princely state. Pending Pass D human review to decide merge or keep both.'
+  wikidata_id: 'Q18127558'
 };
 
 MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'madanpur_state'})
@@ -7046,17 +7013,6 @@ SET c += {
   wikidata_id: 'Q17619012'
 };
 
-MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'marwar'})
-SET c += {
-  colony_id: 'marwar',
-  colony_type: 'Princely State',
-  name: 'Marwar',
-  region: 'South Asia',
-  source: 'wikidata_sparql_Q1336152',
-  successor_dominion: 'india',
-  wikidata_id: 'Q1419618',
-  qid_scope_note: '[POSSIBLE_FILE_DUPLICATE] Sister row \'jodhpur_state_1226_1949\' (Q6207845) maps to Kingdom of Marwar (the polity); this row is the region. Pending Pass D human review.'
-};
 
 MERGE (c:HistoricalTerritory:Colony {colony_id: 'maryland_colony_1634_1783'})
 SET c += {
@@ -7884,7 +7840,7 @@ SET c += {
 MERGE (c:HistoricalTerritory:Colony {colony_id: 'new_south_wales_original_1788_1901'})
 SET c += {
   administrative_status: 'Penal Colony',
-  canonical_name: 'New South Wales',
+  canonical_name: 'New South Wales (Original)',
   colony_id: 'new_south_wales_original_1788_1901',
   colony_type: 'Penal Colony',
   comments: 'Original colony covering most of eastern Australia, gradually subdivided',
@@ -8357,7 +8313,7 @@ SET c += {
 
 MERGE (c:HistoricalTerritory:Federation:Colony {colony_id: 'nyasaland_post_federation_1963'})
 SET c += {
-  canonical_name: 'Nyasaland',
+  canonical_name: 'Nyasaland (Post-Federation)',
   colony_id: 'nyasaland_post_federation_1963',
   colony_type: 'Transitional',
   comments: 'Brief return to colonial status after Federation dissolution',
@@ -9114,20 +9070,6 @@ SET c += {
   qid_scope_note: '[QID_REUSED] Q1978 also assigned to prince_edward_island_1769_1873; WD entity covers PEI continuously (colony 1769-1873 + province 1873-onwards).'
 };
 
-MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'princely_states_placeholder_1818_1947'})
-SET c += {
-  canonical_name: 'Princely States (placeholder)',
-  colony_id: 'princely_states_placeholder_1818_1947',
-  colony_type: 'Princely State',
-  dynasty_founded: 1818,
-  independence_year: 1947,
-  name: 'Princely States (placeholder)',
-  region: 'South Asia',
-  source: 'manual_placeholder',
-  type: 'Princely State',
-  wikidata_id: 'Q1336152',
-  qid_scope_note: '[PLACEHOLDER_NOT_ENTITY] Q1336152 is the CLASS \'princely state\' (instance-of type), not a specific entity. File row is a meta/aggregate placeholder; pending Pass D human review (likely deletion).'
-};
 
 MERGE (c:HistoricalTerritory:Province:Colony {colony_id: 'province_of_canada_1841_1867'})
 SET c += {
@@ -9975,7 +9917,7 @@ SET c += {
 MERGE (c:HistoricalTerritory:Colony {colony_id: 'ruperts_land_1670_1870'})
 SET c += {
   administrative_status: 'Hudson\'s Bay Company Territory',
-  canonical_name: 'Rupert\'s Land',
+  canonical_name: 'Rupert\\\'s Land's Land's Land',
   colony_id: 'ruperts_land_1670_1870',
   colony_type: 'Hudson\'s Bay Company Territory',
   comments: 'Vast HBC territory, sold to Canada 1870, became Manitoba and Northwest Territories',
@@ -10040,7 +9982,7 @@ SET c += {
 MERGE (c:HistoricalTerritory:CrownColony:Colony {colony_id: 'saint_christopher_nevis_anguilla_1958_1983'})
 SET c += {
   administrative_status: 'Crown Colony',
-  canonical_name: 'Saint Kitts and Nevis Colony',
+  canonical_name: 'Saint Christopher-Nevis-Anguilla',
   colony_id: 'saint_christopher_nevis_anguilla_1958_1983',
   colony_type: 'Crown Colony',
   comments: 'First British settlement in Caribbean, mother colony of West Indies',
@@ -10411,7 +10353,7 @@ SET c += {
 MERGE (c:HistoricalTerritory:Colony {colony_id: 'settlement_of_belize_1798_1862'})
 SET c += {
   administrative_status: 'Supervised Settlement',
-  canonical_name: 'English settlement of Belize',
+  canonical_name: 'Settlement of Belize',
   colony_id: 'settlement_of_belize_1798_1862',
   comments: 'De facto British territory secured after the Battle of St. George\'s Caye, administered by a superintendent under the Governor of Jamaica.',
   end_date: '1862-01-01',
@@ -11958,7 +11900,7 @@ SET c += {
 MERGE (c:HistoricalTerritory:CrownColony:Colony {colony_id: 'trinidad_and_tobago_1889_1962'})
 SET c += {
   administrative_status: 'Crown Colony',
-  canonical_name: 'Colony of Trinidad and Tobago',
+  canonical_name: 'Trinidad and Tobago',
   colony_id: 'trinidad_and_tobago_1889_1962',
   colony_type: 'Crown Colony',
   comments: 'Formed by amalgamation of Trinidad and Tobago',
@@ -11986,7 +11928,7 @@ SET c += {
 MERGE (c:HistoricalTerritory:CrownColony:Colony {colony_id: 'trinidad_and_tobago_colony_1797_1962'})
 SET c += {
   administrative_status: 'Crown Colony',
-  canonical_name: 'Trinidad Colony',
+  canonical_name: 'Trinidad and Tobago Colony',
   colony_id: 'trinidad_and_tobago_colony_1797_1962',
   colony_type: 'Crown Colony',
   comments: 'Trinidad captured from Spain 1797, Tobago added 1814',
@@ -12118,11 +12060,12 @@ SET c += {
   capital: 'Udaipur',
   colony_id: 'udaipur_state',
   colony_type: 'Princely State',
-  name: 'Udaipur State',
+  name: 'Udaipur State (Mewar)',
   region: 'South Asia',
   source: 'wikidata_sparql_Q1336152',
   successor_dominion: 'india',
-  wikidata_id: 'Q130642141'
+  wikidata_id: 'Q130642141',
+  qid_scope_note: 'Q130642141 is Udaipur State in the Kingdom of Mewar (Rajasthan); distinct from the same-named udaipur_state_1818_1948 row which is the unrelated Udaipur State in Chhattisgarh.'
 };
 
 MERGE (c:HistoricalTerritory:PrincelyState {colony_id: 'udaipur_state_1818_1948'})
@@ -12131,12 +12074,12 @@ SET c += {
   colony_type: 'Princely State',
   dynasty_founded: 1818,
   independence_year: 1948,
-  name: 'Udaipur State',
+  name: 'Udaipur State (Chhattisgarh)',
   region: 'South Asia',
   source: 'wikidata_sparql_Q1336152',
   successor_dominion: 'india',
   wikidata_id: 'Q1457519',
-  qid_scope_note: '[POSSIBLE_FILE_DUPLICATE] Sister row \'udaipur_state\' (Q130642141) also maps to Udaipur State. Pending Pass D human review to decide merge or keep both.'
+  qid_scope_note: 'Q1457519 is Udaipur State in Chhattisgarh (1818-1948); distinct from the same-named udaipur_state row which is the unrelated Udaipur State in the Kingdom of Mewar (Rajasthan).'
 };
 
 MERGE (c:HistoricalTerritory:Protectorate:Colony {colony_id: 'uganda_1894_1962'})
@@ -12417,7 +12360,7 @@ SET c += {
 MERGE (c:HistoricalTerritory:Colony {colony_id: 'van_diemens_land_1803_1856'})
 SET c += {
   administrative_status: 'Penal Colony',
-  canonical_name: 'Van Diemen\'s Land',
+  canonical_name: 'Van Diemen\\\'s Land's Land's Land',
   colony_id: 'van_diemens_land_1803_1856',
   colony_type: 'Penal Colony',
   comments: 'Separate colony from 1825, renamed to Tasmania 1856',
