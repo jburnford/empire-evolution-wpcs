@@ -3,86 +3,444 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>British Empire — Territorial Evolution</title>
+<title>The British Empire — Territorial Evolution</title>
 <script src="https://d3js.org/d3.v7.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a1a; color: #eee; overflow: hidden; display: flex; flex-direction: column; height: 100vh; }
-
-#header {
-  flex-shrink: 0;
-  background: rgba(10,10,26,0.95); backdrop-filter: blur(8px);
-  padding: 8px 20px; border-bottom: 1px solid rgba(255,255,255,0.1);
-  display: flex; justify-content: space-between; align-items: center;
+:root {
+  --paper:        #f6f2ea;    /* warm off-white background */
+  --paper-deep:   #efe9dd;    /* card / inset surfaces */
+  --rule:         #d9d0bd;    /* hairlines on paper */
+  --rule-soft:    #e6dfd0;
+  --ink:          #1c1a17;    /* primary text */
+  --ink-2:        #4a443c;    /* secondary text */
+  --ink-3:        #7a7264;    /* tertiary / labels */
+  --ink-4:        #a89e8c;    /* faint */
+  --event:        #8b3a2a;    /* event accent (terracotta-red) */
+  --event-band:   rgba(139, 58, 42, 0.06);
+  --highlight:    #b8814a;    /* warm highlight */
 }
-#header h1 { font-size: 16px; font-weight: 600; }
-.controls { display: flex; gap: 10px; align-items: center; font-size: 13px; }
-.controls select, .controls input { background: #1a1a2e; color: #eee; border: 1px solid #333; padding: 4px 8px; border-radius: 4px; font-size: 12px; }
-.controls button { background: #2c3e50; color: #eee; border: none; padding: 4px 12px; border-radius: 4px; cursor: pointer; font-size: 12px; }
-.controls button:hover { background: #3d566e; }
-.controls button.active { background: #4a90d9; }
 
-#panel-b { flex: 1; overflow: hidden; position: relative; }
-#sankey-chart { width: 100%; height: 100%; cursor: grab; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  overflow: hidden;
+  display: flex; flex-direction: column;
+  height: 100vh;
+  font-feature-settings: "ss01", "kern";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Editorial intro panel ───────────────────────────────── */
+#intro {
+  flex-shrink: 0;
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule);
+  padding: 22px 40px 18px;
+  position: relative;
+}
+#intro-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(280px, 1.4fr) minmax(260px, 1fr);
+  gap: 36px;
+  align-items: end;
+}
+.kicker {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--event);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.kicker::before {
+  content: "";
+  display: inline-block;
+  width: 18px; height: 1px;
+  background: var(--event);
+}
+h1.headline {
+  font-family: 'Newsreader', Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(28px, 3.2vw, 42px);
+  line-height: 1.04;
+  letter-spacing: -0.012em;
+  color: var(--ink);
+  text-wrap: balance;
+}
+h1.headline em {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--ink);
+}
+.dek {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: clamp(14.5px, 1.05vw, 16.5px);
+  line-height: 1.45;
+  color: var(--ink-2);
+  text-wrap: pretty;
+  max-width: 56ch;
+}
+.dek em { color: var(--ink); font-style: italic; }
+.caption-block {
+  border-left: 1px solid var(--rule);
+  padding-left: 22px;
+}
+.caption-title {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 9.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-bottom: 10px;
+}
+.howto {
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+.howto ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 5px; }
+.howto li { display: flex; gap: 8px; }
+.howto li::before {
+  content: "→";
+  color: var(--ink-4);
+  font-family: 'IBM Plex Mono', monospace;
+  flex-shrink: 0;
+  width: 12px;
+}
+.byline {
+  margin-top: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--ink-4);
+  text-transform: uppercase;
+}
+
+/* ── Controls bar ───────────────────────────────────────── */
+#controls-bar {
+  flex-shrink: 0;
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule);
+  padding: 9px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.controls { display: flex; gap: 16px; align-items: center; }
+.control-group {
+  display: flex; align-items: center; gap: 8px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.controls select, .controls input {
+  background: transparent;
+  color: var(--ink);
+  border: none;
+  border-bottom: 1px solid var(--rule);
+  padding: 4px 6px 4px 0;
+  font: inherit;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  min-width: 130px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.controls select:hover, .controls input:hover,
+.controls select:focus, .controls input:focus {
+  border-bottom-color: var(--ink);
+}
+.controls input::placeholder { color: var(--ink-4); font-style: italic; }
+.controls button {
+  background: transparent;
+  color: var(--ink-2);
+  border: 1px solid var(--rule);
+  padding: 5px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.15s;
+}
+.controls button:hover { border-color: var(--ink); color: var(--ink); }
+.controls button.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+.scale-hint {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--ink-4);
+  text-transform: uppercase;
+}
+
+/* ── Chart panel ────────────────────────────────────────── */
+#panel-b {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  background:
+    /* faint paper grain */
+    radial-gradient(circle at 20% 30%, rgba(0,0,0,0.012) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(0,0,0,0.012) 0%, transparent 50%),
+    var(--paper);
+}
+#sankey-chart { width: 100%; height: 100%; cursor: grab; display: block; }
 #sankey-chart:active { cursor: grabbing; }
 
+/* ── Tooltip ────────────────────────────────────────────── */
 #tooltip {
   position: fixed; pointer-events: none; z-index: 200;
-  background: rgba(20,20,40,0.95); border: 1px solid rgba(255,255,255,0.2);
-  border-radius: 6px; padding: 10px 14px; font-size: 13px;
-  max-width: 360px; display: none; backdrop-filter: blur(8px);
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  box-shadow: 0 8px 24px rgba(28, 26, 23, 0.10), 0 1px 2px rgba(28,26,23,0.06);
+  padding: 12px 16px 13px;
+  font-size: 12.5px;
+  max-width: 340px;
+  display: none;
+  color: var(--ink-2);
 }
-#tooltip .tt-name { font-weight: 600; font-size: 15px; margin-bottom: 4px; }
-#tooltip .tt-meta { color: #aaa; font-size: 12px; }
-#tooltip .tt-edges { margin-top: 6px; font-size: 11px; color: #88ccff; }
+#tooltip .tt-name {
+  font-family: 'Newsreader', Georgia, serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: var(--ink);
+  margin-bottom: 3px;
+  line-height: 1.15;
+  letter-spacing: -0.005em;
+}
+#tooltip .tt-meta {
+  color: var(--ink-3);
+  font-size: 11px;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.02em;
+  margin-bottom: 2px;
+}
+#tooltip .tt-meta a { color: var(--event); text-decoration: none; }
+#tooltip .tt-meta a:hover { text-decoration: underline; }
+#tooltip .tt-edges {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--rule-soft);
+  font-size: 11.5px;
+  color: var(--ink-2);
+  line-height: 1.45;
+}
+#tooltip .tt-edges:not(:first-of-type) { border-top: none; padding-top: 0; margin-top: 2px; }
+#tooltip .tt-edges b {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+  font-size: 9.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
 
+/* ── Legend ─────────────────────────────────────────────── */
 #legend {
-  position: fixed; bottom: 8px; left: 20px; z-index: 100;
-  background: rgba(10,10,26,0.9); padding: 6px 14px; border-radius: 6px;
-  border: 1px solid rgba(255,255,255,0.1); font-size: 11px;
-  display: flex; flex-wrap: wrap; gap: 2px 12px;
+  position: fixed; bottom: 14px; left: 40px; z-index: 100;
+  background: rgba(246, 242, 234, 0.94);
+  backdrop-filter: blur(6px);
+  padding: 8px 14px;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  font-size: 10.5px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  display: flex; flex-wrap: wrap;
+  gap: 3px 14px;
+  max-width: calc(100vw - 320px);
+  color: var(--ink-2);
 }
-.legend-item { display: inline-flex; align-items: center; }
-.legend-dot { width: 10px; height: 10px; border-radius: 50%; margin-right: 4px; flex-shrink: 0; }
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.legend-dot {
+  width: 9px; height: 9px; border-radius: 1px;
+  margin-right: 6px; flex-shrink: 0;
+}
 
-#info { position: fixed; bottom: 8px; right: 20px; z-index: 100; color: #555; font-size: 11px; }
+#info {
+  position: fixed; bottom: 16px; right: 40px; z-index: 100;
+  color: var(--ink-4);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-align: right;
+}
 
-/* Sankey bars and flows */
-.node-bar { opacity: 0.85; cursor: pointer; transition: opacity 0.15s; }
-.node-bar:hover { opacity: 1; filter: brightness(1.2); }
-.node-bar.postimperial { opacity: 0.7; stroke-width: 2; stroke-dasharray: 4,2; }
-.node-bar.nonbritish { opacity: 0.7; stroke-width: 2; stroke-dasharray: 6,3; }
-.node-bar.standalone { opacity: 0.5; }
-.node-bar.dim { opacity: 0.08; }
-.node-bar.bright { opacity: 1; filter: brightness(1.2); }
+/* ── Sankey bars and flows ──────────────────────────────── */
+.node-bar {
+  opacity: 0.92;
+  cursor: pointer;
+  transition: opacity 0.18s ease;
+  stroke: rgba(28, 26, 23, 0.18);
+  stroke-width: 0.5;
+}
+.node-bar:hover {
+  opacity: 1;
+  stroke: var(--ink);
+  stroke-width: 1;
+}
+.node-bar.postimperial {
+  opacity: 0.55;
+  stroke-width: 1;
+  stroke-dasharray: 3,2;
+}
+.node-bar.nonbritish {
+  opacity: 0.55;
+  stroke-width: 1;
+  stroke-dasharray: 5,3;
+}
+.node-bar.standalone { opacity: 0.6; }
+.node-bar.dim { opacity: 0.10; }
+.node-bar.bright { opacity: 1; stroke: var(--ink); stroke-width: 1; }
 
-.node-label { fill: #fff; font-size: 9px; pointer-events: none; transition: opacity 0.15s; text-shadow: 0 1px 2px rgba(0,0,0,0.7); }
-.node-label.standalone { fill: #ddd; font-size: 7px; }
-.node-label.dim { opacity: 0.06; }
-.node-label.bright { fill: #fff; }
+.node-label {
+  fill: var(--ink);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  pointer-events: none;
+  transition: opacity 0.18s ease;
+  paint-order: stroke;
+  stroke: rgba(246, 242, 234, 0.85);
+  stroke-width: 2.5px;
+  stroke-linejoin: round;
+}
+.node-label.standalone { fill: var(--ink-2); font-size: 7.5px; font-weight: 400; }
+.node-label.minor { opacity: 0; }
+svg.zoomed .node-label.minor { opacity: 1; }
+.node-label.dim { opacity: 0.08; }
+.node-label.bright { fill: var(--ink); opacity: 1; }
+svg.zoomed .node-label.minor.dim { opacity: 0.08; }
 
-.flow { opacity: 0.25; transition: opacity 0.15s; }
-.flow.dim { opacity: 0.03; }
-.flow.bright { opacity: 0.7; }
-.flow.gap-warning { stroke: #ff6644; stroke-width: 1; stroke-dasharray: 3,2; }
+.flow {
+  opacity: 0.32;
+  transition: opacity 0.18s ease;
+  mix-blend-mode: multiply;
+}
+.flow.dim { opacity: 0.05; }
+.flow.bright { opacity: 0.65; }
+.flow.gap-warning { stroke: var(--event); stroke-width: 0.8; stroke-dasharray: 3,2; }
 
-.timeline-line { stroke: rgba(255,255,255,0.05); stroke-width: 1; }
-.timeline-label { fill: rgba(255,255,255,0.2); font-size: 11px; text-anchor: middle; }
-.event-line { stroke: rgba(255,130,100,0.12); stroke-width: 1; stroke-dasharray: 6,4; }
-.event-label { fill: rgba(255,130,100,0.35); font-size: 9px; }
+/* Timeline grid */
+.timeline-line { stroke: rgba(28, 26, 23, 0.05); stroke-width: 1; }
+.timeline-line.decade { stroke: rgba(28, 26, 23, 0.035); }
+.timeline-line.century { stroke: rgba(28, 26, 23, 0.13); stroke-width: 1; }
+.timeline-label {
+  fill: var(--ink-3);
+  font-family: 'Newsreader', Georgia, serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: italic;
+  text-anchor: middle;
+  letter-spacing: -0.01em;
+}
+.timeline-label-decade {
+  fill: var(--ink-4);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  text-anchor: middle;
+  letter-spacing: 0.04em;
+}
+
+/* Major events — vertical bands */
+.event-band {
+  fill: var(--event-band);
+}
+.event-line {
+  stroke: var(--event);
+  stroke-width: 0.7;
+  opacity: 0.40;
+  stroke-dasharray: none;
+}
+.event-year {
+  fill: var(--event);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  paint-order: stroke;
+  stroke: var(--paper);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+.event-label {
+  fill: var(--event);
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 11.5px;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0;
+  paint-order: stroke;
+  stroke: var(--paper);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+
+/* Subtle focus mode when collapsed for narrow viewports */
+@media (max-height: 700px) {
+  #intro { padding: 14px 32px 12px; }
+  #intro-inner { gap: 24px; grid-template-columns: 1.5fr 1fr; }
+  h1.headline { font-size: clamp(22px, 2.6vw, 32px); }
+  .dek { font-size: 13.5px; }
+  .howto { font-size: 11px; }
+}
+@media (max-width: 880px) {
+  #intro-inner { grid-template-columns: 1fr; gap: 18px; }
+  .caption-block { border-left: none; padding-left: 0; border-top: 1px solid var(--rule); padding-top: 14px; }
+  #intro, #controls-bar { padding-left: 20px; padding-right: 20px; }
+  #legend, #info { left: 16px; right: 16px; }
+}
 </style>
 </head>
 <body>
 
-<div id="header">
-  <h1>The British Empire — Territorial Evolution</h1>
-  <div class="controls">
-    <label style="color:#999">Region:
-      <select id="filter-region"><option value="all">All Regions</option></select>
-    </label>
-    <label style="color:#999">Search: <input type="text" id="search" placeholder="colony name..."></label>
-    <button onclick="resetView()">Reset</button>
+<div id="intro">
+  <div id="intro-inner">
+    <div>
+      <div class="kicker">Atlas · 1580–1985</div>
+      <h1 class="headline">The British Empire,<br><em>as a river of time</em></h1>
+    </div>
+    <div>
+      <p class="dek">Four centuries of colonies, protectorates, mandates and successor states drawn as a single alluvial diagram. Each bar is one territorial entity; its <em>length</em> is its lifespan, its <em>colour</em> its region. Bars merge or split where one territory absorbed another, partitioned at independence, or evolved into a new sovereign state.</p>
+    </div>
   </div>
+</div>
+
+<div id="controls-bar">
+  <div class="controls">
+    <label class="control-group">Region
+      <select id="filter-region"><option value="all">All regions</option></select>
+    </label>
+    <label class="control-group">Find
+      <input type="text" id="search" placeholder="colony name…">
+    </label>
+    <button onclick="resetView()">Reset view</button>
+  </div>
+  <div class="scale-hint">Click a bar to follow its lineage · Scroll to zoom · Drag to pan</div>
 </div>
 
 <div id="panel-b">
@@ -91,24 +449,35 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 
 <div id="tooltip"></div>
 <div id="legend"></div>
-<div id="info">Scroll to zoom · Drag to pan · Click a colony to highlight lineage · Use Region dropdown to filter</div>
+<div id="info">Source · Wikidata · author's hand-curated knowledge graph</div>
 
 <script>
 // ── Configuration ──
+// Editorial ink-on-paper palette. Each region picks a distinct hue family
+// at low chroma so colours sit calmly on warm paper.
 const REGION_COLORS = {
-  'Africa': '#e6a832', 'Asia': '#e05252', 'Pacific': '#52b5e0',
-  'Caribbean': '#52e0a0', 'North America': '#b87be0',
-  'Europe': '#e0c552', 'Antarctica': '#8ecae6', 'Atlantic': '#4ea8a8',
-  'South America': '#2ecc71', 'Unknown': '#777',
-  // Africa sub-regions (variants of Africa gold)
-  'Southern Africa': '#e6a832', 'West Africa': '#d4943a',
-  'East Africa': '#c98030', 'Africa (Islands)': '#d4b060',
-  // Middle East (warm red-orange, between Africa gold and Asia red)
-  'Middle East': '#d46a3a',
-  // Asia sub-regions (variants of Asia red)
-  'South Asia': '#e05252', 'Southeast Asia': '#c94040',
+  'Africa':              'oklch(54% 0.10 70)',   // amber
+  'Asia':                'oklch(48% 0.13 22)',   // brick
+  'Pacific':             'oklch(58% 0.08 240)',  // washed sky
+  'Caribbean':           'oklch(56% 0.09 175)',  // dusty teal
+  'North America':       'oklch(50% 0.10 30)',   // dusty red
+  'Europe':              'oklch(48% 0.09 295)',  // plum
+  'Antarctica':          'oklch(72% 0.03 220)',  // ice grey
+  'Atlantic':            'oklch(54% 0.07 210)',  // slate
+  'South America':       'oklch(52% 0.10 150)',  // sage
+  'Unknown':             'oklch(62% 0    0)',    // neutral
+  // Africa sub-regions (golden/earth family)
+  'Southern Africa':     'oklch(45% 0.09 95)',   // olive-bronze
+  'West Africa':         'oklch(50% 0.12 50)',   // sienna
+  'East Africa':         'oklch(54% 0.09 115)',  // moss
+  'Africa (Islands)':    'oklch(63% 0.07 75)',   // sand
+  // Middle East — between Africa amber and Asia red
+  'Middle East':         'oklch(58% 0.11 60)',   // ochre/dijon
+  // Asia sub-regions (red family)
+  'South Asia':          'oklch(48% 0.13 22)',   // brick
+  'Southeast Asia':      'oklch(54% 0.11 5)',    // terracotta
   // Pacific sub-region
-  'Pacific (Guano/Whaling)': '#7ab8b0',
+  'Pacific (Guano/Whaling)': 'oklch(68% 0.04 235)',  // washed steel
 };
 const REGION_ORDER = ['North America','Caribbean','Atlantic','South America','Europe',
   'Middle East','Southern Africa','West Africa','East Africa','Africa (Islands)',
@@ -1135,7 +1504,7 @@ function buildSankey() {
   }
 
   // Layout: assign y positions
-  const MARGIN = { top: 50, right: 60, bottom: 40, left: 60 };
+  const MARGIN = { top: 88, right: 60, bottom: 40, left: 60 };
   // Natural content width independent of viewport — zoom-to-fit (below) scales it to the panel.
   const layoutWidth = Math.max(container.clientWidth, 1400);
   const xScale = d3.scaleLinear().domain([YEAR_MIN, YEAR_MAX]).range([MARGIN.left, layoutWidth - MARGIN.right]);
@@ -1259,37 +1628,89 @@ function buildSankey() {
   // Create drawing groups
   const g = svgEl.append('g');
   const zoom = d3.zoom().scaleExtent([0.15, 8])
-    .on('zoom', event => g.attr('transform', event.transform));
+    .on('zoom', event => {
+      g.attr('transform', event.transform);
+      // When zoomed in, reveal labels on smaller (minor) bars
+      svgEl.classed('zoomed', event.transform.k > 1.25);
+    });
   svgEl.call(zoom);
 
-  // Grid lines
+  // ── Timeline grid (light editorial style) ──
   d3.range(1600, YEAR_MAX, 10).forEach(d => {
-    g.append('line').attr('class', 'timeline-line')
+    const cls = d % 100 === 0 ? 'timeline-line century' : 'timeline-line decade';
+    g.append('line').attr('class', cls)
       .attr('x1', xScale(d)).attr('x2', xScale(d))
-      .attr('y1', MARGIN.top - 20).attr('y2', totalHeight);
+      .attr('y1', MARGIN.top - 6).attr('y2', totalHeight - 8);
   });
   d3.range(1600, 2100, 100).forEach(c => {
     g.append('text').attr('class', 'timeline-label')
-      .attr('x', xScale(c)).attr('y', MARGIN.top - 25).text(c);
+      .attr('x', xScale(c)).attr('y', MARGIN.top - 30).text(c);
   });
 
-  // Event lines
-  EVENTS.forEach(ev => {
+  // ── Major events — vertical bands with year + label, stacked above chart ──
+  // Short labels to keep header band compact; full names live in EVENTS_FULL for tooltip later.
+  const EVENT_LABELS = {
+    1776: 'American Indep.',
+    1834: 'Slavery Abolition',
+    1857: 'Indian Rebellion',
+    1914: 'WWI',
+    1939: 'WWII',
+    1947: 'Indian Indep.',
+    1960: 'Year of Africa',
+  };
+  // Estimate label width (chars × ~5.5 px at 11px font)
+  function estW(ev) { return (EVENT_LABELS[ev.year] || ev.label).length * 5.8 + 26; }
+  // Stack labels: assign each event to a vertical row that doesn't collide with prior events at that row
+  const placed = []; // {row, x0, x1}
+  const eventRow = EVENTS.map(ev => {
+    const cx = xScale(ev.year);
+    const w = estW(ev);
+    const x0 = cx - 4, x1 = cx + w;
+    for (let row = 0; row < 4; row++) {
+      const conflict = placed.some(p => p.row === row && !(x1 < p.x0 || x0 > p.x1));
+      if (!conflict) {
+        placed.push({ row, x0, x1 });
+        return row;
+      }
+    }
+    placed.push({ row: 0, x0, x1 });
+    return 0;
+  });
+
+  const eventBandW = 3;
+  EVENTS.forEach((ev, i) => {
+    const cx = xScale(ev.year);
+    // Faint vertical band (full height)
+    g.append('rect').attr('class', 'event-band')
+      .attr('x', cx - eventBandW)
+      .attr('y', MARGIN.top - 6)
+      .attr('width', eventBandW * 2)
+      .attr('height', totalHeight - MARGIN.top + 6);
+    // Crisp center line
     g.append('line').attr('class', 'event-line')
-      .attr('x1', xScale(ev.year)).attr('x2', xScale(ev.year))
-      .attr('y1', MARGIN.top - 15).attr('y2', totalHeight);
+      .attr('x1', cx).attr('x2', cx)
+      .attr('y1', MARGIN.top - 6).attr('y2', totalHeight - 4);
+    // Year + label, horizontal, stacked
+    // Row 0 sits closest to bars; rows go upward.
+    const rowY = MARGIN.top - 14 - eventRow[i] * 14;
+    g.append('text').attr('class', 'event-year')
+      .attr('x', cx + 4).attr('y', rowY)
+      .attr('text-anchor', 'start')
+      .text(ev.year);
     g.append('text').attr('class', 'event-label')
-      .attr('x', xScale(ev.year) + 3).attr('y', MARGIN.top - 5).text(ev.label);
+      .attr('x', cx + 30).attr('y', rowY)
+      .attr('text-anchor', 'start')
+      .text(EVENT_LABELS[ev.year] || ev.label);
   });
 
   // Component color variation
+  // Using the base region color directly (no per-component shift) for a calmer
+  // editorial look — oklch values come straight through to the browser.
   const compColorMap = {};
-  components.forEach((comp, ci) => {
+  components.forEach((comp) => {
     const baseRegion = nodeById[comp[0]] ? nodeById[comp[0]].region : 'Unknown';
-    const baseColor = d3.color(REGION_COLORS[baseRegion] || '#777');
-    const shift = (ci % 5) * 15 - 30;
-    const varied = baseColor.brighter(shift / 60);
-    comp.forEach(id => { compColorMap[id] = varied.formatHex(); });
+    const baseColor = REGION_COLORS[baseRegion] || REGION_COLORS['Unknown'];
+    comp.forEach(id => { compColorMap[id] = baseColor; });
   });
 
   // French/pre-British colonial nodes get a distinct color
@@ -1305,11 +1726,11 @@ function buildSankey() {
   const INDIA_OFFICE_TYPES = new Set([
     'Trading Company', 'Trading Post', 'Presidency', 'Province', 'Province of British India',
   ]);
-  const FRENCH_COLOR = '#3a8fd4'; // blue — Bourbon France
-  const SCOTTISH_COLOR = '#2e86ab'; // teal-blue — Scottish charter
-  const DUTCH_COLOR = '#e87d2f'; // orange — VOC / Dutch Republic
-  const INDIA_OFFICE_COLOR = '#cc3333'; // deeper red — India Office
-  const COLONIAL_OFFICE_SA_COLOR = '#e88080'; // lighter red — Colonial Office territories in South Asia
+  const FRENCH_COLOR = 'oklch(50% 0.10 250)'; // dusty blue — Bourbon France
+  const SCOTTISH_COLOR = 'oklch(52% 0.08 230)'; // teal-blue — Scottish charter
+  const DUTCH_COLOR = 'oklch(60% 0.11 45)';   // dusty orange — VOC / Dutch Republic
+  const INDIA_OFFICE_COLOR = 'oklch(45% 0.13 22)'; // deeper brick — India Office
+  const COLONIAL_OFFICE_SA_COLOR = 'oklch(58% 0.10 22)'; // lighter brick — Colonial Office in SA
 
   function getColor(id) {
     if (FRENCH_IDS.has(id)) return FRENCH_COLOR;
@@ -1625,6 +2046,23 @@ function buildSankey() {
     const pi = POST_IMPERIAL.has(n.type);
     const nb = NON_BRITISH.has(n.type);
     const standalone = !connected.has(n.id);
+    // Importance: long-lived or pivotal nodes always show their label.
+    // Minor = short-lived peripheral entities (guano-islands, brief occupations)
+    // that crowd the chart with little informational value. Those get revealed
+    // only on zoom-in.
+    const duration = ind - est;
+    const numChildren = (childrenOf[n.id] || []).length;
+    const numParents = (parentsOf[n.id] || []).length;
+    const PIVOTAL_TYPES = new Set(['Dominion', 'Independence', 'Federation']);
+    const hasEdges = !standalone;
+    const isImportant = (
+      hasEdges ||                       // any node in a lineage chain
+      duration >= 20 ||                 // standalone but lasted 20+ years
+      numChildren >= 1 ||
+      numParents >= 1 ||
+      PIVOTAL_TYPES.has(n.type) ||
+      pi
+    );
 
     const cls = 'node-bar' + (pi ? ' postimperial' : '') + (nb ? ' nonbritish' : '') + (standalone ? ' standalone' : '');
     const bar = barGroup.append('rect')
@@ -1642,16 +2080,17 @@ function buildSankey() {
       });
 
     if (pi || nb) {
-      const c = d3.color(color);
-      c.opacity = 0.25;
-      bar.attr('stroke', color).attr('fill', c.formatRgb());
+      // Use stroke at full color + transparent fill via fill-opacity (works with oklch)
+      bar.attr('stroke', color).attr('fill', color).attr('fill-opacity', 0.18);
     } else { bar.attr('fill', color); }
 
     // Label — inside the bar
     const displayName = SHORT_NAMES[n.id] || n.name;
     const fontSize = standalone ? 7 : Math.max(Math.min(10, l.h - 1), 7);
     barGroup.append('text')
-      .attr('class', 'node-label' + (standalone ? ' standalone' : ''))
+      .attr('class', 'node-label'
+        + (standalone ? ' standalone' : '')
+        + (!isImportant ? ' minor' : ''))
       .attr('x', x + 4).attr('y', l.y + l.h / 2 + fontSize * 0.35)
       .attr('text-anchor', 'start')
       .attr('font-size', fontSize + 'px')
@@ -1770,17 +2209,17 @@ function showTooltip(event, n) {
   if (inEdges.length > 0) {
     const evolved = inEdges.filter(e => e.type !== 'PARTITIONED_INTO').map(e => nodeById[e.source].name);
     const partFrom = inEdges.filter(e => e.type === 'PARTITIONED_INTO').map(e => nodeById[e.source].name);
-    if (evolved.length > 0) edgeHtml += `<div class="tt-edges">From: ${evolved.join(', ')}</div>`;
-    if (partFrom.length > 0) edgeHtml += `<div class="tt-edges">Partitioned from: ${partFrom.join(', ')}</div>`;
+    if (evolved.length > 0) edgeHtml += `<div class="tt-edges"><b>Predecessor</b><br>${evolved.join(', ')}</div>`;
+    if (partFrom.length > 0) edgeHtml += `<div class="tt-edges"><b>Partitioned from</b><br>${partFrom.join(', ')}</div>`;
   }
   if (outEdges.length > 0) {
     const evolvedTo = outEdges.filter(e => e.type !== 'PARTITIONED_INTO').map(e => nodeById[e.target].name);
     const partInto = outEdges.filter(e => e.type === 'PARTITIONED_INTO').map(e => nodeById[e.target].name);
-    if (evolvedTo.length > 0) edgeHtml += `<div class="tt-edges">Became: ${evolvedTo.join(', ')}</div>`;
-    if (partInto.length > 0) edgeHtml += `<div class="tt-edges">Partitioned into: ${partInto.join(', ')}</div>`;
+    if (evolvedTo.length > 0) edgeHtml += `<div class="tt-edges"><b>Became</b><br>${evolvedTo.join(', ')}</div>`;
+    if (partInto.length > 0) edgeHtml += `<div class="tt-edges"><b>Partitioned into</b><br>${partInto.join(', ')}</div>`;
   }
 
-  const qidLink = n.qid ? `<a href="https://www.wikidata.org/wiki/${n.qid}" style="color:#88ccff" target="_blank">${n.qid}</a>` : '';
+  const qidLink = n.qid ? `<a href="https://www.wikidata.org/wiki/${n.qid}" target="_blank">${n.qid}↗</a>` : '';
 
   tt.innerHTML = `
     <div class="tt-name">${n.name}</div>

@@ -16,6 +16,9 @@
 # OS
 .DS_Store
 Thumbs.db
+# Windows web-of-trust + Dropbox xattr sidecars
+*:Zone.Identifier
+*:com.dropbox.attrs
 
 # FalkorDBLite local DB (regeneratable from data/britishempire_kg_export.cypher)
 empire.db
