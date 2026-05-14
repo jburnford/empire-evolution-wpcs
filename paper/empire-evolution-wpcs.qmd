@@ -142,7 +142,7 @@ The dataset, visualization, and loading scripts are openly available at <https:/
 - `scripts/load_falkordb.py`: an in-process loader for [FalkorDB](https://www.falkordb.com/) (no Neo4j server, no Docker, no Java required).
 - `notebooks/quick_tour.ipynb`: a guided tour with three pyvis subgraph visualizations (schema-level statistics, the Canada lineage tree, and the Southeast Asia regional subgraph).
 
-The dataset and code are released under CC-BY 4.0.
+The paper text is released under CC-BY 4.0, the dataset under CC0 1.0 (a public domain dedication: attribution is appreciated but not required), and the code under the MIT License.
 
 ## Loading the graph
 

@@ -1,24 +1,59 @@
-Creative Commons Attribution 4.0 International (CC BY 4.0)
+Licensing for this repository
+=============================
 
 Copyright (c) 2026 Jim Clifford
 
-Both the paper text and the dataset in this repository are licensed under
-the Creative Commons Attribution 4.0 International License.
+This repository contains three kinds of material, each under the license
+best suited to it: the paper text, the dataset, and the code.
 
-You are free to:
-  - Share — copy and redistribute the material in any medium or format
-  - Adapt — remix, transform, and build upon the material for any purpose,
-    even commercially.
 
-Under the following terms:
-  - Attribution — You must give appropriate credit, provide a link to the
-    license, and indicate if changes were made. You may do so in any
-    reasonable manner, but not in any way that suggests the licensor
-    endorses you or your use.
+Paper text
+----------
 
-Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+The paper (paper/empire-evolution-wpcs.qmd and its rendered HTML and PDF) is
+licensed under the Creative Commons Attribution 4.0 International License
+(CC BY 4.0): https://creativecommons.org/licenses/by/4.0/legalcode
+
+
+Dataset
+-------
+
+The dataset (the data/ directory and viz/empire_evolution.html, together with
+the graph embedded in it) is released into the public domain under the
+Creative Commons CC0 1.0 Universal Public Domain Dedication:
+https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+You may copy, modify, distribute, and use the data, including for commercial
+purposes, without asking permission. Attribution is appreciated but not
+required: a citation to the paper helps others find the source and is
+welcome, but you are under no obligation to provide one.
 
 The dataset incorporates Wikidata identifiers (QIDs), which are themselves
-released under CC0. The CC-BY 4.0 license covers the curated assembly,
-date research, typology decisions, and relationship structure contributed
-by this work.
+CC0. The curated assembly, date research, typology decisions, and
+relationship structure contributed by this work are likewise dedicated to
+the public domain under CC0.
+
+
+Code
+----
+
+The scripts and notebooks (the scripts/ and notebooks/ directories) are
+licensed under the MIT License:
+
+  Permission is hereby granted, free of charge, to any person obtaining a
+  copy of this software and associated documentation files (the "Software"),
+  to deal in the Software without restriction, including without limitation
+  the rights to use, copy, modify, merge, publish, distribute, sublicense,
+  and/or sell copies of the Software, and to permit persons to whom the
+  Software is furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+  DEALINGS IN THE SOFTWARE.
